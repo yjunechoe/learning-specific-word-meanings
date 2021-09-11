@@ -18,12 +18,28 @@ PennController( "consent" ,
 Template("choice_set_df.csv", row => 
     // learn-phase goes here before test-phase
     newTrial("experiment",
+        // init learn and test content
+        newSallyCanvas("learn-phase")
+            .css("height", "550px")
+            .css("width", "1100px")
+            .css("position", "relative")
+            .print()
+        ,
         newSelectionGrid("test-phase", row.choices)
             .print()
             .hide()
             .log()
         ,
-        newTimer("hurry", 3000)
+        // show speech bubble above sally after 1 sec
+        newTimer("show-speech-bubble", 1000)
+            .start()
+            .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .showSpeechBubble()
+        ,
+        // move to test phase after 3 sec
+        newTimer("show-selection-grid", 3000)
             .start()
             .wait()
         ,

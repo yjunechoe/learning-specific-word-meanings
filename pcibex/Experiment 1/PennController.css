@@ -34,29 +34,28 @@
   bottom: 0px;
 }
 
-#canvas {
-  margin: 0 0 2rem 0;
-  width: 1000px;
-  height: 550px;
+.SallyCanvas {
+  position: relative;
+  margin: auto;
   background-color: ghostwhite;
   outline: 3px solid black;
 }
 
-#sally {
+.sally-img {
   position: absolute;
-  height: 250px;
+  height: 300px;
   margin: auto;
-  top: 305px;
+  top: 250px;
   left: 0px;
   right: 0px;
 }
 
-#speech-bubble {
+.speech-bubble {
   position: absolute;
   margin: auto;
   left: 0px;
   right: 0px;
-  top: 25%;
+  top: 17%;
   width: 40%;
   height: 20%;
   border-radius: 1rem;
@@ -64,7 +63,7 @@
   background-color: #bde0ff;
 }
 
-#speech-bubble:before {
+.speech-bubble:before {
   content: '';
   position: absolute;
   bottom: 0px;
@@ -79,10 +78,38 @@
   transform-origin: center center;
 }
 
-#speech-text {
+.speech-text {
   font-size: 20px;
   font-family: "Verdana";
   line-height: 150%;
   margin: 0px;
   padding: 1rem;
+}
+
+.labelled {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.left-ref {
+  top: 10%;
+  left: 5%
+}
+
+.right-ref {
+  top: 10%;
+  right: 5%;
+}
+
+.labelled > img {
+    outline: 10px solid white;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    top:0;
+    bottom:0;
 }
