@@ -1,0 +1,88 @@
+.PennController {
+}
+
+.SelectionGrid {
+  margin: 0 0 2rem calc(25%);
+  padding: 15px;
+  background-color: #EEEEEE;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(3, 150px);
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.cell {
+  position: relative;
+  background-color: white;
+}
+
+.cell-selected {
+  outline: 5px solid forestgreen;
+  opacity: 0.6;
+}
+
+.cell img {
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#canvas {
+  margin: 0 0 2rem 0;
+  width: 1000px;
+  height: 550px;
+  background-color: ghostwhite;
+  outline: 3px solid black;
+}
+
+#sally {
+  position: absolute;
+  height: 250px;
+  margin: auto;
+  top: 305px;
+  left: 0px;
+  right: 0px;
+}
+
+#speech-bubble {
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 25%;
+  width: 40%;
+  height: 20%;
+  border-radius: 1rem;
+  border: 2px solid #6ea6d5;
+  background-color: #bde0ff;
+}
+
+#speech-bubble:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border: 2px solid #6ea6d5;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, 48%) rotate(45deg);
+  transform-origin: center center;
+}
+
+#speech-text {
+  font-size: 20px;
+  font-family: "Verdana";
+  line-height: 150%;
+  margin: 0px;
+  padding: 1rem;
+}
