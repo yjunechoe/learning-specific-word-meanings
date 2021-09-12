@@ -59,7 +59,7 @@ Template("choice_set_df.csv", row =>
             .sallySay("This is a dax etc...")
         ,
         // hide all taught referents
-        newTimer("hide-all", 2000)
+        newTimer("hide-all", 3000)
             .start()
             .wait()
         ,
@@ -80,9 +80,10 @@ Template("choice_set_df.csv", row =>
             .show()
         ,
         newButton("Continue")
+            .cssContainer("margin-top", "1rem")
+            .cssContainer("margin-bottom", "3rem")
             .print()
             .center()
-            .css("margin", "2rem")
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
 )
