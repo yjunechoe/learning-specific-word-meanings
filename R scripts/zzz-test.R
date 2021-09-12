@@ -25,3 +25,5 @@ choice_set <- c("vehicle/sup-vehicle-5.jpg",
 choice_set_df <- tibble(choices = map_chr(list(choice_set, sample(choice_set)), toJSON))
 
 write_csv(choice_set_df, "choice_set_df.csv")
+
+

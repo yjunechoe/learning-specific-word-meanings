@@ -8,8 +8,9 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
         this.learningString = typeof learningString == "string" ? JSON.parse(learningString) : learningString;
         
         // sally imgs
+        let remote = "https://raw.githubusercontent.com/yjunechoe/learning-specific-word-meanings/main/image_stimuli/"
         this.sallyArray = ["Sally/pointer-none.png", "Sally/pointer-left.png", "Sally/pointer-right.png"].map(d => {
-            return "https://raw.githubusercontent.com/yjunechoe/learning-specific-word-meanings/main/image_stimuli/" + d
+            return remote + d
         })
         // preload images
         this.sallyImgArray = this.sallyArray.map(d => {
@@ -18,16 +19,25 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
             return imgObj;
         })
         
-        this.learnFirstImg = this.learningString[0] || new Image();
-        this.learnSecondImg = this.learningString[1] || new Image();
+        this.learnFirstImg = $("<img>").attr("src", remote + this.learningString[0]);
+        this.learnSecondImg = $("<img>").attr("src", remote + this.learningString[1]);
         
         this.sallyImg = $("<img>").attr("class", "PennController-sally-img").attr("src", this.sallyArray[0])        
-        this.learnFirst = $("<div>").attr("class", "PennController-labelled PennController-left-ref")
-        this.learnSecond = $("<div>").attr("class", "PennController-labelled PennController-right-ref")
+        let learnFirst = $("<div>").attr("class", "PennController-labelled PennController-left-ref")
+            .append(this.learnFirstImg)
+        let learnSecond = $("<div>").attr("class", "PennController-labelled PennController-right-ref")
+            .append(this.learnSecondImg)
+            
+        this.secondMissing = this.learningString[1] === null
+        if (this.secondMissing) {
+            learnSecond = null
+        }
         
-        this.speechText = $("<div>").attr("class", "PennController-speech-text")
+        this.learnFirst = learnFirst
+        this.learnSecond = learnSecond
+
+        this.speechText = $("<p>").attr("class", "PennController-speech-text")
         this.speechBubble = $("<div>").attr("class", "PennController-speech-bubble")
-            .css("display", "none")
             .append(this.speechText)
     }
         
@@ -53,8 +63,32 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
     };
     
     this.actions = {
+        sallySay: function(resolve, speech){
+            this.speechText.text(speech);
+            resolve();
+        },
         showSpeechBubble: function(resolve){
-            this.speechBubble.css("display", "inherit")
+            this.speechBubble.css("display", "inherit");
+            resolve();
+        },
+        hideSpeechBubble: function(resolve){
+            this.speechBubble.css("display", "none");
+            resolve(); 
+        },
+        showFirst: function(resolve){
+            this.learnFirstImg.css("visibility", "visible");
+            this.sallyImg.attr("src", this.sallyArray[1]) 
+            resolve();
+        },
+        showSecond: function(resolve){
+            this.learnSecondImg.css("visibility", "visible");
+            this.sallyImg.attr("src", this.sallyArray[2])
+            resolve();
+        },
+        hideAll: function(resolve){
+            this.sallyImg.attr("src", this.sallyArray[0])
+            this.learnFirstImg.css("visibility", "hidden");
+            this.learnSecondImg.css("visibility", "hidden");
             resolve();
         }
         // show sally none

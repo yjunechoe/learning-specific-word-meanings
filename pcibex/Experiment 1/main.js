@@ -23,6 +23,7 @@ Template("choice_set_df.csv", row =>
             .css("height", "550px")
             .css("width", "1100px")
             .css("position", "relative")
+            .css("margin-bottom", "2rem")
             .print()
         ,
         newSelectionGrid("test-phase", row.choices)
@@ -37,11 +38,43 @@ Template("choice_set_df.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showSpeechBubble()
+            .sallySay("Are you ready?")
         ,
-        // move to test phase after 3 sec
-        newTimer("show-selection-grid", 3000)
+        // teach left referent
+        newTimer("show-first", 3000)
             .start()
             .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .showFirst()
+            .sallySay("This is a feb etc...")
+        ,
+        // teach right referent
+        newTimer("show-second", 3000)
+            .start()
+            .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .showSecond()
+            .sallySay("This is a dax etc...")
+        ,
+        // hide all taught referents
+        newTimer("hide-all", 2000)
+            .start()
+            .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .hideAll()
+            .hideSpeechBubble()
+        ,
+        // move to test phase after 3 sec
+        newTimer("show-selection-grid", 1000)
+            .start()
+            .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .sallySay("Can you find more daxes below?")
+            .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
             .show()
@@ -49,6 +82,7 @@ Template("choice_set_df.csv", row =>
         newButton("Continue")
             .print()
             .center()
+            .css("margin", "2rem")
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
 )
