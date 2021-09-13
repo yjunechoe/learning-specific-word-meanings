@@ -1,6 +1,10 @@
 library(fs)
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(jsonlite)
 library(assertr)
 
 set.seed(2021)
@@ -40,23 +44,66 @@ img_tbl %>%
     description = "There are 9 semantic domains, and all have the same # of images except the filler domain 'planet'."
   )
 
+# design pre-randomized trial order and condition split (within-participant)
+
 group_designs <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
-  group1 = rep(c("S", "C"), 4),
-  group2 = rep(c("C", "S"), 4),
-  group3 = rep(c("S", "S", "C", "C"), 2),
-  group4 = rep(c("C", "C", "S", "S"), 2)
+  groupA = rep(c("S", "C"), 4),
+  groupB = rep(c("C", "S"), 4),
+  groupC = rep(c("S", "S", "C", "C"), 2),
+  groupD = rep(c("C", "C", "S", "S"), 2)
 ) %>% 
   pivot_longer(
     cols = starts_with("group"),
     names_to = "group",
-    names_pattern = "group(\\d)",
+    names_prefix = "group",
     values_to = "condition"
   ) %>% 
   mutate(condition = c(S = "single", C = "contrast")[condition]) %>% 
   arrange(group)
 
-gen_test_set <- function(domain) {
-  
+group_designs %>% 
+  verify(
+    expr = all(table(group, condition) == 4),
+    description = "There are 4 trials from each condition in all 4 design groups."
+  )
+
+## fill design with trial templates
+
+category_dict <- img_tbl %>% 
+  distinct(domain, type, category) %>% 
+  filter(type %in% c("sub", "contrast"))
+
+gen_learn_set <- function(d, condition) {
+  learn_set <- category_dict %>% 
+    filter(domain == d)
+  if (condition == "contrast") {
+    pull(learn_set, category)
+  } else if (condition == "single") {
+    learn_set %>% 
+      filter(type == "sub") %>% 
+      pull(category)
+  }
 }
 
+gen_test_set <- function(d) {
+  other_refs <- img_tbl %>% 
+    filter(domain != d) %>% 
+    group_by(domain) %>% 
+    slice_sample(n = 1) %>% 
+    pull(path)
+  domain_refs <- img_tbl %>% 
+    filter(domain == d, !is.na(id)) %>% 
+    pull(path)
+  sample(c(other_refs, domain_refs))
+}
+
+trial_template_tbl <- group_designs %>% 
+  rowwise() %>% 
+  mutate(
+    learn_set = toJSON(gen_learn_set(domain, condition)),
+    test_set = toJSON(gen_test_set(domain))
+  ) %>% 
+  ungroup()
+
+write_csv(trial_template_tbl, here::here("R Scripts", "01_trial_templates.csv"))
