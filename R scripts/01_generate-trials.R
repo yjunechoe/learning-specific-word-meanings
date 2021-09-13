@@ -3,6 +3,8 @@ library(here)
 library(tidyverse)
 library(assertr)
 
+set.seed(2021)
+
 img_dir <- here("image_stimuli")
 
 img_paths <- fs::dir_ls(img_dir, regexp = "/[a-z]+$") %>% 
@@ -35,7 +37,7 @@ img_tbl %>%
   ) %>% 
   verify(
     expr = (n_distinct(domain) == 9) && (var(table(domain[domain != "planet"])) == 0),
-    description = "There are 9 domains, and all have the same # of images except the filler domain 'planet'."
+    description = "There are 9 semantic domains, and all have the same # of images except the filler domain 'planet'."
   )
 
 group_designs <- tibble(
