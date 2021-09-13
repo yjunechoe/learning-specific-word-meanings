@@ -88,7 +88,7 @@ gen_learn_set <- function(d, condition) {
 
 gen_test_set <- function(d) {
   other_refs <- img_tbl %>% 
-    filter(domain != d) %>% 
+    filter(domain != d, type == "sup") %>% 
     group_by(domain) %>% 
     slice_sample(n = 1) %>% 
     pull(path)
