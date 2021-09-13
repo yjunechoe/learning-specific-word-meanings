@@ -50,7 +50,7 @@ Template("01_trial_templates.csv", row =>
             .sallySay("This is a feb etc...")
         ,
         // teach right referent
-        newTimer("show-second", 3000)
+        newTimer("show-second", 5000)
             .start()
             .wait()
         ,
@@ -59,20 +59,20 @@ Template("01_trial_templates.csv", row =>
             .sallySay("This is a dax etc...")
         ,
         // hide all taught referents
-        newTimer("hide-all", 3000)
+        newTimer("hide-all", 5000)
+            .start()
+            .wait()
+        ,
+        getSallyCanvas("learn-phase")
+            .hideSpeechBubble()
+        ,
+        // move to test phase after 3 sec
+        newTimer("show-selection-grid", 3000)
             .start()
             .wait()
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .hideSpeechBubble()
-        ,
-        // move to test phase after 3 sec
-        newTimer("show-selection-grid", 1000)
-            .start()
-            .wait()
-        ,
-        getSallyCanvas("learn-phase")
             .sallySay("Can you find more daxes below?")
             .showSpeechBubble()
         ,
@@ -81,7 +81,7 @@ Template("01_trial_templates.csv", row =>
         ,
         newButton("Continue")
             .cssContainer("margin-top", "1rem")
-            .cssContainer("margin-top", "1rem")
+            .cssContainer("margin-bottom", "1rem")
             .print()
             .center()
             .wait(getSelectionGrid("test-phase").test.selectAny())
