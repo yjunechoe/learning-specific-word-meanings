@@ -47,7 +47,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay("This is a feb etc...")
+            .sallySay("Look, this is a fep! Do you see the fep?")
         ,
         // teach right referent
         newTimer("show-second", 5000)
@@ -56,7 +56,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showSecond()
-            .sallySay("This is a dax etc...")
+            .sallySay("And look, this is a dax! Do you see the dax?")
         ,
         // hide all taught referents
         newTimer("hide-all", 5000)
