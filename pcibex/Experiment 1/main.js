@@ -61,7 +61,7 @@ Template("01_trial_templates.csv", row =>
                     ,
                     getSallyCanvas("learn-phase")
                         .showSecond()
-                        .sallySay("And look, this is a " + row.label2 + "! Do you see the " + row.label2 + "?")
+                        .sallySay("And look, this is a " + row.label2 + "!<br>Do you see the " + row.label2 + "?")
                 )
         ,
         // hide all taught referents
@@ -80,7 +80,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .sallySay("Do you see any other " + row.label1 + "s below?")
+            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Select all " + row.label1 + "s that you see!")
             .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
