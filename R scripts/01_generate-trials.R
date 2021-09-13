@@ -76,13 +76,14 @@ category_dict <- img_tbl %>%
 
 gen_learn_set <- function(d, condition) {
   learn_set <- category_dict %>% 
-    filter(domain == d)
+    filter(domain == d) %>% 
+    left_join(img_tbl, by = c("domain", "type", "category"))
   if (condition == "contrast") {
-    pull(learn_set, category)
+    pull(learn_set, path)
   } else if (condition == "single") {
     learn_set %>% 
       filter(type == "sub") %>% 
-      pull(category)
+      pull(path)
   }
 }
 
