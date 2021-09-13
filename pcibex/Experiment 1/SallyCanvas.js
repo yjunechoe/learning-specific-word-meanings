@@ -27,7 +27,8 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
             .append(this.learnFirstImg)
         let learnSecond = $("<div>").attr("class", "PennController-labelled PennController-right-ref")
             .append(this.learnSecondImg)
-            
+        
+        console.log(this.learningString)
         this.secondMissing = this.learningString[1] === null
         if (this.secondMissing) {
             learnSecond = null
@@ -61,13 +62,13 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
     };
 
     this.test = {
+        noContrast: function(){
+            console.log(this.secondMissing)
+            return this.secondMissing
+        },
     };
     
     this.actions = {
-        noContrast: function(resolve){
-            resolve();
-            return this.secondMissing
-        },
         sallyStill: function(resolve){
             this.sallyImg.attr("src", this.sallyArray[0])
             resolve();

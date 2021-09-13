@@ -6,7 +6,7 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         
         // debug ---
         // imageString = '["vehicle/sup-vehicle-5.jpg","beast/basic-dinosaur/basic-dinosaur-1.jpg","light/lamp/contrast-desk_lamp/contrast-desk_lamp-2.jpg","fruit/basic-apple/sub-red_apple/sub-red_apple-1.jpg","light/lamp/basic-lamp-2.jpg","light/lamp/sub-gooseneck_lamp/1sub-gooseneck_lamp.jpg","fruit/basic-apple/basic-apple-2.jpg","electronics/sup-electronics-5.jpg","furniture/basic-chair/basic-chair-2.jpg","beast/basic-dinosaur/contrast-triceratops/contrast-triceratops-1.jpg","vehicle/basic-car/sub-racecar/1sub-racecar.jpg","beast/sup-beast-1.jpg","furniture/sup-furniture-4.jpg","fruit/basic-apple/sub-red_apple/1sub-red_apple.jpg","electronics/basic-phone/sub-smart_phone/sub-smart_phone-1.jpg","vehicle/sup-vehicle-4.jpg","furniture/basic-chair/contrast-office_chair/contrast-office_chair-1.jpg","electronics/sup-electronics-4.jpg","beast/basic-dinosaur/sub-trex/sub-trex-2.jpg","vegetable/basic-pepper/contrast-red_pepper/1contrast-red_pepper.jpg"]'
-        console.log(imageString)
+        // console.log(imageString)
         
         this.id = id;
         
@@ -52,7 +52,7 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                                 cell.addClass("PennController-cell-selected")
                                 selection.add(imgfile)
                             }
-                            console.log(selection)
+                            // console.log(selection)
                         })
                 )
         })
@@ -81,12 +81,12 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
     // display none so imgs load during test but doesn't takeup space
     this.actions = {
         hide: function(resolve){
-            console.log("SelectionGrid hidden")
+            // console.log("SelectionGrid hidden")
             this.jQueryElement.css("display", "none")
             resolve();
         },
         show: function(resolve){
-            console.log("SelectionGrid shown")
+            // console.log("SelectionGrid shown")
             this.jQueryElement.css("display", "grid")
             resolve();
         }
