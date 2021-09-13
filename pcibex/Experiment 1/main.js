@@ -58,11 +58,6 @@ Template("01_trial_templates.csv", row =>
             .showSecond()
             .sallySay("And look, this is a dax! Do you see the dax?")
         ,
-        newButton("debug")
-            .print()
-            .center()
-            .wait(getSallyCanvas("learn-phase").test.noContrast())
-        ,
         // hide all taught referents
         newTimer("hide-all", 5000)
             .start()
