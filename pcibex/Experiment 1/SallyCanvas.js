@@ -72,7 +72,7 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
             resolve();
         },
         sallySay: function(resolve, speech){
-            this.speechText.text(speech);
+            this.speechText.html(speech);
             resolve();
         },
         showSpeechBubble: function(resolve){

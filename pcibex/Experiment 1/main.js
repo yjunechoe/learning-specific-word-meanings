@@ -47,7 +47,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay("Look, this is a " + row.label1 + "! Do you see the " + row.label1 + "?")
+            .sallySay("Look, this is a " + row.label1 + "!<br>Do you see the " + row.label1 + "?")
         ,
         // teach right referent
         newTimer("show-second", 5000)
