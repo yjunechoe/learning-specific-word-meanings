@@ -38,6 +38,7 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
 
         this.speechText = $("<p>").attr("class", "PennController-speech-text")
         this.speechBubble = $("<div>").attr("class", "PennController-speech-bubble")
+            .css("display", "none")
             .append(this.speechText)
     }
         
@@ -63,6 +64,12 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
     };
     
     this.actions = {
+        noContrast: function(resolve){
+            return this.secondMissing
+        },
+        sallyStill: function(resolve){
+            this.sallyImg.attr("src", this.sallyarray[0])
+        },
         sallySay: function(resolve, speech){
             this.speechText.text(speech);
             resolve();
@@ -86,7 +93,6 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
             resolve();
         },
         hideAll: function(resolve){
-            this.sallyImg.attr("src", this.sallyArray[0])
             this.learnFirstImg.css("visibility", "hidden");
             this.learnSecondImg.css("visibility", "hidden");
             resolve();

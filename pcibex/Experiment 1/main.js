@@ -64,6 +64,7 @@ Template("01_trial_templates.csv", row =>
             .wait()
         ,
         getSallyCanvas("learn-phase")
+            .sallyStill()
             .hideSpeechBubble()
         ,
         // move to test phase after 3 sec
