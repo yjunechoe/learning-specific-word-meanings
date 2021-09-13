@@ -65,10 +65,12 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
     
     this.actions = {
         noContrast: function(resolve){
+            resolve();
             return this.secondMissing
         },
         sallyStill: function(resolve){
             this.sallyImg.attr("src", this.sallyarray[0])
+            resolve();
         },
         sallySay: function(resolve, speech){
             this.speechText.text(speech);
