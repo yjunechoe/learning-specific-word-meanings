@@ -94,7 +94,8 @@ group_designs %>%
 
 category_dict <- img_tbl %>% 
   distinct(domain, type, category) %>% 
-  filter(type %in% c("sub", "contrast"))
+  filter(type %in% c("sub", "contrast")) %>% 
+  arrange(domain, desc(type))
 
 gen_learn_set <- function(d, condition) {
   learn_set <- category_dict %>% 
