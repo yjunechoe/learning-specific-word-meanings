@@ -2,6 +2,7 @@ library(fs)
 library(here)
 library(readr)
 library(dplyr)
+library(purrr)
 library(tidyr)
 library(stringr)
 library(jsonlite)
@@ -46,8 +47,29 @@ img_tbl %>%
 
 # design pre-randomized trial order and condition split (within-participant)
 
+nonsense_labels <- c(
+  "kapsin",
+  "tantol",
+  "garlet",
+  "crittum",
+  "tazzai",
+  "pitten",
+  "mipen",
+  "kalmick",
+  "gavai",
+  "flippet",
+  "belpid",
+  "spadil",
+  "tuffee",
+  "blicket",
+  "clazzo",
+  "dalkeet"
+)
+
 group_designs <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
+  label1 = nonsense_labels[c(TRUE, FALSE)],
+  label2 = nonsense_labels[c(FALSE, TRUE)],
   groupA = rep(c("S", "C"), 4),
   groupB = rep(c("C", "S"), 4),
   groupC = rep(c("S", "S", "C", "C"), 2),
