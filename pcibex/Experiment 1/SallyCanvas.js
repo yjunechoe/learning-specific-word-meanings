@@ -62,8 +62,6 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
 
     this.test = {
         noContrast: function(){
-            console.log(this.learningString)
-            console.log(this.secondMissing)
             return this.secondMissing
         },
     };

@@ -51,12 +51,18 @@ Template("01_trial_templates.csv", row =>
         ,
         // teach right referent
         newTimer("show-second", 5000)
-            .start()
-            .wait()
         ,
         getSallyCanvas("learn-phase")
-            .showSecond()
-            .sallySay("And look, this is a dax! Do you see the dax?")
+            .test.noContrast()
+                .failure(
+                    getTimer("show-second")
+                        .start()
+                        .wait()
+                    ,
+                    getSallyCanvas("learn-phase")
+                        .showSecond()
+                        .sallySay("And look, this is a dax! Do you see the dax?")
+                )
         ,
         // hide all taught referents
         newTimer("hide-all", 5000)
@@ -74,7 +80,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .sallySay("Can you find more daxes below?")
+            .sallySay("Can you find more feps below?")
             .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
