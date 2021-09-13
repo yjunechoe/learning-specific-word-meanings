@@ -19,7 +19,7 @@ Template("01_trial_templates.csv", row =>
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
-        newSallyCanvas("learn-phase")
+        newSallyCanvas("learn-phase", row.learn_set)
             .css("height", "550px")
             .css("width", "1100px")
             .css("position", "relative")
