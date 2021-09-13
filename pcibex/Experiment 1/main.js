@@ -47,7 +47,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay("Look, this is a fep! Do you see the fep?")
+            .sallySay("Look, this is a " + row.label1 + "! Do you see the " + row.label1 + "?")
         ,
         // teach right referent
         newTimer("show-second", 5000)
@@ -61,7 +61,7 @@ Template("01_trial_templates.csv", row =>
                     ,
                     getSallyCanvas("learn-phase")
                         .showSecond()
-                        .sallySay("And look, this is a dax! Do you see the dax?")
+                        .sallySay("And look, this is a " + row.label2 + "! Do you see the " + row.label2 + "?")
                 )
         ,
         // hide all taught referents
@@ -80,7 +80,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .sallySay("Can you find more feps below?")
+            .sallySay("Do you see any other " + row.label1 + "s below?")
             .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
