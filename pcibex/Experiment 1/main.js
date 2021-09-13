@@ -15,7 +15,7 @@ PennController( "consent" ,
         .wait()
 )
 
-Template("choice_set_df.csv", row => 
+Template("01_trial_templates.csv", row => 
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
@@ -26,7 +26,7 @@ Template("choice_set_df.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSelectionGrid("test-phase", row.choices)
+        newSelectionGrid("test-phase", row.test_set)
             .print()
             .hide()
             .log()
@@ -81,7 +81,7 @@ Template("choice_set_df.csv", row =>
         ,
         newButton("Continue")
             .cssContainer("margin-top", "1rem")
-            .cssContainer("margin-bottom", "3rem")
+            .cssContainer("margin-top", "1rem")
             .print()
             .center()
             .wait(getSelectionGrid("test-phase").test.selectAny())
