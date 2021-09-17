@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null)
 
-PennController.Sequence("consent", randomize("experiment"))
+PennController.Sequence("consent", ("experiment"))
 
 PennController( "consent" ,
     defaultText
@@ -80,7 +80,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Select all " + row.label1 + "s that you see!")
+            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Click on all the " + row.label1 + "s you can find!")
             .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
