@@ -42,9 +42,9 @@
 
 .sally-img {
   position: absolute;
-  height: 300px;
+  height: 40%;
   margin: auto;
-  top: 250px;
+  top: 60%;
   left: 0px;
   right: 0px;
 }
@@ -52,128 +52,9 @@
 .speech-bubble {
   display:none ;
   position: absolute;
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 17%;
-  width: 40%;
-  height: 20%;
-  border-radius: 1rem;
-  border: 2px solid #6ea6d5;
-  background-color: #bde0ff;
-}
-
-.speech-bubble:before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
+  transform: translateX(-50%);
   left: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: inherit;
-  border: 2px solid #6ea6d5;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  transform: translate(-50%, 48%) rotate(45deg);
-  transform-origin: center center;
-}
-
-.speech-text {
-  font-size: 20px;
-  font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 190%;
-  margin: 0px;
-  padding: 1rem;
-}
-
-.labelled {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  visibility: hidden;
-}
-
-.left-ref {
-  top: 10%;
-  left: 5%
-}
-
-.right-ref {
-  top: 10%;
-  right: 5%;
-}
-
-.labelled > img {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left:0;
-    right:0;
-    margin:auto;
-    top:0;
-    bottom:0;
-}
-.PennController {
-}
-
-.SelectionGrid {
-  margin: 2rem auto;
-  padding: 30px;
-  background-color: #EEEEEE50;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(5, 150px);
-  grid-template-rows: repeat(4, 150px);
-  column-gap: 30px;
-  row-gap: 30px;
-}
-
-.cell {
-  position: relative;
-  background-color: white;
-}
-
-.cell-selected {
-  outline: 5px solid forestgreen;
-  opacity: 0.6;
-}
-
-.cell img {
-  max-width: 95%;
-  max-height: 95%;
-  position: absolute;
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-}
-
-.SallyCanvas {
-  position: relative;
-  margin: auto;
-  outline: 3px solid black;
-}
-
-.sally-img {
-  position: absolute;
-  height: 300px;
-  margin: auto;
-  top: 250px;
-  left: 0px;
-  right: 0px;
-}
-
-.speech-bubble {
-  display:none ;
-  position: absolute;
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 17%;
-  width: 35%;
-  height: 20%;
+  top: 33%;
   border-radius: 1rem;
   border: 2px solid #6ea6d5;
   background-color: #bde0ff;
