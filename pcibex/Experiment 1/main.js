@@ -71,11 +71,12 @@ Template("01_trial_templates.csv", row =>
             .wait()
         ,
         getSallyCanvas("learn-phase")
+            .hideAll()
             .sallyStill()
             .hideSpeechBubble()
         ,
         // move to test phase after 3 sec
-        newTimer("show-selection-grid", 3000)
+        newTimer("show-selection-grid", 1000)
             .start()
             .wait()
         ,
