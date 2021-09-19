@@ -1,6 +1,9 @@
 PennController.ResetPrefix(null)
 
-PennController.Sequence("consent", ("experiment"))
+PennController.Sequence("consent", "counter", "experiment")
+
+SetCounter("counter", "inc", 1);
+
 
 PennController( "consent" ,
     defaultText
@@ -41,7 +44,7 @@ Template("01_trial_templates.csv", row =>
             .sallySay("Okay!<br>Are you ready?")
         ,
         // teach left referent
-        newTimer("show-first", 3000)
+        newTimer("hold-speech-bubble", 3000)
             .start()
             .wait()
         ,
@@ -49,13 +52,13 @@ Template("01_trial_templates.csv", row =>
             .showFirst()
             .sallySay("Look, this is a " + row.label1 + "!<br>Do you see the " + row.label1 + "?")
         ,
-        // teach right referent
-        newTimer("show-second", 5000)
+        // teach referent(s)
+        newTimer("learn-referent", 7000)
         ,
         getSallyCanvas("learn-phase")
             .test.noContrast()
                 .failure(
-                    getTimer("show-second")
+                    getTimer("learn-referent")
                         .start()
                         .wait()
                     ,
@@ -65,11 +68,11 @@ Template("01_trial_templates.csv", row =>
                         .sallySay("And look, this is a " + row.label2 + "!<br>Do you see the " + row.label2 + "?")
                 )
         ,
-        // hide all taught referents
-        newTimer("hide-all", 5000)
+        getTimer("learn-referent")
             .start()
             .wait()
         ,
+        // hide all taught referents
         getSallyCanvas("learn-phase")
             .hideAll()
             .sallyStill()
