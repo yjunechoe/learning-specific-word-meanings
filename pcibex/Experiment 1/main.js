@@ -60,6 +60,7 @@ Template("01_trial_templates.csv", row =>
                         .wait()
                     ,
                     getSallyCanvas("learn-phase")
+                        .hideAll()
                         .showSecond()
                         .sallySay("And look, this is a " + row.label2 + "!<br>Do you see the " + row.label2 + "?")
                 )
