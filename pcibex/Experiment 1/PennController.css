@@ -76,6 +76,7 @@
 }
 
 .speech-text {
+  text-align: center;
   font-size: 20px;
   font-family: "Bitter";
   font-weight: 500;

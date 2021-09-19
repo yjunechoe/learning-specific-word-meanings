@@ -38,7 +38,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showSpeechBubble()
-            .sallySay("Are you ready?")
+            .sallySay("Okay!<br>Are you ready?")
         ,
         // teach left referent
         newTimer("show-first", 3000)
@@ -80,7 +80,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .hideAll()
-            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Click on all the " + row.label1 + "s you can find!")
+            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Click on all the " + row.label1 + "s you see!")
             .showSpeechBubble()
         ,
         getSelectionGrid("test-phase")
