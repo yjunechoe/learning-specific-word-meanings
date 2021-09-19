@@ -29,6 +29,11 @@ Template("01_trial_templates.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
+        newHtml("directions", "small-sally-canvas.html")
+            .cssContainer("display", "block")
+            .print()
+            .hidden()
+        ,
         newSelectionGrid("test-phase", row.test_set)
             .print()
             .hide()
@@ -84,9 +89,10 @@ Template("01_trial_templates.csv", row =>
             .wait()
         ,
         getSallyCanvas("learn-phase")
-            .hideAll()
-            .sallySay("Do you see any other " + row.label1 + "s below?<br>" + "Click on all the " + row.label1 + "s you see!")
-            .showSpeechBubble()
+            .remove()
+        ,
+        getHtml("directions")
+            .visible()
         ,
         getSelectionGrid("test-phase")
             .show()
