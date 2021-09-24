@@ -1,4 +1,5 @@
 PennController.ResetPrefix(null)
+var showProgressBar = false;
 
 PennController.Sequence("consent", "counter", "intro", "experiment", "end")
 
