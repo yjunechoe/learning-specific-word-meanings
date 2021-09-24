@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null)
 
-PennController.Sequence("consent", "counter", "experiment")
+PennController.Sequence("consent", "counter", "intro", "experiment")
 
 SetCounter("counter", "inc", 1);
 
@@ -10,10 +10,37 @@ PennController( "consent" ,
         .print()
     ,
     newText("<h2><b>CONSENT TO PARTICIPATE IN RESEARCH</b></h2>")
-        .settings.center()
+        .print()
+        .center()
     ,
     newButton("I Agree")
-        .settings.center()
+        .center()
+        .print()
+        .wait()
+)
+
+PennController("intro",
+    defaultText
+        .css("font-style", "italic")
+        .center()
+        .print()
+        .cssContainer("margin-top", "1rem")
+    ,
+    newImage("sally", "https://raw.githubusercontent.com/yjunechoe/learning-specific-word-meanings/main/image_stimuli/Sally/pointer-none.png")
+        .cssContainer("margin", "1rem")
+        .print()
+        .center()
+    ,
+    newText("This is Sally.")
+    ,
+    newText("Sally would like to teach you some words in her native language.")
+    ,
+    newText("Please pay attention to what Sally says, because she will be asking you questions about them.")
+    ,
+    newButton("Begin")
+        .cssContainer("margin-top", "1rem")
+        .cssContainer("margin-bottom", "5rem")
+        .center()
         .print()
         .wait()
 )
