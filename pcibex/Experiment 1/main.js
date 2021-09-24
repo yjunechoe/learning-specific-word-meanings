@@ -130,6 +130,9 @@ Template("01_trial_templates.csv", row =>
             .center()
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
+    .log("group", row.group)
+    .log("condition", row.condition)
+    .log("item", row.domain)
 )
 
 PennController("end",
@@ -137,7 +140,9 @@ PennController("end",
         .css("height", "550px")
         .css("width", "1100px")
         .css("position", "relative")
+        .css("margin-top", "-150px")
         .css("margin-bottom", "2rem")
+        .css("outline", "none")
         .showSpeechBubble()
         .sallySay("That was fun!<br>Thanks for playing with me!")
         .print()
