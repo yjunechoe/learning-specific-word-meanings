@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null)
 
-PennController.Sequence("consent", "counter", "intro", "experiment")
+PennController.Sequence("consent", "counter", "intro", "experiment", "end")
 
 SetCounter("counter", "inc", 1);
 
@@ -38,7 +38,7 @@ PennController("intro",
     newText("Please pay attention to what Sally says, because she will be asking you questions about them.")
     ,
     newButton("Begin")
-        .cssContainer("margin-top", "1rem")
+        .cssContainer("margin-top", "3rem")
         .cssContainer("margin-bottom", "5rem")
         .center()
         .print()
@@ -130,4 +130,22 @@ Template("01_trial_templates.csv", row =>
             .center()
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
+)
+
+PennController("end",
+    newSallyCanvas("learn-phase")
+        .css("height", "550px")
+        .css("width", "1100px")
+        .css("position", "relative")
+        .css("margin-bottom", "2rem")
+        .showSpeechBubble()
+        .sallySay("That was fun!<br>Thanks for playing with me!")
+        .print()
+    ,
+    newButton("Finish")
+        .cssContainer("margin-top", "2rem")
+        .cssContainer("margin-bottom", "1rem")
+        .center()
+        .print()
+        .wait()
 )
