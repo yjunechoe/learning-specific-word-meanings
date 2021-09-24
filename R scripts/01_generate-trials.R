@@ -121,6 +121,7 @@ gen_test_set <- function(d) {
     pull(path)
   domain_refs <- img_tbl %>% 
     filter(domain == d, !is.na(id)) %>% 
+    filter(id <= 3) %>%
     pull(path)
   sample(c(other_refs, domain_refs))
 }
