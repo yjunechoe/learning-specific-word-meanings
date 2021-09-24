@@ -28,7 +28,8 @@ PennController("intro",
         .cssContainer("margin-top", "1rem")
     ,
     newImage("sally", "https://raw.githubusercontent.com/yjunechoe/learning-specific-word-meanings/main/image_stimuli/Sally/pointer-none.png")
-        .cssContainer("margin", "1rem")
+        .cssContainer("margin-top", "5rem")
+        .cssContainer("margin-bottom", "2rem")
         .print()
         .center()
     ,
