@@ -125,8 +125,7 @@ Template("01_trial_templates.csv", row =>
             .show()
         ,
         newButton("Continue")
-            .cssContainer("margin-top", "1rem")
-            .cssContainer("margin-bottom", "5rem")
+            .cssContainer("margin", "1rem")
             .print()
             .center()
             .wait(getSelectionGrid("test-phase").test.selectAny())
