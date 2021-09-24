@@ -29,7 +29,7 @@ Template("01_trial_templates.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newHtml("directions", "small-sally-canvas.html")
+        newSallyMessageBar("directions", row.label1)
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -91,7 +91,7 @@ Template("01_trial_templates.csv", row =>
         getSallyCanvas("learn-phase")
             .remove()
         ,
-        getHtml("directions")
+        getSallyMessageBar("directions")
             .visible()
         ,
         getSelectionGrid("test-phase")
