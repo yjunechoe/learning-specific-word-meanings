@@ -66,6 +66,9 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         if (this.log){
             PennEngine.controllers.running.save(this.type, this.id, "Selections", Array.from(selection).join(";"), this.printTime, "NULL")
         }
+        // remove all elements from selection set
+        selection.clear()
+        
     };
 
     this.test = {
