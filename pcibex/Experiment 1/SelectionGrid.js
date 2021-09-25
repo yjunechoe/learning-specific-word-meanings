@@ -42,7 +42,7 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                         .append(
                             $(img).attr("img-file", imgfile)
                         )
-                        .click(function(){
+                        .click(() => {
                             let cell = $(this)
                             if (cell.hasClass("PennController-cell-selected")) {
                                 cell.removeClass("PennController-cell-selected")
