@@ -20,21 +20,21 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         
         // console.log(this.imgArray)
         
-        this.clickEventImg = new Array();
-        this.clickEventTime = new Array();
-        this.clickEventType = new Array();
+        // [img, click type, time]
+        this.clickEvent = [];
     }
         
     // render
     this.uponCreation = function(resolve){
 
+        that = this;
         // define grid
         // append images
         //
         this.jQueryElement = $("<div>")
           .attr("class", "PennController-SelectionGrid");
         
-        this.imgArray.forEach(img => {
+        this.imgArray.forEach((img) => {
             let imgfile = img.src.match("[a-z0-9\-_]+\.jpg")[0]
             this.jQueryElement
                 .append(
@@ -42,7 +42,7 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                         .append(
                             $(img).attr("img-file", imgfile)
                         )
-                        .click(() => {
+                        .click(function() {
                             let cell = $(this)
                             if (cell.hasClass("PennController-cell-selected")) {
                                 cell.removeClass("PennController-cell-selected")
@@ -51,7 +51,10 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                                 cell.addClass("PennController-cell-selected")
                                 selection.add(imgfile)
                             }
-                            // console.log(selection)
+                            let clickEventType = cell.hasClass("PennController-cell-selected")
+                            let clickEventTime = Date.now() - that.startTime
+                            that.clickEvent.push([imgfile, clickEventType, clickEventTime].join(";"))
+                            console.log(that.clickEvent)
                         })
                 )
         })
@@ -63,7 +66,9 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
     this.end = function(){
         // log
         if (this.log){
-            PennEngine.controllers.running.save(this.type, this.id, "Selections", Array.from(selection).join(";"), this.printTime, "NULL")
+            let trialResult = Array.from(selection).join(";") + "|" + that.clickEvent.join(":")
+            console.log(trialResult)
+            PennEngine.controllers.running.save(this.type, this.id, "Selections", trialResult, this.printTime, "NULL")
         }
         // remove all elements from selection set
         selection.clear()
@@ -90,9 +95,9 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         show: function(resolve){
             // console.log("SelectionGrid shown")
             this.jQueryElement.css("display", "grid")
+            this.startTime = Date.now()
             resolve();
         }
     }
-
 
 })
