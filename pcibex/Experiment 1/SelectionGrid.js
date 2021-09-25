@@ -4,10 +4,6 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
 
     this.immediate = function(id, imageString){
         
-        // debug ---
-        // imageString = '["vehicle/sup-vehicle-5.jpg","beast/basic-dinosaur/basic-dinosaur-1.jpg","light/lamp/contrast-desk_lamp/contrast-desk_lamp-2.jpg","fruit/basic-apple/sub-red_apple/sub-red_apple-1.jpg","light/lamp/basic-lamp-2.jpg","light/lamp/sub-gooseneck_lamp/1sub-gooseneck_lamp.jpg","fruit/basic-apple/basic-apple-2.jpg","electronics/sup-electronics-5.jpg","furniture/basic-chair/basic-chair-2.jpg","beast/basic-dinosaur/contrast-triceratops/contrast-triceratops-1.jpg","vehicle/basic-car/sub-racecar/1sub-racecar.jpg","beast/sup-beast-1.jpg","furniture/sup-furniture-4.jpg","fruit/basic-apple/sub-red_apple/1sub-red_apple.jpg","electronics/basic-phone/sub-smart_phone/sub-smart_phone-1.jpg","vehicle/sup-vehicle-4.jpg","furniture/basic-chair/contrast-office_chair/contrast-office_chair-1.jpg","electronics/sup-electronics-4.jpg","beast/basic-dinosaur/sub-trex/sub-trex-2.jpg","vegetable/basic-pepper/contrast-red_pepper/1contrast-red_pepper.jpg"]'
-        // console.log(imageString)
-        
         this.id = id;
         
         // image properties
@@ -23,19 +19,22 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         })
         
         // console.log(this.imgArray)
-
+        
+        // [img, click type, time]
+        this.clickEvent = [];
     }
         
     // render
     this.uponCreation = function(resolve){
 
+        that = this;
         // define grid
         // append images
         //
         this.jQueryElement = $("<div>")
           .attr("class", "PennController-SelectionGrid");
         
-        this.imgArray.forEach(img => {
+        this.imgArray.forEach((img) => {
             let imgfile = img.src.match("[a-z0-9\-_]+\.jpg")[0]
             this.jQueryElement
                 .append(
@@ -43,7 +42,7 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                         .append(
                             $(img).attr("img-file", imgfile)
                         )
-                        .click(function(){
+                        .click(function() {
                             let cell = $(this)
                             if (cell.hasClass("PennController-cell-selected")) {
                                 cell.removeClass("PennController-cell-selected")
@@ -52,7 +51,10 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                                 cell.addClass("PennController-cell-selected")
                                 selection.add(imgfile)
                             }
-                            // console.log(selection)
+                            let clickEventType = cell.hasClass("PennController-cell-selected")
+                            let clickEventTime = Date.now() - that.startTime
+                            that.clickEvent.push([imgfile, clickEventType, clickEventTime].join(";"))
+                            console.log(that.clickEvent)
                         })
                 )
         })
@@ -64,7 +66,9 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
     this.end = function(){
         // log
         if (this.log){
-            PennEngine.controllers.running.save(this.type, this.id, "Selections", Array.from(selection).join(";"), this.printTime, "NULL")
+            let trialResult = Array.from(selection).join(";") + "|" + that.clickEvent.join(":")
+            console.log(trialResult)
+            PennEngine.controllers.running.save(this.type, this.id, "Selections", trialResult, this.printTime, "NULL")
         }
         // remove all elements from selection set
         selection.clear()
@@ -91,9 +95,9 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
         show: function(resolve){
             // console.log("SelectionGrid shown")
             this.jQueryElement.css("display", "grid")
+            this.startTime = Date.now()
             resolve();
         }
     }
-
 
 })
