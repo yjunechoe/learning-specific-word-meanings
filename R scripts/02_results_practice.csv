@@ -1,0 +1,108 @@
+#,,,,,,,,,,,,,,
+# Results on Sat, 25 Sep 2021 19:28:39 GMT,,,,,,,,,,,,,
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36,,,,,,,,,,,,,
+# Design number was non-random = 90,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,
+# Columns below this comment are as follows:,,,,,,,,,,,,,,
+# 1. Results reception time.,,,,,,,,,,,,,,
+# 2. MD5 hash of participant's IP address.,,,,,,,,,,,,,,
+# 3. Controller name.,,,,,,,,,,,,,,
+# 4. Order number of item.,,,,,,,,,,,,,,
+# 5. Inner element number.,,,,,,,,,,,,,,
+# 6. Label.,,,,,,,,,,,,,,
+# 7. Latin Square Group.,,,,,,,,,,,,,,
+# 8. PennElementType.,,,,,,,,,,,,,,
+# 9. PennElementName.,,,,,,,,,,,,,,
+# 10. Parameter.,,,,,,,,,,,,,,
+# 11. Value.,,,,,,,,,,,,,,
+# 12. EventTime.,,,,,,,,,,,,,,
+# 13. Comments.,,,,,,,,,,,,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,1,0,consent,NULL,PennController,0,_Trial_,Start,1.6326E+12,NULL,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,1,0,consent,NULL,PennController,0,_Trial_,End,1.6326E+12,NULL,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,2,0,intro,NULL,PennController,1,_Trial_,Start,1.6326E+12,NULL,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,2,0,intro,NULL,PennController,1,_Trial_,End,1.6326E+12,NULL,,,
+# 13. group.,,,,,,,,,,,,,,
+# 14. condition.,,,,,,,,,,,,,,
+# 15. item.,,,,,,,,,,,,,,
+# 16. Comments.,,,,,,,,,,,,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,3,0,experiment,NULL,PennController,3,_Trial_,Start,1.6326E+12,C,single,animal,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,3,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-dog-2.jpg;basic-dog-1.jpg;sup-vehicle-5.jpg;sup-fruit-5.jpg;sub-dalmatian-2.jpg;sup-light-1.jpg|basic-dog-2.jpg;true;1152:basic-dog-1.jpg;true;2096:sup-vehicle-5.jpg;true;3856:sup-fruit-5.jpg;true;6328:sub-dalmatian-2.jpg;true;7560:sup-light-1.jpg;true;9184:sup-light-1.jpg;false;9304:sup-light-1.jpg;true;9400:sup-light-1.jpg;false;9504:sup-light-1.jpg;true;9607:sup-light-1.jpg;false;9711:sup-light-1.jpg;true;9816:sup-light-1.jpg;false;9912:sup-light-1.jpg;true;10016,1.6326E+12,C,single,animal,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,3,0,experiment,NULL,PennController,3,_Trial_,End,1.6326E+12,C,single,animal,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,4,0,experiment,NULL,PennController,4,_Trial_,Start,1.6326E+12,C,single,beast,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sup-electronics-5.jpg;basic-dinosaur-3.jpg;sup-beast-1.jpg|sup-electronics-5.jpg;true;2130:basic-dinosaur-3.jpg;true;4058:sup-beast-1.jpg;true;5410:sup-beast-1.jpg;false;5986:sup-beast-1.jpg;true;6098:sup-beast-1.jpg;false;6218:sup-beast-1.jpg;true;6322,1.6326E+12,C,single,beast,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,4,0,experiment,NULL,PennController,4,_Trial_,End,1.6326E+12,C,single,beast,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,5,0,experiment,NULL,PennController,5,_Trial_,Start,1.6326E+12,C,contrast,electronics,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-phone-2.jpg;basic-phone-1.jpg|basic-phone-2.jpg;true;1384:basic-phone-1.jpg;true;3856,1.6326E+12,C,contrast,electronics,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,5,0,experiment,NULL,PennController,5,_Trial_,End,1.6326E+12,C,contrast,electronics,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,6,0,experiment,NULL,PennController,6,_Trial_,Start,1.6326E+12,C,contrast,fruit,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg|sub-red_apple-2.jpg;true;2465,1.6326E+12,C,contrast,fruit,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,6,0,experiment,NULL,PennController,6,_Trial_,End,1.6326E+12,C,contrast,fruit,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,7,0,experiment,NULL,PennController,7,_Trial_,Start,1.6326E+12,C,single,furniture,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,sup-light-5.jpg|sup-light-5.jpg;true;1545,1.6326E+12,C,single,furniture,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,7,0,experiment,NULL,PennController,7,_Trial_,End,1.6326E+12,C,single,furniture,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,8,0,experiment,NULL,PennController,8,_Trial_,Start,1.6326E+12,C,single,light,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sup-electronics-3.jpg|sup-electronics-3.jpg;true;1012,1.6326E+12,C,single,light,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,8,0,experiment,NULL,PennController,8,_Trial_,End,1.6326E+12,C,single,light,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,9,0,experiment,NULL,PennController,9,_Trial_,Start,1.6326E+12,C,contrast,vegetable,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sup-vegetable-2.jpg;contrast-red_pepper-1.jpg;sup-fruit-4.jpg|sup-vegetable-2.jpg;true;333:contrast-red_pepper-1.jpg;true;2637:sup-electronics-4.jpg;true;2933:sup-electronics-4.jpg;false;3605:sup-fruit-4.jpg;true;5245,1.6326E+12,C,contrast,vegetable,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,9,0,experiment,NULL,PennController,9,_Trial_,End,1.6326E+12,C,contrast,vegetable,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,10,0,experiment,NULL,PennController,10,_Trial_,Start,1.6326E+12,C,contrast,vehicle,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;basic-car-1.jpg|sub-racecar-2.jpg;true;1090:basic-car-1.jpg;true;1802,1.6326E+12,C,contrast,vehicle,NULL
+1632598119,46cec183d31ee02c6be15eef5381a20c,10,0,experiment,NULL,PennController,10,_Trial_,End,1.6326E+12,C,contrast,vehicle,NULL
+# 13. Comments.,,,,,,,,,,,,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,11,0,end,NULL,PennController,2,_Trial_,Start,1.6326E+12,NULL,,,
+1632598119,46cec183d31ee02c6be15eef5381a20c,11,0,end,NULL,PennController,2,_Trial_,End,1.6326E+12,NULL,,,
+#,,,,,,,,,,,,,,
+# Results on Sun, 26 Sep 2021 01:54:04 GMT,,,,,,,,,,,,,
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36,,,,,,,,,,,,,
+# Design number was non-random = 91,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,
+# Columns below this comment are as follows:,,,,,,,,,,,,,,
+# 1. Results reception time.,,,,,,,,,,,,,,
+# 2. MD5 hash of participant's IP address.,,,,,,,,,,,,,,
+# 3. Controller name.,,,,,,,,,,,,,,
+# 4. Order number of item.,,,,,,,,,,,,,,
+# 5. Inner element number.,,,,,,,,,,,,,,
+# 6. Label.,,,,,,,,,,,,,,
+# 7. Latin Square Group.,,,,,,,,,,,,,,
+# 8. PennElementType.,,,,,,,,,,,,,,
+# 9. PennElementName.,,,,,,,,,,,,,,
+# 10. Parameter.,,,,,,,,,,,,,,
+# 11. Value.,,,,,,,,,,,,,,
+# 12. EventTime.,,,,,,,,,,,,,,
+# 13. Comments.,,,,,,,,,,,,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,1,0,consent,NULL,PennController,0,_Trial_,Start,1.63262E+12,NULL,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,1,0,consent,NULL,PennController,0,_Trial_,End,1.63262E+12,NULL,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,2,0,intro,NULL,PennController,1,_Trial_,Start,1.63262E+12,NULL,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,2,0,intro,NULL,PennController,1,_Trial_,End,1.63262E+12,NULL,,,
+# 13. group.,,,,,,,,,,,,,,
+# 14. condition.,,,,,,,,,,,,,,
+# 15. item.,,,,,,,,,,,,,,
+# 16. Comments.,,,,,,,,,,,,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,3,0,experiment,NULL,PennController,3,_Trial_,Start,1.63262E+12,D,contrast,animal,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,3,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-2.jpg;sub-dalmatian-1.jpg|contrast-corgi-1.jpg;true;1955:contrast-corgi-1.jpg;false;9841:sub-dalmatian-2.jpg;true;10997:basic-dog-3.jpg;true;14226:basic-dog-1.jpg;true;14787:basic-dog-1.jpg;false;15197:basic-dog-3.jpg;false;15836:sub-dalmatian-1.jpg;true;16130,1.63262E+12,D,contrast,animal,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,3,0,experiment,NULL,PennController,3,_Trial_,End,1.63262E+12,D,contrast,animal,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,4,0,experiment,NULL,PennController,4,_Trial_,Start,1.63262E+12,D,contrast,beast,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|basic-dinosaur-3.jpg;true;3186:sub-trex-2.jpg;true;4032:sub-trex-1.jpg;true;5777:basic-dinosaur-3.jpg;false;6981,1.63262E+12,D,contrast,beast,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,4,0,experiment,NULL,PennController,4,_Trial_,End,1.63262E+12,D,contrast,beast,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,5,0,experiment,NULL,PennController,5,_Trial_,Start,1.63262E+12,D,single,electronics,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg;contrast-flip_phone-1.jpg;contrast-flip_phone-2.jpg;basic-phone-2.jpg;basic-phone-1.jpg|sub-smart_phone-2.jpg;true;4887:sub-smart_phone-1.jpg;true;6651:contrast-flip_phone-1.jpg;true;7170:contrast-flip_phone-2.jpg;true;7418:basic-phone-2.jpg;true;7769:basic-phone-1.jpg;true;8320,1.63262E+12,D,single,electronics,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,5,0,experiment,NULL,PennController,5,_Trial_,End,1.63262E+12,D,single,electronics,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,6,0,experiment,NULL,PennController,6,_Trial_,Start,1.63262E+12,D,single,fruit,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;5865:sub-red_apple-1.jpg;true;6632,1.63262E+12,D,single,fruit,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,6,0,experiment,NULL,PennController,6,_Trial_,End,1.63262E+12,D,single,fruit,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,7,0,experiment,NULL,PennController,7,_Trial_,Start,1.63262E+12,D,contrast,furniture,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-1.jpg;sub-wooden_chair-2.jpg|sub-wooden_chair-1.jpg;true;2470:sub-wooden_chair-2.jpg;true;3279,1.63262E+12,D,contrast,furniture,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,7,0,experiment,NULL,PennController,7,_Trial_,End,1.63262E+12,D,contrast,furniture,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,8,0,experiment,NULL,PennController,8,_Trial_,Start,1.63262E+12,D,contrast,light,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-1.jpg;sub-gooseneck_lamp-2.jpg|sub-gooseneck_lamp-1.jpg;true;2561:contrast-desk_lamp-2.jpg;true;5331:contrast-desk_lamp-1.jpg;true;6049:sub-gooseneck_lamp-2.jpg;true;7724:contrast-desk_lamp-2.jpg;false;8496:contrast-desk_lamp-1.jpg;false;8812,1.63262E+12,D,contrast,light,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,8,0,experiment,NULL,PennController,8,_Trial_,End,1.63262E+12,D,contrast,light,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,9,0,experiment,NULL,PennController,9,_Trial_,Start,1.63262E+12,D,single,vegetable,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;2742:sub-green_pepper-2.jpg;true;3877,1.63262E+12,D,single,vegetable,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,9,0,experiment,NULL,PennController,9,_Trial_,End,1.63262E+12,D,single,vegetable,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,10,0,experiment,NULL,PennController,10,_Trial_,Start,1.63262E+12,D,single,vehicle,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;basic-car-3.jpg;basic-car-1.jpg;basic-car-2.jpg;contrast-van-1.jpg;contrast-van-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;1863:basic-car-3.jpg;true;2132:basic-car-1.jpg;true;2450:basic-car-2.jpg;true;3044:contrast-van-1.jpg;true;3672:contrast-van-2.jpg;true;4032:sup-planet-2.jpg;true;6071:sub-racecar-1.jpg;true;7131:sup-planet-2.jpg;false;7493,1.63262E+12,D,single,vehicle,NULL
+1632621244,05d8157f2a421c943a67cd895e3db9f4,10,0,experiment,NULL,PennController,10,_Trial_,End,1.63262E+12,D,single,vehicle,NULL
+# 13. Comments.,,,,,,,,,,,,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,11,0,end,NULL,PennController,2,_Trial_,Start,1.63262E+12,NULL,,,
+1632621244,05d8157f2a421c943a67cd895e3db9f4,11,0,end,NULL,PennController,2,_Trial_,End,1.63262E+12,NULL,,,

@@ -1,7 +1,5 @@
 window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
     
-    var selection = new Set()
-
     this.immediate = function(id, imageString){
         
         this.id = id;
@@ -18,8 +16,8 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
             return imgObj;
         })
         
-        // console.log(this.imgArray)
-        
+        // selections
+        this.selection = new Set()
         // [img, click type, time]
         this.clickEvent = [];
     }
@@ -46,10 +44,10 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
                             let cell = $(this)
                             if (cell.hasClass("PennController-cell-selected")) {
                                 cell.removeClass("PennController-cell-selected")
-                                selection.delete(imgfile)
+                                that.selection.delete(imgfile)
                             } else {
                                 cell.addClass("PennController-cell-selected")
-                                selection.add(imgfile)
+                                that.selection.add(imgfile)
                             }
                             let clickEventType = cell.hasClass("PennController-cell-selected")
                             let clickEventTime = Date.now() - that.startTime
@@ -66,22 +64,22 @@ window.PennController._AddElementType("SelectionGrid", function(PennEngine) {
     this.end = function(){
         // log
         if (this.log){
-            let trialResult = Array.from(selection).join(";") + "|" + that.clickEvent.join(":")
+            let trialResult = Array.from(that.selection).join(";") + "|" + that.clickEvent.join(":")
             console.log(trialResult)
             PennEngine.controllers.running.save(this.type, this.id, "Selections", trialResult, this.printTime, "NULL")
         }
         // remove all elements from selection set
-        selection.clear()
+        that.selection.clear()
         
     };
 
     this.test = {
         // test for any
         selectAny: function() {
-			if (selection.size === 0) {
+			if (that.selection.size === 0) {
 			    alert("Please make a selection.")
 			}
-            return selection.size > 0
+            return that.selection.size > 0
         }
     };
     
