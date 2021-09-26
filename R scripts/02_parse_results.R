@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("R scripts/02_results_practice.csv")
+results_raw <- read_pcibex("R scripts/results_practice.csv")
 
 results_parsed <- results_raw %>% 
   select(participant = contains("participant"), value = Value, group, condition, item) %>% 
@@ -21,8 +21,8 @@ results_parsed <- results_raw %>%
     })
   )
 
-## Checks ----
-## - check that selections are imgs where the click event was a selection
+# Validations ====
+## check that selections are imgs where the click event was a selection ----
 stopifnot(
   all.equal(
     map(results_parsed$selections, sort),
@@ -70,7 +70,7 @@ results_encoded <- results_parsed %>%
   mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
   rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup)"))
 
-results_encoded
+write_csv(results_encoded, here::here("R scripts", "02_results_encoded"))
 
 
 
@@ -85,3 +85,5 @@ results_clicks <- results_encoded %>%
     by = c("img", "item")
   ) %>% 
   replace_na(list(type = "sup"))
+
+write_csv(results_clicks, here::here("R scripts", "02_results_clicks"))
