@@ -1,21 +1,23 @@
 library(tidyverse)
-library(assertr)
 source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results <- read_pcibex("R scripts/02_results_practice.csv")
+results_raw <- read_pcibex("R scripts/02_results_practice.csv")
 
-results_parsed <- results %>% 
-  select(contains("participant"), Value, group, condition, item) %>% 
-  filter(!Value %in% c("Start", "End")) %>% 
-  separate(Value, "\\|", into = c("selections", "clicks")) %>% 
+results_parsed <- results_raw %>% 
+  select(participant = contains("participant"), value = Value, group, condition, item) %>% 
+  filter(!value %in% c("Start", "End")) %>% 
+  separate(value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(
     selections = str_split(selections, ";"),
     clicks = map(str_split(clicks, ":"), ~ {
       as_tibble(.x) %>% 
         separate(value, ";", into = c("img", "selected", "time")) %>% 
-        mutate(selected = selected == "true")
+        mutate(
+          selected = selected == "true",
+          time = as.double(time)
+        )
     })
   )
 
@@ -71,3 +73,15 @@ results_encoded <- results_parsed %>%
 results_encoded
 
 
+
+# Click data ====
+
+results_clicks <- results_encoded %>% 
+  select(-ends_with("_n"), -selections) %>% 
+  unnest(clicks) %>% 
+  left_join(
+    keys %>% 
+      select(item = domain, img, type),
+    by = c("img", "item")
+  ) %>% 
+  replace_na(list(type = "sup"))

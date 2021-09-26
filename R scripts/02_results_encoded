@@ -1,0 +1,17 @@
+participant,selections,clicks,group,condition,item,basic_n,contrast_n,sub_n,sup_n
+46cec183d31ee02c6be15eef5381a20c,,,C,single,animal,2,0,1,3
+46cec183d31ee02c6be15eef5381a20c,,,C,single,beast,1,0,0,2
+46cec183d31ee02c6be15eef5381a20c,,,C,contrast,electronics,2,0,0,0
+46cec183d31ee02c6be15eef5381a20c,,,C,contrast,fruit,0,0,1,0
+46cec183d31ee02c6be15eef5381a20c,,,C,single,furniture,0,0,0,1
+46cec183d31ee02c6be15eef5381a20c,,,C,single,light,0,0,0,1
+46cec183d31ee02c6be15eef5381a20c,,,C,contrast,vegetable,0,1,0,2
+46cec183d31ee02c6be15eef5381a20c,,,C,contrast,vehicle,1,0,1,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,contrast,animal,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,contrast,beast,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,single,electronics,4,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,single,fruit,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,contrast,furniture,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,contrast,light,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,single,vegetable,0,0,2,0
+05d8157f2a421c943a67cd895e3db9f4,,,D,single,vehicle,5,0,2,0
