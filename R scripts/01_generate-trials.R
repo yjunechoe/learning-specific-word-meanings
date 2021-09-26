@@ -45,6 +45,20 @@ img_tbl %>%
     description = "There are 9 semantic domains, and all have the same # of images except the filler domain 'planet'."
   )
 
+write_csv(img_tbl, here::here("R Scripts", "01_image_table.csv"))
+
+# keys
+
+keys <- img_tbl %>% 
+  filter(!is.na(id) & domain != "planet") %>% 
+  mutate(img = str_extract(path, "[^/]+\\.jpg$")) %>% 
+  select(domain, type, category, img) %>% 
+  group_by(domain) %>% 
+  mutate(target = unique(category[type == "sub"]), .after = "domain") %>% 
+  ungroup()
+
+write_csv(keys, here::here("R Scripts", "01_keys.csv"))
+
 # design pre-randomized trial order and condition split (within-participant)
 
 nonsense_labels <- c(
