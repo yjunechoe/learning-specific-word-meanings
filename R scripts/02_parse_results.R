@@ -40,8 +40,9 @@ stopifnot(
 
 
 # Keys ====
-## Read ----
+## Read / transform ----
 library(here)
+
 trial_template <- read_csv(here("R Scripts", "01_trial_templates.csv"))
 img_tbl <- read_csv(here("R Scripts", "01_image_table.csv"))
 keys <- read_csv(here("R Scripts", "01_keys.csv"))
@@ -58,9 +59,9 @@ categorize_responses <- function(item, selections, condition) {
   if (condition == "single") {
     domain_keys[domain_keys == "contrast"] <- "basic"
   }
-  category_counts <- tidyr::replace_na(domain_keys[selections], "sup")
+  category_counts <- tidyr::replace_na(domain_keys[selections], "other")
   category_list <- modifyList(
-    list(basic = 0, contrast = 0, sub = 0, sup = 0),
+    list(basic = 0, contrast = 0, sub = 0, sup = 0, other = 0),
     as.list(table(category_counts))
   )
   bind_cols(category_list)
@@ -70,8 +71,7 @@ results_encoded <- results_parsed %>%
   mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
   rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup)"))
 
-write_csv(results_encoded, here::here("R scripts", "02_results_encoded.csv"))
-
+write_rds(results_encoded, here::here("R scripts", "02_results_encoded.rds"))
 
 
 # Click data ====
@@ -84,6 +84,6 @@ results_clicks <- results_encoded %>%
       select(item = domain, img, type),
     by = c("img", "item")
   ) %>% 
-  replace_na(list(type = "sup"))
+  replace_na(list(type = "other"))
 
 write_csv(results_clicks, here::here("R scripts", "02_results_clicks.csv"))
