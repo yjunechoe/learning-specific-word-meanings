@@ -21,6 +21,7 @@ img_info_col <- c("number", "type", "category", "id")
 img_tbl <- tibble(path = img_paths) %>%
   mutate(
     domain = str_extract(path_dir(img_paths), "^[a-z]+"),
+    kind = ifelse(domain %in% c("animal", "beast", "fruit", "vegetable"), "natural", "artificial"),
     file = path_file(path)
   ) %>% 
   extract(
@@ -52,9 +53,9 @@ write_csv(img_tbl, here::here("R Scripts", "01_image_table.csv"))
 keys <- img_tbl %>% 
   filter(!is.na(id) & domain != "planet") %>% 
   mutate(img = str_extract(path, "[^/]+\\.jpg$")) %>% 
-  select(domain, type, category, img) %>% 
+  select(domain, kind, type, category, img) %>% 
   group_by(domain) %>% 
-  mutate(target = unique(category[type == "sub"]), .after = "domain") %>% 
+  mutate(target = unique(category[type == "sub"]), .after = "kind") %>% 
   ungroup()
 
 write_csv(keys, here::here("R Scripts", "01_keys.csv"))

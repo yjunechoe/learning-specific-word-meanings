@@ -7,7 +7,7 @@ source("R scripts/read_pcibex.R")
 results <- read_pcibex("R scripts/02_results_practice.csv")
 
 results_parsed <- results %>% 
-  select(contains("participant"), Value:last_col()) %>% 
+  select(contains("participant"), Value, group, condition, item) %>% 
   filter(!Value %in% c("Start", "End")) %>% 
   separate(Value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(
