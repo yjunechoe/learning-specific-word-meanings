@@ -44,3 +44,30 @@ trial_template <- read_csv(here("R Scripts", "01_trial_templates.csv"))
 img_tbl <- read_csv(here("R Scripts", "01_image_table.csv"))
 keys <- read_csv(here("R Scripts", "01_keys.csv"))
 keys_nested <- nest(keys, referents = c(type, category, img))
+
+
+# Encode selections as categories ====
+
+categorize_responses <- function(item, selections, condition) {
+  domain_keys <- keys %>% 
+    filter(domain == item) %>% 
+    pull(type, img)
+  # in the single condition, seeing "contrast" subordinate exemplar is actually as if it's sampled from basic
+  if (condition == "single") {
+    domain_keys[domain_keys == "contrast"] <- "basic"
+  }
+  category_counts <- tidyr::replace_na(domain_keys[selections], "sup")
+  category_list <- modifyList(
+    list(basic = 0, contrast = 0, sub = 0, sup = 0),
+    as.list(table(category_counts))
+  )
+  bind_cols(category_list)
+}
+
+results_encoded <- results_parsed %>% 
+  mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
+  rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup)"))
+
+results_encoded
+
+
