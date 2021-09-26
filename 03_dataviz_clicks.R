@@ -1,4 +1,5 @@
 library(tidyverse)
+library(here)
 library(ggtext)
 library(ggh4x)
 library(penngradlings)
@@ -6,6 +7,8 @@ library(patchwork)
 
 trial_template <- read_csv(here("R Scripts", "01_trial_templates.csv"))
 keys <- read_csv(here("R Scripts", "01_keys.csv"))
+results_encoded <- write_csv(here("R scripts", "02_results_encoded.csv"))
+results_clicks <- write_csv(here("R scripts", "02_results_clicks.csv"))
 
 
 condition_weight_scale <- trial_template %>% 

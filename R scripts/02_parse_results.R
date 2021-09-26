@@ -70,7 +70,7 @@ results_encoded <- results_parsed %>%
   mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
   rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup)"))
 
-write_csv(results_encoded, here::here("R scripts", "02_results_encoded"))
+write_csv(results_encoded, here::here("R scripts", "02_results_encoded.csv"))
 
 
 
@@ -86,4 +86,4 @@ results_clicks <- results_encoded %>%
   ) %>% 
   replace_na(list(type = "sup"))
 
-write_csv(results_clicks, here::here("R scripts", "02_results_clicks"))
+write_csv(results_clicks, here::here("R scripts", "02_results_clicks.csv"))
