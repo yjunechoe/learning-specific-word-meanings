@@ -22,7 +22,8 @@ condition_weight_scale <- trial_template %>%
 condition_y_scales <- map(LETTERS[1:4], ~ {
   as.formula(expr(
     group == !!.x ~ scale_y_discrete(
-      guide = guide_axis_manual(label_family = condition_weight_scale[[!!.x]])
+      # gets reversed because beginning of weight vector is aligned to bottom of y-axis
+      guide = guide_axis_manual(label_family = rev(condition_weight_scale[[!!.x]]))
     )
   ))
 })
@@ -38,22 +39,28 @@ clicks_plot_df <- results_clicks %>%
 # Plot ====
 
 clicks_plot_df %>% 
+  arrange(desc(type)) %>% 
   ggplot(aes(time, fct_rev(item))) +
-  geom_linerange(
-    aes(x = time, ymin = stage(item, after_stat = y - 0.3), ymax = stage(item, after_stat = y + 0.3)),
-    alpha = 0.8, color = "forestgreen",
+  geom_point(
+    color = "forestgreen",
+    shape = "|", size = 5,
     data = . %>% 
       filter(type == "sub", selected) %>%
-      group_by(participant, item, img) %>%
+      group_by(participant, group, item, img) %>%
       slice_head(n = 1)
   ) +
   geom_point(
-    aes(shape = type, color = selected),
-    size = 2, alpha = 0.7
+    aes(shape = type, color = selected, alpha = type),
+    size = 2
   ) +
-  scale_shape_manual(values = c(16, 2, 4, 3, 8)) +
+  scale_shape_manual(values = c(16, 2, 0, 3, 4)) +
+  scale_alpha_manual(values = c(1, rep(0.7 ,4))) +
   scale_color_manual(values = c("#990000", "#011F5b")) +
-  facet_wrap(~ group, scales = "free_y") +
+  facet_wrap(
+    ~ group,
+    scales = "free_y",
+    labeller = label_both
+  ) +
   facetted_pos_scales(
     x = scale_x_continuous(
       limits = c(0, NA),
@@ -68,7 +75,11 @@ clicks_plot_df %>%
     # ),
     y = condition_y_scales
   ) +
-  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  labs(y = NULL, x = "Time (seconds)") +
+  theme_pgl_minimal(
+    axis_lines = "x",
+    grid_lines = "y"
+  ) +
   theme(
     axis.line.x.top = element_blank(),
     axis.text.x.top = element_blank(),
@@ -77,7 +88,7 @@ clicks_plot_df %>%
     ggh4x.axis.ticks.length.minor = rel(0.7),
     ggh4x.axis.ticks.length.mini = rel(0.3)
   )
-
+# ggsave_auto(height = 6, width = 8)
 
 ## ggtext solution with patchwork
 # results_clicks %>% 

@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("R scripts/results_practice.csv")
+results_raw <- read_pcibex("R scripts/00_results_practice.csv")
 
 results_parsed <- results_raw %>% 
   select(participant = contains("participant"), value = Value, group, condition, item) %>% 
@@ -84,6 +84,7 @@ results_clicks <- results_encoded %>%
       select(item = domain, img, type),
     by = c("img", "item")
   ) %>% 
-  replace_na(list(type = "other"))
+  replace_na(list(type = "other")) %>% 
+  mutate(type = ifelse(condition == "single" & type == "contrast", "basic", type))
 
 write_csv(results_clicks, here::here("R scripts", "02_results_clicks.csv"))
