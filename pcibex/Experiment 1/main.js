@@ -2,10 +2,9 @@ PennController.ResetPrefix(null)
 DebugOff()
 var showProgressBar = false;
 
-PennController.Sequence("consent", "counter", "intro", "beginning", "experiment", "end")
+PennController.Sequence("consent", "counter", "beginning", "experiment", "end")
 
 SetCounter("counter", "inc", 1);
-
 
 PennController( "consent" ,
     defaultText
@@ -16,33 +15,6 @@ PennController( "consent" ,
         .center()
     ,
     newButton("I Agree")
-        .center()
-        .print()
-        .wait()
-)
-
-PennController("intro",
-    defaultText
-        .css("font-style", "italic")
-        .center()
-        .print()
-        .cssContainer("margin-top", "1rem")
-    ,
-    newImage("sally", "https://raw.githubusercontent.com/yjunechoe/learning-specific-word-meanings/main/image_stimuli/Sally/pointer-none.png")
-        .cssContainer("margin-top", "5rem")
-        .cssContainer("margin-bottom", "2rem")
-        .print()
-        .center()
-    ,
-    newText("This is Sally.")
-    ,
-    newText("Sally would like to teach you some words in her native language.")
-    ,
-    newText("Please pay attention to what Sally says, because she will be asking you questions about them.")
-    ,
-    newButton("Begin")
-        .cssContainer("margin-top", "3rem")
-        .cssContainer("margin-bottom", "5rem")
         .center()
         .print()
         .wait()
@@ -83,7 +55,7 @@ PennController("beginning",
     newButton("Next-3", "Next")
     ,
     getSallyCanvas("beginning-message")
-        .sallySay('Are you ready?<br>Click on the "Begin" button when you are ready!')
+        .sallySay('Are you ready?<br>Click the "Begin" button when you are ready!')
     ,
     newButton("Begin")
 )
