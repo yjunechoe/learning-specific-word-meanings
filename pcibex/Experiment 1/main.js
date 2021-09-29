@@ -168,4 +168,4 @@ PennController("end",
         .center()
         .print()
         .wait()
-)
+).log("window_size", `${window.innerWidth}x${window.innerHeight}` )
