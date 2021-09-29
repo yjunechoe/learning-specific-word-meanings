@@ -65,6 +65,7 @@ PennController("beginning",
         .center()
         .print()
         .wait()
+        .remove()
     ,
     newSallyCanvas("beginning-message")
         .sallySay("Hi there!<br>My name is Sally!")
