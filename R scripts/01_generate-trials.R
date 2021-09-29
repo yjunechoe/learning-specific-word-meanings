@@ -63,7 +63,7 @@ keys <- img_tbl %>%
 # fillers
 
 fillers <- tibble(
-  domain = c("Filler-shape-red", "Filler-color-triangle"),
+  domain = c("Filler-Color-red", "Filler-Shape-triangle"),
   label1 = c("gelder", "panzet"),
   label2 = ""
 )
@@ -131,32 +131,60 @@ category_dict <- img_tbl %>%
   arrange(domain, desc(type))
 
 gen_learn_set <- function(d, condition) {
-  learn_set <- category_dict %>% 
-    filter(domain == d) %>% 
-    left_join(
-      filter(img_tbl, number == 1),
-      by = c("domain", "type", "category")
-    )
-  if (condition == "contrast") {
-    pull(learn_set, path)
-  } else if (condition == "single") {
-    learn_set %>% 
-      filter(type == "sub") %>% 
-      pull(path)
+  if (str_detect(d, "^Filler")) {
+    if (str_detect(d, "Shape")) {
+      "Fillers/Shape/triangle.jpg"
+    } else if (str_detect(d, "Color")) {
+      "Fillers/Color/red-rect.jpg"  
+    }
+  } else {
+    learn_set <- category_dict %>% 
+      filter(domain == d) %>% 
+      left_join(
+        filter(img_tbl, number == 1), # single exemplar in learn phase
+        by = c("domain", "type", "category")
+      )
+    if (condition == "contrast") {
+      pull(learn_set, path)
+    } else if (condition == "single") {
+      learn_set %>% 
+        filter(type == "sub") %>% 
+        pull(path)
+    }
   }
 }
 
 gen_test_set <- function(d) {
-  other_refs <- img_tbl %>% 
-    filter(domain != d, type == "sup") %>% 
-    group_by(domain) %>% 
-    slice_sample(n = 1) %>% 
-    pull(path)
-  domain_refs <- img_tbl %>% 
-    filter(domain == d, !is.na(id)) %>% 
-    filter(id <= 3) %>%
-    pull(path)
-  sample(c(other_refs, domain_refs))
+  if (str_detect(d, "^Filler")) {
+    filler_dir <- paste0("image_stimuli/Fillers/", str_extract(d, "Color|Shape"), "/")
+    if (str_detect(d, "Shape")) {
+      c("Fillers/Shape/lines-11.jpg", "Fillers/Shape/lines-13.jpg", "Fillers/Shape/triangle-5.jpg",
+        "Fillers/Shape/lines-5.jpg", "Fillers/Shape/lines-3.jpg", "Fillers/Shape/lines-2.jpg",
+        "Fillers/Shape/lines-9.jpg", "Fillers/Shape/lines-8.jpg", "Fillers/Shape/triangle-3.jpg",
+        "Fillers/Shape/triangle-2.jpg", "Fillers/Shape/triangle-4.jpg", "Fillers/Shape/lines-7.jpg",
+        "Fillers/Shape/lines-10.jpg", "Fillers/Shape/lines-6.jpg", "Fillers/Shape/lines-4.jpg",
+        "Fillers/Shape/lines-1.jpg", "Fillers/Shape/triangle-1.jpg", "Fillers/Shape/lines-12.jpg")
+    } else if (str_detect(d, "Color")) {
+      c("Fillers/Color/blue-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/green-rect.jpg",
+        "Fillers/Color/green-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/green-rect.jpg",
+        "Fillers/Color/green-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/blue-rect.jpg",
+        "Fillers/Color/blue-rect.jpg", "Fillers/Color/green-rect.jpg", "Fillers/Color/green-rect.jpg",
+        "Fillers/Color/red-rect.jpg", "Fillers/Color/blue-rect.jpg", "Fillers/Color/blue-rect.jpg",
+        "Fillers/Color/blue-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/red-rect.jpg")
+    }
+  }
+  else {
+    other_refs <- img_tbl %>% 
+      filter(domain != d, type == "sup") %>% 
+      group_by(domain) %>% 
+      slice_sample(n = 1) %>% 
+      pull(path)
+    domain_refs <- img_tbl %>% 
+      filter(domain == d, !is.na(id)) %>% 
+      filter(id <= 3) %>%
+      pull(path)
+    sample(c(other_refs, domain_refs))
+  }
 }
 
 trial_template_tbl <- group_designs %>% 
