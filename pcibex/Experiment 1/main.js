@@ -69,6 +69,21 @@ PennController("beginning",
     newSallyCanvas("beginning-message")
         .sallySay("Hi there!<br>My name is Sally!")
     ,
+    newButton("Next-1", "Next")
+    ,
+    getSallyCanvas("beginning-message")
+        .sallySay("I'd like to teach you some words<br>from my native language.")
+    ,
+    newButton("Next-2", "Next")
+    ,
+    getSallyCanvas("beginning-message")
+        .sallySay("Please pay attention because I will be<br>asking you questions about these words later!")
+    ,
+    newButton("Next-3", "Next")
+    ,
+    getSallyCanvas("beginning-message")
+        .sallySay('Are you ready?<br>Click on the "Begin" button when you are ready!')
+    ,
     newButton("Begin")
 )
 
@@ -100,7 +115,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showSpeechBubble()
-            .sallySay("Okay!<br>Are you ready?")
+            .sallySay("Okay!<br>Pay attention now!")
         ,
         // teach left referent
         newTimer("hold-speech-bubble", 3000)
