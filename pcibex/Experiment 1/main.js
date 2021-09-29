@@ -49,23 +49,27 @@ PennController("intro",
 )
 
 PennController("beginning",
-    newSallyCanvas("beginning-message")
+    defaultSallyCanvas
         .css("height", "550px")
         .css("width", "1100px")
         .css("position", "relative")
-        .css("margin-top", "-150px")
+        .css("margin-top", "-50px")
         .css("margin-bottom", "2rem")
         .css("outline", "none")
         .showSpeechBubble()
-        .sallySay("Hi! My name is Sally!<br>I'd like to teach you some words from my native language. Please pay attention because I will be asking you questions about these words later!")
         .print()
     ,
-    newButton("Begin")
+    defaultButton
         .cssContainer("margin-top", "2rem")
         .cssContainer("margin-bottom", "1rem")
         .center()
         .print()
         .wait()
+    ,
+    newSallyCanvas("beginning-message")
+        .sallySay("Hi there!<br>My name is Sally!")
+    ,
+    newButton("Begin")
 )
 
 Template("01_trial_templates.csv", row => 
