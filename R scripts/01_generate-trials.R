@@ -8,6 +8,8 @@ library(stringr)
 library(jsonlite)
 library(assertr)
 
+`%$%` <- magrittr::`%$%`
+
 set.seed(2021)
 
 img_dir <- here("image_stimuli")
@@ -58,6 +60,14 @@ keys <- img_tbl %>%
   mutate(target = unique(category[type == "sub"]), .after = "kind") %>% 
   ungroup()
 
+# fillers
+
+fillers <- tibble(
+  domain = c("Filler-shape-red", "Filler-color-triangle"),
+  label1 = c("gelder", "panzet"),
+  label2 = ""
+)
+
 write_csv(keys, here::here("R Scripts", "01_keys.csv"))
 
 # design pre-randomized trial order and condition split (within-participant)
@@ -90,18 +100,26 @@ group_designs <- tibble(
   groupC = rep(c("S", "S", "C", "C"), 2),
   groupD = rep(c("C", "C", "S", "S"), 2)
 ) %>% 
+  add_row(fillers[1,], .after = 3) %>% 
+  add_row(fillers[2,], .after = 7) %>% 
   pivot_longer(
     cols = starts_with("group"),
     names_to = "group",
     names_prefix = "group",
     values_to = "condition"
   ) %>% 
+  replace_na(list(condition = "S")) %>% 
   mutate(condition = c(S = "single", C = "contrast")[condition]) %>% 
   arrange(group)
 
-group_designs %>% 
+group_designs %>%
   verify(
-    expr = all(table(group, condition) == 4),
+    expr = length(str_subset(domain, "^Filler")) == 2 * 4,
+    description = "There are 4 trials from each condition in all 4 design groups."
+  ) %>% 
+  verify(
+    expr = filter(., str_detect(domain, "^Filler", negate = TRUE)) %$% 
+      all(table(group, condition) == 4),
     description = "There are 4 trials from each condition in all 4 design groups."
   )
 
