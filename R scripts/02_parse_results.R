@@ -18,8 +18,35 @@ results_parsed <- results_raw %>%
           selected = selected == "true",
           time = as.double(time)
         )
-    })
+    }),
+    trial = ifelse(str_detect(item, "^Filler"), "catch", "critical")
   )
+
+# Check on catch trials
+pass_catch <- function(item, clicks) {
+  switch(
+    item,
+    "Filler-Color-red" = {
+      clicks %>% 
+        filter(img == "red-rect.jpg") %>% 
+        pull(selected) %>% 
+        sum() %>% 
+        all.equal(6)
+    },
+    "Filler-Shape-triangle" = {
+      length(clicks$img) == 5 && every(clicks$img, ~ str_detect(.x, "^triangle"))
+    }
+  )
+}
+
+results_catch <- results_parsed %>%
+  filter(trial == "catch") %>%
+  mutate(pass = map2_lgl(item, clicks, pass_catch))
+
+failed_catch <- results_catch %>% 
+  filter(!pass) %>% 
+  pull(participant) %>% 
+  unique()
 
 # Validations ====
 ## check that selections are imgs where the click event was a selection ----
@@ -67,9 +94,10 @@ categorize_responses <- function(item, selections, condition) {
   bind_cols(category_list)
 }
 
-results_encoded <- results_parsed %>% 
+results_encoded <- results_parsed %>%
+  filter(trial == "critical") %>% 
   mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
-  rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup)"))
+  rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup|other)"))
 
 write_rds(results_encoded, here::here("R scripts", "02_results_encoded.rds"))
 
