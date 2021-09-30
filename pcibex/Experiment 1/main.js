@@ -11,7 +11,6 @@ PennController( "consent" ,
         .print()
     ,
     newText("<h2><b>CONSENT TO PARTICIPATE IN RESEARCH</b></h2>")
-        .print()
         .center()
     ,
     newButton("I Agree")
