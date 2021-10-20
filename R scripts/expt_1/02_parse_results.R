@@ -3,12 +3,23 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("R scripts/00_results_practice.csv")
+results_raw <- read_pcibex("data/pilot_18-10-2021.csv")
+
+participant_ID_vec <- results_raw %>% 
+  select(ID, contains("participant")) %>% 
+  na.omit() %>% 
+  distinct() %>% 
+  pull(1, 2)
 
 results_parsed <- results_raw %>% 
-  select(participant = contains("participant"), value = Value, group, condition, item) %>% 
-  filter(!value %in% c("Start", "End")) %>% 
-  separate(value, "\\|", into = c("selections", "clicks")) %>% 
+  rename(participant = contains("participant")) %>% 
+  mutate(ID = participant_ID_vec[participant]) %>% 
+  filter(
+    !Value %in% c("Start", "End"),
+    ID != "test"
+  ) %>% 
+  select(participant, Value, group, condition, item) %>% 
+  separate(Value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(
     selections = str_split(selections, ";"),
     clicks = map(str_split(clicks, ":"), ~ {
@@ -19,7 +30,9 @@ results_parsed <- results_raw %>%
           time = as.double(time)
         )
     }),
-    trial = ifelse(str_detect(item, "^Filler"), "catch", "critical")
+    trial = ifelse(str_detect(item, "^Filler"), "catch", "critical"),
+    participant = as.factor(participant),
+    item = as.factor(item)
   )
 
 # Check on catch trials
@@ -27,11 +40,10 @@ pass_catch <- function(item, clicks) {
   switch(
     item,
     "Filler-Color-red" = {
-      clicks %>% 
+      (clicks %>% 
         filter(img == "red-rect.jpg") %>% 
         pull(selected) %>% 
-        sum() %>% 
-        all.equal(6)
+        sum()) == 6
     },
     "Filler-Shape-triangle" = {
       length(clicks$img) == 5 && every(clicks$img, ~ str_detect(.x, "^triangle"))
@@ -41,8 +53,7 @@ pass_catch <- function(item, clicks) {
 
 results_catch <- results_parsed %>%
   filter(trial == "catch") %>%
-  mutate(pass = map2_lgl(item, clicks, pass_catch))
-
+  mutate(pass = map2_lgl(as.character(item), clicks, pass_catch))
 failed_catch <- results_catch %>% 
   filter(!pass) %>% 
   pull(participant) %>% 
@@ -72,7 +83,7 @@ library(here)
 
 trial_template <- read_csv(here("R Scripts", "01_trial_templates.csv"))
 img_tbl <- read_csv(here("R Scripts", "01_image_table.csv"))
-keys <- read_csv(here("R Scripts", "01_keys.csv"))
+keys <- read_csv(here("R Scripts", "01_keys.csv"), col_types = "fccccc")
 keys_nested <- nest(keys, referents = c(type, category, img))
 
 
