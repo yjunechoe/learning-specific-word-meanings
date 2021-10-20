@@ -73,14 +73,14 @@ Template("01_trial_templates.csv", row =>
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
-        newSallyCanvas("learn-phase", row.learn_set)
+        newSallyCanvas("learn-phase", row.learn_set, row.number)
             .css("height", "550px")
             .css("width", "1100px")
             .css("position", "relative")
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSallyMessageBar("directions", row.label1)
+        newSallyMessageBar("directions", row[row.target])
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -155,7 +155,8 @@ Template("01_trial_templates.csv", row =>
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
     .log("group", row.group)
-    .log("condition", row.condition)
+    .log("number", row.number)
+    .log("target", row.target)
     .log("item", row.domain)
 )
 

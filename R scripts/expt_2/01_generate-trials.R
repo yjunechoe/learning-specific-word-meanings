@@ -44,7 +44,7 @@ nonsense_labels <- c(
 
 cond_design <- crossing(
   number = c("one", "three"),
-  target = c("first", "second")
+  target = c("label1", "label2")
 ) %>% 
   slice(c(1:4, c(3, 4, 1, 2))) %>% 
   mutate(group = rep(c("A", "B"), each = 4)) %>% 
@@ -64,7 +64,8 @@ group_designs <- tibble(
     ~ .x %>%
       add_row(fillers[1,], .after = 3) %>% 
       add_row(fillers[2,], .after = 7) %>% 
-      fill(number:group, .direction = "down")
+      fill(target:group, .direction = "down") %>% 
+      replace_na(list(number = ""))
   )
 
 ## fill design with trial templates
@@ -74,7 +75,7 @@ category_dict <- img_tbl %>%
   filter(type %in% c("sub", "contrast")) %>% 
   arrange(domain, desc(type))
 
-gen_learn_set <- function(d, condition) {
+gen_learn_set <- function(d, num_cond) {
   if (str_detect(d, "^Filler")) {
     if (str_detect(d, "Shape")) {
       "Fillers/Shape/triangle.jpg"
@@ -85,16 +86,10 @@ gen_learn_set <- function(d, condition) {
     learn_set <- category_dict %>% 
       filter(domain == d) %>% 
       left_join(
-        filter(img_tbl, number == 1), # single exemplar in learn phase
+        filter(img_tbl, c("one" = 1, "three" = 3)[num_cond] == .data$number), # single exemplar in learn phase
         by = c("domain", "type", "category")
       )
-    if (condition == "contrast") {
-      pull(learn_set, path)
-    } else if (condition == "single") {
-      learn_set %>% 
-        filter(type == "sub") %>% 
-        pull(path)
-    }
+    pull(learn_set, path)
   }
 }
 
@@ -134,7 +129,7 @@ gen_test_set <- function(d) {
 trial_template_tbl <- group_designs %>% 
   rowwise() %>% 
   mutate(
-    learn_set = toJSON(gen_learn_set(domain, "contrast")),
+    learn_set = toJSON(gen_learn_set(domain, number)),
     test_set = toJSON(gen_test_set(domain))
   ) %>% 
   ungroup()
