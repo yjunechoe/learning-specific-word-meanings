@@ -106,7 +106,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay("Look, this is a " + row.label1 + "!<br>Do you see the " + row.label1 + "?")
+            .sallySay(resolveName(row.label1, row.number, true))
         ,
         // teach referent(s)
         newTimer("learn-referent", 7000)
@@ -121,7 +121,7 @@ Template("01_trial_templates.csv", row =>
                     getSallyCanvas("learn-phase")
                         .hideAll()
                         .showSecond()
-                        .sallySay("And look, this is a " + row.label2 + "!<br>Do you see the " + row.label2 + "?")
+                        .sallySay(resolveName(row.label2, row.number, false))
                 )
         ,
         getTimer("learn-referent")
