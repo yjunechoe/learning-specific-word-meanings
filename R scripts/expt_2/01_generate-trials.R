@@ -65,7 +65,7 @@ group_designs <- tibble(
       add_row(fillers[1, ], .after = 3) %>%
       add_row(fillers[2, ], .after = 7) %>%
       fill(target:group, .direction = "down") %>%
-      replace_na(list(number = ""))
+      replace_na(list(number = "one"))
   )
 
 ## fill design with trial templates
