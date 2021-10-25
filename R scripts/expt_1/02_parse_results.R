@@ -11,9 +11,10 @@ results_raw %>%
   filter(!is.na(window_size)) %>%
   select(participant = contains("participant"), window_size) %>%
   mutate(at = rep(c("start", "end"), n()/2)) %>%
-  separate(window_size, into = c("width", "height"), sep = "x") %>% 
-  group_by(participant) %>% 
-  summarize(across(width:height, sd))
+  separate(window_size, into = c("width", "height"), sep = "x", convert = TRUE) %>% 
+  mutate(across(width:height, ~ .x / 96, .names = "{.col}_px"))
+  # group_by(participant) %>% 
+  # summarize(across(width:height, sd))
 
 # Processing
 
