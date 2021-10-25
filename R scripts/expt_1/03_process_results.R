@@ -1,7 +1,7 @@
 library(tidyverse)
 library(emphatic)
 
-results_encoded <- read_rds("R scripts/02_results_encoded.rds")
+results_encoded <- read_rds("R scripts/expt_1/02_results_encoded.rds")
 
 prop_table <- results_encoded %>% 
   mutate(

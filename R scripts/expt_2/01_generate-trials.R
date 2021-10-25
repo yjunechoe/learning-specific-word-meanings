@@ -7,8 +7,7 @@ library(tidyr)
 library(stringr)
 library(jsonlite)
 library(assertr)
-
-`%$%` <- magrittr::`%$%`
+library(magrittr)
 
 set.seed(2021)
 
@@ -43,29 +42,33 @@ nonsense_labels <- c(
 )
 
 cond_design <- crossing(
-  number = c("one", "three"),
-  target = c("label1", "label2")
+  number = list(c("one", "three"), c("three", "one")),
+  target = list(c("label1", "label2"), c("label2", "label1"))
 ) %>%
-  slice(c(1:4, c(3, 4, 1, 2))) %>%
-  mutate(group = rep(c("A", "B"), each = 4)) %>%
-  group_by(group) %>%
-  slice(rep(1:n(), 2)) %>%
+  mutate(group = LETTERS[seq_len(n())]) %>% 
+  unnest(cols = c(number, target)) %>% 
+  group_by(group) %>% 
+  slice(rep(1:2, 4)) %>% 
+  mutate(id = row_number()) %>% 
   ungroup()
 
-group_designs <- tibble(
+item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
   label1 = nonsense_labels[c(TRUE, FALSE)],
   label2 = nonsense_labels[c(FALSE, TRUE)],
 ) %>%
-  slice(rep(1:8, 2)) %>%
-  bind_cols(cond_design) %>%
+  mutate(id = row_number())
+
+group_designs <- cond_design %>% 
+  left_join(item_design, by = "id") %>% 
+  select(-id) %>% 
   group_split(group) %>%
   map_dfr(
     ~ .x %>%
       add_row(fillers[1, ], .after = 3) %>%
       add_row(fillers[2, ], .after = 7) %>%
-      fill(target:group, .direction = "down") %>%
-      replace_na(list(number = "one"))
+      fill(group) %>%
+      replace_na(list(target = "label1", number = "one"))
   )
 
 ## fill design with trial templates
