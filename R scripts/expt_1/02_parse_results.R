@@ -5,6 +5,18 @@ source("R scripts/read_pcibex.R")
 
 results_raw <- read_pcibex("data/pilot_18-10-2021.csv")
 
+# Check window sizes
+
+results_raw %>%
+  filter(!is.na(window_size)) %>%
+  select(participant = contains("participant"), window_size) %>%
+  mutate(at = rep(c("start", "end"), n()/2)) %>%
+  separate(window_size, into = c("width", "height"), sep = "x") %>% 
+  group_by(participant) %>% 
+  summarize(across(width:height, sd))
+
+# Processing
+
 participant_ID_vec <- results_raw %>% 
   select(ID, contains("participant")) %>% 
   na.omit() %>% 
