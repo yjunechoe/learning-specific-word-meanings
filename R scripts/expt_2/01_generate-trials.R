@@ -41,16 +41,51 @@ nonsense_labels <- c(
   "dalkeet"
 )
 
-cond_design <- crossing(
-  number = list(c("one", "three"), c("three", "one")),
-  target = list(c("label1", "label2"), c("label2", "label1"))
-) %>%
-  mutate(group = LETTERS[seq_len(n())]) %>% 
-  unnest(cols = c(number, target)) %>% 
+cond_number <- c("one", "three")
+cond_target <- c("label1", "label2")
+
+group_A <- tibble(
+  number = cond_number[c(1, 2, 1, 2)],
+  target = cond_target[c(1, 2, 2, 1)],
+  group = "A"
+)
+group_B <- tibble(
+  number = cond_number[c(1, 2, 1, 2)],
+  target = cond_target[c(2, 1, 1, 2)],
+  group = "B"
+)
+group_C <- tibble(
+  number = cond_number[c(2, 1, 2, 1)],
+  target = cond_target[c(1, 2, 2, 1)],
+  group = "C"
+)
+group_D <- tibble(
+  number = cond_number[c(2, 1, 2, 1)],
+  target = cond_target[c(2, 1, 1, 2)],
+  group = "D"
+)
+
+cond_design <- bind_rows(group_A, group_B, group_C, group_D) %>% 
   group_by(group) %>% 
-  slice(rep(1:2, 4)) %>% 
+  slice(c(1:n(), 1:n())) %>% 
   mutate(id = row_number()) %>% 
   ungroup()
+
+# cond_design %>% 
+#   pivot_wider(names_from = group, values_from = c(number, target)) %>% 
+#   select(1, !!!str_order(str_extract(colnames(.)[-1], "\\w$")) + 1)
+# 
+# | id|number_A |target_A |number_B |target_B |number_C |target_C |number_D |target_D |
+# |--:|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
+# |  1|one      |label1   |one      |label2   |three    |label1   |three    |label2   |
+# |  2|three    |label2   |three    |label1   |one      |label2   |one      |label1   |
+# |  3|one      |label2   |one      |label1   |three    |label2   |three    |label1   |
+# |  4|three    |label1   |three    |label2   |one      |label1   |one      |label2   |
+# |  5|one      |label1   |one      |label2   |three    |label1   |three    |label2   |
+# |  6|three    |label2   |three    |label1   |one      |label2   |one      |label1   |
+# |  7|one      |label2   |one      |label1   |three    |label2   |three    |label1   |
+# |  8|three    |label1   |three    |label2   |one      |label1   |one      |label2   |
+
 
 item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
