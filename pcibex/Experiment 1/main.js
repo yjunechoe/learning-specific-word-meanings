@@ -69,7 +69,7 @@ PennController("beginning",
     newButton("Begin")
 )
 
-Template("01_trial_templates.csv", row => 
+Template("01_trial_templates_A.csv", row => 
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
