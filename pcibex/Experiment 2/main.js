@@ -185,7 +185,7 @@ PennController("end",
                                 survey code and automatically grant credit.*/
 newTrial( "bye" ,
     newText("<p style=font-size:18px;>Your results have been saved, but you need to validate your participation below. This is a necessary step to grant you credits!</p>" +
-            "<p style=font-size:18px;><a href='https://upenn.sona-systems.com/webstudy_credit.aspx?experiment_id=842&credit_token=bb762cf301c24caaa16869064c688e67&survey_code="
+            "<p style=font-size:18px;><a href='https://upenn.sona-systems.com/webstudy_credit.aspx?experiment_id=858&credit_token=731f2912993a4bea96818a5884bb5cfd&survey_code="
             + GetURLParameter("survey_code")+"'>Click here to confirm my submission on SONA</a>.</p>")
         .center()
         .print()
