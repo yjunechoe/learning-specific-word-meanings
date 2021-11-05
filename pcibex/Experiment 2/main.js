@@ -17,17 +17,17 @@ newTrial( "intro" ,
         .center()
         .print()
     ,
-    newVar("ID")
-        .global()
-        .set(GetURLParameter("survey_code"))
-    ,
+    // newVar("ID")
+    //    .global()
+    //    .set(GetURLParameter("survey_code"))
+    //,
     newKey("Enter","ENTER")
         .wait()
     ,
     fullscreen()
 
 ).setOption("hideProgressBar",true)
-.log("ID", getVar("ID"))
+//.log("ID", getVar("ID"))
 
 PennController("beginning",
     defaultSallyCanvas
@@ -184,9 +184,8 @@ PennController("end",
                                 (you can find this on your Sona experiment page) to return to Sona. Sona will recognize their
                                 survey code and automatically grant credit.*/
 newTrial( "bye" ,
-    newText("<p style=font-size:18px;>Your results have been saved, but you need to validate your participation below. This is a necessary step to grant you credits!</p>" +
-            "<p style=font-size:18px;><a href='https://upenn.sona-systems.com/webstudy_credit.aspx?experiment_id=858&credit_token=731f2912993a4bea96818a5884bb5cfd&survey_code="
-            + GetURLParameter("survey_code")+"'>Click here to confirm my submission on SONA</a>.</p>")
+    newText("<p style=font-size:18px;>Your results have been saved, but you need to validate your participation below.</p>" +
+            "<p style=font-size:18px;><a href='https://app.prolific.co/submissions/complete?cc=42CB45E7'>Click here to confirm my submission on SONA</a>.</p>")
         .center()
         .print()
         .wait()
