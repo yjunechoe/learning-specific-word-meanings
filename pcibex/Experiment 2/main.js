@@ -185,7 +185,7 @@ PennController("end",
                                 survey code and automatically grant credit.*/
 newTrial( "bye" ,
     newText("<p style=font-size:18px;>Your results have been saved, but you need to validate your participation below.</p>" +
-            "<p style=font-size:18px;><a href='https://app.prolific.co/submissions/complete?cc=42CB45E7'>Click here to confirm my submission on SONA</a>.</p>")
+            "<p style=font-size:18px;><a href='https://app.prolific.co/submissions/complete?cc=42CB45E7'>Click here to confirm my submission on Prolific</a>.</p>")
         .center()
         .print()
         .wait()
