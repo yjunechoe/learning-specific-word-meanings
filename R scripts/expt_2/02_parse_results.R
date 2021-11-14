@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt2_28-10-2021.csv")
+results_raw <- read_pcibex("data/expt2_pilot_11-13-2021.csv")
 
 # Check window sizes
 
@@ -18,19 +18,9 @@ results_raw %>%
 
 # Processing
 
-participant_ID_vec <- results_raw %>% 
-  select(ID, contains("participant")) %>% 
-  na.omit() %>% 
-  distinct() %>% 
-  pull(1, 2)
-
 results_parsed <- results_raw %>% 
   rename(participant = contains("participant")) %>% 
-  mutate(ID = participant_ID_vec[participant]) %>% 
-  filter(
-    !Value %in% c("Start", "End"),
-    ID != "test"
-  ) %>% 
+  filter(!Value %in% c("Start", "End")) %>% 
   select(participant, Value, group, number, target, item) %>% 
   separate(Value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(

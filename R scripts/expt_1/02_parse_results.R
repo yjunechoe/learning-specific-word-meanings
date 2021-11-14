@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt1_28-10-2021.csv")
+results_raw <- read_pcibex("data/expt1_11-13-2021.csv")
 
 # Check window sizes
 
