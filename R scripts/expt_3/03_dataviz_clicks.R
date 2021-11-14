@@ -7,24 +7,24 @@ library(patchwork)
 
 ## Read ----
 
-trial_template <- read_csv(here("pcibex", "Experiment 2", "01_trial_templates.csv"))
+trial_template <- read_csv(here("pcibex", "Experiment 3", "01_trial_templates.csv"))
 keys <- read_csv(here("R Scripts", "keys.csv"))
-results_encoded <- read_rds(here("R scripts", "expt_2", "02_results_encoded.rds"))
-results_clicks <- read_csv(here("R scripts", "expt_2", "02_results_clicks.csv"))
+results_encoded <- read_rds(here("R scripts", "expt_3", "02_results_encoded.rds"))
+results_clicks <- read_csv(here("R scripts", "expt_3", "02_results_clicks.csv"))
 
 ## Helpers ----
 
 condition_weight_scale <- trial_template %>% 
-  unite(condition, number, target, sep = "-") %>% 
+  unite(condition, order, type, sep = "_") %>% 
   filter(str_detect(domain, "^Filler", negate = TRUE)) %>% 
   group_split(group) %>% 
   set_names(unique(trial_template$group)) %>% 
   map(~ {
     c(
-      "one-label1" = "Inter-Regular",
-      "three-label1" = "Inter-Black",
-      "one-label2" = "Inter-Italic",
-      "three-label2" = "Inter-BlackItalic"
+      "1-3_3sub" = "Inter-Regular",
+      "1-3_3basic" = "Inter-Black",
+      "3-1_3sub" = "Inter-Italic",
+      "3-1_3basic" = "Inter-BlackItalic"
     )[pull(.x, condition)]
   })
 
@@ -39,7 +39,7 @@ condition_y_scales <- map(LETTERS[1:4], ~ {
 
 clicks_plot_df <- results_clicks %>% 
   mutate(
-    type = factor(type, levels = c("sub", "contrast", "basic", "sup", "other")),
+    category = factor(category, levels = c("sub", "contrast", "basic", "sup", "other")),
     time = time / 1000,
     item = fct_rev(as.factor(item))
   )
@@ -54,11 +54,10 @@ plot_individual <- function(x) {
   df %>% 
     ggplot(aes(time, item)) +
     geom_point(
-      aes(shape = type, color = selected, alpha = type),
+      aes(shape = category, color = selected),
       size = 2
     ) +
-    scale_shape_manual(values = c(16, 2, 0, 3, 4), drop = FALSE) +
-    scale_alpha_manual(values = c(1, rep(0.7 ,4)), guide = guide_none()) +
+    scale_shape_manual(values = c(16, 2, 15, 3, 4), drop = FALSE) +
     scale_color_manual(values = c("TRUE" = "#011F5b", "FALSE" = "#990000"), drop = FALSE) +
     scale_x_continuous(
       limits = c(0, NA),

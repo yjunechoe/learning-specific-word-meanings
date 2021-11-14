@@ -1,0 +1,63 @@
+#
+# Results on Sun, 14 Nov 2021 19:33:38 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+# Design number was non-random = 4
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,2,0,intro,NULL,PennController,0,_Trial_,Start,1636917316229,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,2,0,intro,NULL,PennController,0,_Trial_,End,1636918134882,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,3,0,beginning,NULL,PennController,1,_Trial_,Start,1636918134895,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,3,0,beginning,NULL,PennController,1,_Trial_,End,1636918137814,NULL
+# 13. group.
+# 14. type.
+# 15. order.
+# 16. target.
+# 17. item.
+# 18. Comments.
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,4,0,experiment,NULL,PennController,4,_Trial_,Start,1636918137816,A,3basic,3-1,label1,animal,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-dog-3.jpg;basic-dog-1.jpg;basic-dog-2.jpg;sub-dalmatian-1.jpg;sub-dalmatian-2.jpg;contrast-corgi-1.jpg;contrast-corgi-2.jpg|basic-dog-3.jpg;true;9066:basic-dog-1.jpg;true;9723:basic-dog-2.jpg;true;10696:sub-dalmatian-1.jpg;true;11395:sub-dalmatian-2.jpg;true;12008:contrast-corgi-1.jpg;true;12245:contrast-corgi-2.jpg;true;12998,1636918137827,A,3basic,3-1,label1,animal,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,4,0,experiment,NULL,PennController,4,_Trial_,End,1636918170838,A,3basic,3-1,label1,animal,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,5,0,experiment,NULL,PennController,5,_Trial_,Start,1636918170840,A,3sub,1-3,label2,beast,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;4195:sub-trex-1.jpg;true;6228,1636918170844,A,3sub,1-3,label2,beast,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,5,0,experiment,NULL,PennController,5,_Trial_,End,1636918198598,A,3sub,1-3,label2,beast,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,6,0,experiment,NULL,PennController,6,_Trial_,Start,1636918198600,A,3sub,3-1,label1,electronics,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;3649:sub-smart_phone-1.jpg;true;5175,1636918198604,A,3sub,3-1,label1,electronics,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,6,0,experiment,NULL,PennController,6,_Trial_,End,1636918224714,A,3sub,3-1,label1,electronics,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,7,0,experiment,NULL,PennController,7,_Trial_,Start,1636918224715,A,1sub,1,label1,Filler-Color-red,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;1989:red-rect.jpg;true;2343:red-rect.jpg;true;2629:red-rect.jpg;true;2901:red-rect.jpg;true;3345:red-rect.jpg;true;3593,1636918224718,A,1sub,1,label1,Filler-Color-red,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,7,0,experiment,NULL,PennController,7,_Trial_,End,1636918240914,A,1sub,1,label1,Filler-Color-red,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,8,0,experiment,NULL,PennController,8,_Trial_,Start,1636918240916,A,3basic,1-3,label2,fruit,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-apple-1.jpg;basic-apple-2.jpg;sub-red_apple-2.jpg;sub-red_apple-1.jpg;basic-apple-3.jpg|basic-apple-1.jpg;true;3877:basic-apple-2.jpg;true;4237:sub-red_apple-2.jpg;true;4565:sub-red_apple-1.jpg;true;5194:basic-apple-3.jpg;true;6270,1636918240918,A,3basic,1-3,label2,fruit,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,8,0,experiment,NULL,PennController,8,_Trial_,End,1636918267067,A,3basic,1-3,label2,fruit,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,9,0,experiment,NULL,PennController,9,_Trial_,Start,1636918267068,A,3basic,3-1,label1,furniture,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-1.jpg;sub-wooden_chair-2.jpg;basic-chair-3.jpg;basic-chair-1.jpg;basic-chair-2.jpg|sub-wooden_chair-1.jpg;true;7604:sub-wooden_chair-2.jpg;true;8081:basic-chair-3.jpg;true;9018:basic-chair-1.jpg;true;10313:basic-chair-2.jpg;true;11084,1636918267071,A,3basic,3-1,label1,furniture,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,9,0,experiment,NULL,PennController,9,_Trial_,End,1636918298381,A,3basic,3-1,label1,furniture,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,10,0,experiment,NULL,PennController,10,_Trial_,Start,1636918298384,A,3sub,1-3,label2,light,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sup-vegetable-3.jpg;sup-animal-5.jpg;sup-vehicle-3.jpg;sup-beast-5.jpg;sup-furniture-5.jpg;sup-fruit-3.jpg;sup-planet-2.jpg;sup-electronics-2.jpg|sub-gooseneck_lamp-1.jpg;true;14912:sub-gooseneck_lamp-1.jpg;false;15753:sup-vegetable-3.jpg;true;18572:sup-animal-5.jpg;true;19235:sup-vehicle-3.jpg;true;19791:sup-beast-5.jpg;true;21274:sup-furniture-5.jpg;true;23742:sup-fruit-3.jpg;true;25893:sup-planet-2.jpg;true;26513:sup-electronics-2.jpg;true;29337,1636918298386,A,3sub,1-3,label2,light,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,10,0,experiment,NULL,PennController,10,_Trial_,End,1636918348618,A,3sub,1-3,label2,light,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,11,0,experiment,NULL,PennController,11,_Trial_,Start,1636918348620,A,1sub,1,label1,Filler-Shape-triangle,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;1198:triangle-3.jpg;true;1485:triangle-2.jpg;true;1751:triangle-4.jpg;true;2190:triangle-1.jpg;true;2449,1636918348622,A,1sub,1,label1,Filler-Shape-triangle,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,11,0,experiment,NULL,PennController,11,_Trial_,End,1636918363601,A,1sub,1,label1,Filler-Shape-triangle,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,12,0,experiment,NULL,PennController,12,_Trial_,Start,1636918363603,A,3sub,3-1,label1,vegetable,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;1844:sub-green_pepper-2.jpg;true;2726,1636918363607,A,3sub,3-1,label1,vegetable,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,12,0,experiment,NULL,PennController,12,_Trial_,End,1636918386499,A,3sub,3-1,label1,vegetable,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,13,0,experiment,NULL,PennController,13,_Trial_,Start,1636918386501,A,3basic,1-3,label2,vehicle,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;basic-car-1.jpg;contrast-van-2.jpg;basic-car-2.jpg;contrast-van-1.jpg;sub-racecar-1.jpg;basic-car-3.jpg|sub-racecar-2.jpg;true;2814:basic-car-1.jpg;true;4464:contrast-van-2.jpg;true;6456:basic-car-2.jpg;true;6913:contrast-van-1.jpg;true;7219:sub-racecar-1.jpg;true;7853:basic-car-3.jpg;true;9023,1636918386505,A,3basic,1-3,label2,vehicle,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,13,0,experiment,NULL,PennController,13,_Trial_,End,1636918416542,A,3basic,1-3,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,14,0,end,NULL,PennController,2,_Trial_,Start,1636918416544,1739x877,NULL
+1636918418,a32f52473f97d56c62a7bf2405cfb49d,14,0,end,NULL,PennController,2,_Trial_,End,1636918417947,1739x877,NULL

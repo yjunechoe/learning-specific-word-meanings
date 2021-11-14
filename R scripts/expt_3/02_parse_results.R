@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt2_pilot_11-13-2021.csv")
+results_raw <- read_pcibex("data/expt3_test_11-14-2021.csv")
 
 # Check window sizes
 
@@ -11,8 +11,7 @@ results_raw %>%
   filter(!is.na(window_size)) %>%
   select(participant = contains("participant"), window_size) %>%
   mutate(at = rep(c("start", "end"), n()/2)) %>%
-  separate(window_size, into = c("width", "height"), sep = "x", convert = TRUE) %>% 
-  mutate(across(width:height, ~ .x / 96, .names = "{.col}_px"))
+  separate(window_size, into = c("width", "height"), sep = "x", convert = TRUE)
   # group_by(participant) %>% 
   # summarize(across(width:height, sd))
 
@@ -21,7 +20,7 @@ results_raw %>%
 results_parsed <- results_raw %>% 
   rename(participant = contains("participant")) %>% 
   filter(!Value %in% c("Start", "End")) %>% 
-  select(participant, Value, group, number, target, item) %>% 
+  select(participant, Value, group, type, order, target, item) %>% 
   separate(Value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(
     selections = str_split(selections, ";"),
@@ -59,6 +58,8 @@ failed_catch <- results_catch %>%
   filter(!pass) %>% 
   pull(participant) %>% 
   unique()
+failed_catch
+
 results_parsed <- results_parsed %>% 
   filter(!participant %in% failed_catch) %>% 
   mutate(participant = factor(participant))
@@ -93,51 +94,52 @@ keys_nested <- nest(keys, referents = c(type, category, img))
 
 # Encode selections as categories ====
 
-categorize_responses <- function(item, selections, target) {
+categorize_responses <- function(item, selections, type) {
   domain_keys <- keys %>% 
     filter(domain == item) %>% 
     pull(type, img)
   
-  if (target == "label2") {
-    domain_keys <- setNames(c("basic" = "basic", "sup" = "sup", "sub" = "contrast", "contrast" = "sub")[domain_keys], nm = names(domain_keys))
+  if (type == "3basic") {
+    domain_keys <- replace(domain_keys, domain_keys == "sub", "basic")
   }
-
+  
   category_counts <- tidyr::replace_na(domain_keys[selections], "other")
+  
   category_list <- modifyList(
-    list(basic = 0, contrast = 0, sub = 0, sup = 0, other = 0),
+    list(basic = 0L, contrast = 0L, sub = 0L, sup = 0L, other = 0L),
     as.list(table(category_counts))
   )
+  if (type == "3basic" && category_list$sub == 0L) { category_list$sub <- NA_integer_ }
   bind_cols(category_list)
 }
 
 results_encoded <- results_parsed %>%
   filter(trial == "critical") %>% 
-  mutate(pmap_dfr(list(item, selections, target), categorize_responses)) %>% 
+  mutate(pmap_dfr(list(item, selections, type), categorize_responses)) %>% 
   rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup|other)"))
 
-write_rds(results_encoded, here::here("R scripts", "expt_2", "02_results_encoded.rds"))
-
+write_rds(results_encoded, here::here("R scripts", "expt_3", "02_results_encoded.rds"))
 
 # Click data ====
 
-categorize_clicks <- function(item, img, target) {
+categorize_clicks <- function(item, img, type) {
   
   domain_keys <- keys %>% 
     filter(domain == item) %>% 
     pull(type, img)
   
-  if (target == "label2") {
-    c("basic" = "basic", "sup" = "sup", "sub" = "contrast", "contrast" = "sub")[domain_keys[img]]
-  } else {
-    domain_keys[img]
+  if (type == "3basic") {
+    domain_keys <- replace(domain_keys, domain_keys == "sub", "basic")
   }
+  
+  domain_keys[img]
   
 }
 
 results_clicks <- results_encoded %>% 
   select(-ends_with("_n"), -selections) %>% 
   unnest(clicks) %>% 
-  mutate(type = Vectorize(categorize_clicks)(item, img, target)) %>% 
-  replace_na(list(type = "other"))
+  mutate(category = Vectorize(categorize_clicks)(item, img, type)) %>% 
+  replace_na(list(category = "other"))
 
-write_csv(results_clicks, here::here("R scripts", "expt_2", "02_results_clicks.csv"))
+write_csv(results_clicks, here::here("R scripts", "expt_3", "02_results_clicks.csv"))

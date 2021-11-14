@@ -106,7 +106,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay(resolveName(row.label1, row.number, true))
+            .sallySay(resolveName(row.label1, row.order == "3-1", true))
         ,
         // teach referent(s)
         newTimer("learn-referent", 7000)
@@ -121,7 +121,7 @@ Template("01_trial_templates.csv", row =>
                     getSallyCanvas("learn-phase")
                         .hideAll()
                         .showSecond()
-                        .sallySay(resolveName(row.label2, row.number, false))
+                        .sallySay(resolveName(row.label2, row.order == "1-3", false))
                 )
         ,
         getTimer("learn-referent")
@@ -186,7 +186,7 @@ PennController("end",
                                 survey code and automatically grant credit.*/
 newTrial( "bye" ,
     newText("<p style=font-size:18px;>Your results have been saved, but you need to validate your participation below.</p>" +
-            "<p style=font-size:18px;><a href='https://app.prolific.co/submissions/complete?cc=42CB45E7'>Click here to confirm my submission on Prolific</a>.</p>")
+            "<p style=font-size:18px;><a href=''>Click here to confirm my submission on Prolific</a>.</p>")
         .center()
         .print()
         .wait()
