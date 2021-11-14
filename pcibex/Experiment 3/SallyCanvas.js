@@ -1,9 +1,9 @@
 window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
     
-    this.immediate = function(id, learningString = '["animal/basic-dog/sub-dalmatian/1sub-dalmatian.jpg"]', condNumber = "one"){
+    this.immediate = function(id, learningString = '["animal/basic-dog/sub-dalmatian/1sub-dalmatian.jpg"]', condOrder = "3-1"){
         
         this.id = id;
-        this.condNumber = condNumber;
+        this.condOrder = condOrder;
         
         // image properties
         this.learningString = typeof learningString == "string" ? JSON.parse(learningString) : learningString;
@@ -28,10 +28,10 @@ window.PennController._AddElementType("SallyCanvas", function(PennEngine) {
         
         this.sallyImg = $("<img>").attr("class", "PennController-sally-img").attr("src", this.sallyArray[0]);        
         let learnFirst = $("<div>").attr("class", "PennController-labelled PennController-left-ref")
-            .css("height", this.condNumber === "one" ? "150px" : "450px")
+            .css("height", this.condOrder === "3-1" ? "450px" : "150px")
             .append(this.learnFirstImg);
         let learnSecond = $("<div>").attr("class", "PennController-labelled PennController-right-ref")
-            .css("height", this.condNumber === "one" ? "150px" : "450px")
+            .css("height", this.condOrder === "3-1" ? "150px" : "450px")
             .append(this.learnSecondImg);
         
         this.secondMissing = this.learningString.length === 1
