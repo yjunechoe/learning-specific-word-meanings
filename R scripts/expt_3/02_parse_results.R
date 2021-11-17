@@ -99,10 +99,6 @@ categorize_responses <- function(item, selections, type) {
     filter(domain == item) %>% 
     pull(type, img)
   
-  if (type == "3basic") {
-    domain_keys <- replace(domain_keys, domain_keys == "sub", "basic")
-  }
-  
   category_counts <- tidyr::replace_na(domain_keys[selections], "other")
   
   category_list <- modifyList(
@@ -127,10 +123,6 @@ categorize_clicks <- function(item, img, type) {
   domain_keys <- keys %>% 
     filter(domain == item) %>% 
     pull(type, img)
-  
-  if (type == "3basic") {
-    domain_keys <- replace(domain_keys, domain_keys == "sub", "basic")
-  }
   
   domain_keys[img]
   

@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt1_11-13-2021.csv")
+results_raw <- read_pcibex("data/expt1_A_11-17-2021.csv")
 
 # Check window sizes
 
@@ -29,7 +29,7 @@ results_parsed <- results_raw %>%
   mutate(ID = participant_ID_vec[participant]) %>% 
   filter(
     !Value %in% c("Start", "End"),
-    ID != "test"
+    participant != names(which(participant_ID_vec == "test"))
   ) %>% 
   select(participant, Value, group, condition, item) %>% 
   separate(Value, "\\|", into = c("selections", "clicks")) %>% 
@@ -71,6 +71,10 @@ failed_catch <- results_catch %>%
   filter(!pass) %>% 
   pull(participant) %>% 
   unique()
+
+# remove failed catches
+results_parsed <- results_parsed %>% 
+  filter(!participant %in% failed_catch)
 
 # Validations ====
 ## check that selections are imgs where the click event was a selection ----

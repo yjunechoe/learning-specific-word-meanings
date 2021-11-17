@@ -14,7 +14,7 @@ prop_table <- results_encoded %>%
   ) %>% 
   select(participant, group, condition, item, ends_with("_prop")) %>% 
   mutate(
-    uncodeable = sub_prop == 0,
+    uncodeable = sub_prop < 0 | other_prop > 1,
     sub_only = sub_prop == 1 & if_all(ends_with("_prop") & !matches("sub_prop"), ~ is.na(.x) | .x == 0),
     basic_gen = sub_prop == 1 & other_prop == 0 & if_any(c(contrast_prop, basic_prop), ~ !is.na(.x) & .x > 0)
   )
@@ -66,3 +66,27 @@ basic_tbl <- basic_df %>%
   pivot_wider(-n, names_from = "item", values_from = "basic_gen")
 
 basic_tbl
+
+
+# Within contrast condition
+
+prop_table %>% 
+  filter(condition == "contrast") %>% 
+  mutate(coding = case_when(
+    sub_prop == 1 & contrast_prop == 0 & basic_prop == 0 & sup_prop == 0 & other_prop == 0 ~ "Subordinate",
+    sub_prop == 1 & contrast_prop == 0 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "ME",
+    sub_prop == 1 & contrast_prop == 1 & basic_prop == 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_narrow",
+    sub_prop == 1 & contrast_prop == 1 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_broad",
+    TRUE ~ NA_character_
+  )) %>% 
+  mutate(coding = factor(coding, rev(c("Subordinate", "ME", "Basic_narrow", "Basic_broad")))) %>% 
+  count(item, coding) %>% 
+  ggplot(aes(item, n, fill = coding)) +
+  geom_col(position = position_fill()) +
+  geom_text(aes(label = n), position = position_fill(vjust = 0.5), color = "white", family = "Inter-Black") +
+  labs(
+    title = "Proportion of Mutually Exclusive meanings in\n1target-1contrast order",
+    y = NULL, x = NULL
+  ) +
+  discrete_scale("fill", "pgl_continuous", pgl_pals(), na.value = "grey") +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y")
