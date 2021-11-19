@@ -7,7 +7,7 @@
   background-color: #EEEEEE50;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, 150px);
+  grid-template-columns: repeat(4, 150px);
   grid-template-rows: repeat(3, 150px);
   column-gap: 15px;
   row-gap: 15px;

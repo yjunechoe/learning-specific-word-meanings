@@ -166,7 +166,7 @@ gen_test_set <- function(d) {
       slice_sample(n = 1) %>%
       pull(path)
     domain_refs <- img_tbl %>%
-      filter(domain == "animal", type != "sub", !is.na(id)) %>%
+      filter(domain == d, type != "sub", !is.na(id)) %>%
       group_split(type) %>%
       map_dfr(~ {
         type_g <- unique(.x$type)
@@ -189,7 +189,7 @@ trial_template_tbl <- group_designs %>%
     learn_set = list(gen_learn_set(domain, order)),
     test_set = list(gen_test_set(domain))
   ) %>% 
-  mutate(across(ends_with("set"), toJSON)) %>% 
+  mutate(across(ends_with("_set"), toJSON)) %>% 
   ungroup()
 
 write_csv(trial_template_tbl, here::here("pcibex", "Experiment 3", "01_trial_templates.csv"))
