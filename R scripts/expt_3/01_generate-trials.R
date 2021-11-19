@@ -18,8 +18,9 @@ keys <- read_csv(here::here("R Scripts", "keys.csv"))
 
 fillers <- tibble(
   domain = c("Filler-Color-red", "Filler-Shape-triangle"),
-  label1 = c("gelder", "panzet"),
-  label2 = ""
+  label = c("gelder", "panzet"),
+  order = "1",
+  number = "one"
 )
 
 nonsense_labels <- c(
@@ -39,29 +40,24 @@ nonsense_labels <- c(
   "blicket",
   "clazzo",
   "dalkeet"
-)
+)[c(TRUE, FALSE)]
 
 cond_order <- c("3-1", "1-3")
-cond_contrast <- c("3basic", "3sub")
 
 group_A <- tibble(
-  order = cond_order[c(1, 2, 1, 2)],
-  target = cond_contrast[c(1, 2, 2, 1)],
+  order = cond_order[c(1, 1, 2, 2)],
   group = "A"
 )
 group_B <- tibble(
   order = cond_order[c(1, 2, 1, 2)],
-  target = cond_contrast[c(2, 1, 1, 2)],
   group = "B"
 )
 group_C <- tibble(
   order = cond_order[c(2, 1, 2, 1)],
-  target = cond_contrast[c(1, 2, 2, 1)],
   group = "C"
 )
 group_D <- tibble(
-  order = cond_order[c(2, 1, 2, 1)],
-  target = cond_contrast[c(2, 1, 1, 2)],
+  order = cond_order[c(2, 2, 1, 1)],
   group = "D"
 )
 
@@ -72,26 +68,25 @@ cond_design <- bind_rows(group_A, group_B, group_C, group_D) %>%
   ungroup() %>% 
   mutate(number = "three")
 
-# cond_design %>% 
-#   pivot_wider(-number, names_from = group, values_from = c(order, target)) %>% 
+# cond_design %>%
+#   pivot_wider(-number, names_from = group, values_from = order) %>%
 #   select(1, !!!str_order(str_extract(colnames(.)[-1], "\\w$")) + 1)
 # 
-# | id|order_A |target_A |order_B |target_B |order_C |target_C |order_D |target_D |
-# |--:|:-------|:--------|:-------|:--------|:-------|:--------|:-------|:--------|
-# |  1|3-1     |3basic   |3-1     |3sub     |1-3     |3basic   |1-3     |3sub     |
-# |  2|1-3     |3sub     |1-3     |3basic   |3-1     |3sub     |3-1     |3basic   |
-# |  3|3-1     |3sub     |3-1     |3basic   |1-3     |3sub     |1-3     |3basic   |
-# |  4|1-3     |3basic   |1-3     |3sub     |3-1     |3basic   |3-1     |3sub     |
-# |  5|3-1     |3basic   |3-1     |3sub     |1-3     |3basic   |1-3     |3sub     |
-# |  6|1-3     |3sub     |1-3     |3basic   |3-1     |3sub     |3-1     |3basic   |
-# |  7|3-1     |3sub     |3-1     |3basic   |1-3     |3sub     |1-3     |3basic   |
-# |  8|1-3     |3basic   |1-3     |3sub     |3-1     |3basic   |3-1     |3sub     |
+#   | id|A   |B   |C   |D   |
+#   |--:|:---|:---|:---|:---|
+#   |  1|3-1 |3-1 |1-3 |1-3 |
+#   |  2|3-1 |1-3 |3-1 |1-3 |
+#   |  3|1-3 |3-1 |1-3 |3-1 |
+#   |  4|1-3 |1-3 |3-1 |3-1 |
+#   |  5|3-1 |3-1 |1-3 |1-3 |
+#   |  6|3-1 |1-3 |3-1 |1-3 |
+#   |  7|1-3 |3-1 |1-3 |3-1 |
+#   |  8|1-3 |1-3 |3-1 |3-1 |
 
 
 item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
-  label1 = nonsense_labels[c(TRUE, FALSE)],
-  label2 = nonsense_labels[c(FALSE, TRUE)],
+  label = nonsense_labels,
 ) %>%
   mutate(id = row_number())
 
@@ -101,11 +96,12 @@ group_designs <- cond_design %>%
   group_split(group) %>%
   map_dfr(
     ~ .x %>%
-      add_row(fillers[1, ], order = "1", number = "one", .after = 3) %>%
-      add_row(fillers[2, ], order = "1", number = "one", .after = 7) %>%
-      fill(group) %>%
-      replace_na(list(target = "1sub"))
+      add_row(fillers[1, ], .after = 3) %>%
+      add_row(fillers[2, ], .after = 7) %>%
+      fill(group)
   )
+
+# TODO this point on ---------
 
 ## fill design with trial templates
 
@@ -114,7 +110,7 @@ category_dict <- img_tbl %>%
   filter(type %in% c("sub", "contrast")) %>%
   arrange(domain, desc(type))
 
-gen_learn_set <- function(d, target, order) {
+gen_learn_set <- function(d, order) {
   if (str_detect(d, "^Filler")) {
     if (str_detect(d, "Shape")) {
       "Fillers/Shape/triangle.jpg"
@@ -122,8 +118,8 @@ gen_learn_set <- function(d, target, order) {
       "Fillers/Color/red-rect.jpg"
     }
   } else {
-    cond_num <- str_extract(target, "^\\d")
-    cond_type <- str_extract(target, "\\D+$")
+    cond_num <- "3"
+    cond_type <- "basic"
     cond_order <- str_split(order, "-")[[1]]
     
     one <- img_tbl %>% 
@@ -137,7 +133,7 @@ gen_learn_set <- function(d, target, order) {
     
   }
 }
-# gen_learn_set("animal", "3basic", "3-1")
+# gen_learn_set("animal", "1-3")
 
 gen_test_set <- function(d) {
   if (str_detect(d, "^Filler")) {
@@ -147,10 +143,8 @@ gen_test_set <- function(d) {
         "Fillers/Shape/lines-11.jpg", "Fillers/Shape/lines-13.jpg", "Fillers/Shape/triangle-5.jpg",
         "Fillers/Shape/lines-5.jpg", "Fillers/Shape/lines-3.jpg", "Fillers/Shape/lines-2.jpg",
         "Fillers/Shape/lines-9.jpg", "Fillers/Shape/lines-8.jpg", "Fillers/Shape/triangle-3.jpg",
-        "Fillers/Shape/triangle-2.jpg", "Fillers/Shape/triangle-4.jpg", "Fillers/Shape/lines-7.jpg",
-        "Fillers/Shape/lines-10.jpg", "Fillers/Shape/lines-6.jpg", "Fillers/Shape/lines-4.jpg",
-        "Fillers/Shape/lines-1.jpg", "Fillers/Shape/triangle-1.jpg", "Fillers/Shape/lines-12.jpg"
-      )
+        "Fillers/Shape/triangle-2.jpg", "Fillers/Shape/triangle-4.jpg", "Fillers/Shape/triangle-1.jpg"
+      )[1:10]
     } else if (str_detect(d, "Color")) {
       c(
         "Fillers/Color/blue-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/green-rect.jpg",
@@ -159,33 +153,44 @@ gen_test_set <- function(d) {
         "Fillers/Color/blue-rect.jpg", "Fillers/Color/green-rect.jpg", "Fillers/Color/green-rect.jpg",
         "Fillers/Color/red-rect.jpg", "Fillers/Color/blue-rect.jpg", "Fillers/Color/blue-rect.jpg",
         "Fillers/Color/blue-rect.jpg", "Fillers/Color/red-rect.jpg", "Fillers/Color/red-rect.jpg"
-      )
+      )[1:10]
     }
   } else {
+    d_kind <- img_tbl %>% 
+      filter(domain == d) %>% 
+      distinct(kind) %>% 
+      pull(kind)
     other_refs <- img_tbl %>%
-      filter(domain != d, type == "sup") %>%
+      filter(kind != d_kind | domain == "planet", type == "sup") %>%
       group_by(domain) %>%
       slice_sample(n = 1) %>%
       pull(path)
     domain_refs <- img_tbl %>%
-      filter(domain == d, !is.na(id)) %>%
-      filter(id <= 3) %>%
+      filter(domain == "animal", type != "sub", !is.na(id)) %>%
+      group_split(type) %>%
+      map_dfr(~ {
+        type_g <- unique(.x$type)
+        if (type_g %in% c("basic", "contrast")) {
+          .x
+        } else {
+          slice(.x, 1:2)
+        }
+      }) %>% 
       pull(path)
     sample(c(other_refs, domain_refs))
   }
 }
 
+# gen_test_set("animal")
+
 trial_template_tbl <- group_designs %>%
   rowwise() %>%
   mutate(
-    learn_set = toJSON(gen_learn_set(domain, target, order)),
-    test_set = toJSON(gen_test_set(domain))
-  ) %>%
+    learn_set = list(gen_learn_set(domain, order)),
+    test_set = list(gen_test_set(domain))
+  ) %>% 
+  mutate(across(ends_with("set"), toJSON)) %>% 
   ungroup()
-
-trial_template_tbl <- trial_template_tbl %>% 
-  rename(type = target) %>% 
-  mutate(target = ifelse(order == "1-3", "label2", "label1"))
 
 write_csv(trial_template_tbl, here::here("pcibex", "Experiment 3", "01_trial_templates.csv"))
 

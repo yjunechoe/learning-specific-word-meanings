@@ -1,9 +1,9 @@
-resolveName = function(label, plural = true, first = true) {
+resolveSallyMessage = function(label, labelled = true, first = true) {
   let directions
-  if (plural) {
+  if (labelled) {
     directions = ", these are " + label + "s!<br>Do you see the " + label + "s?"
   } else {
-    directions = ", this is a " + label + "!<br>Do you see the " + label + "?"
+    directions = " over here!<br>Do you see this?"
   }
   if (first) {
     directions = "Look" + directions

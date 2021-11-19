@@ -73,3 +73,28 @@ basic_tbl <- basic_df %>%
 
 basic_tbl
 
+# Mutually exclusive vs. basic
+
+prop_table %>% 
+  mutate(coding = case_when(
+    sub_prop == 1 & contrast_prop == 0 & basic_prop == 0 & sup_prop == 0 & other_prop == 0 ~ "Subordinate",
+    sub_prop == 1 & contrast_prop == 0 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "ME",
+    sub_prop == 1 & contrast_prop == 1 & basic_prop == 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_narrow",
+    sub_prop == 1 & contrast_prop == 1 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_broad",
+    TRUE ~ NA_character_
+  )) %>% 
+  mutate(coding = factor(coding, rev(c("Subordinate", "ME", "Basic_narrow", "Basic_broad")))) %>% 
+  group_by(condition, number, target) %>% 
+  count(coding) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = coding, n, fill = coding)) +
+  geom_col() +
+  geom_text(aes(label = n), position = position_fill(vjust = 0.5), color = "white", family = "Inter-Black") +
+  facet_grid(number ~ target) +
+  labs(
+    title = "Proportion of Mutually Exclusive meanings in\n1target-1contrast order",
+    y = NULL, x = NULL
+  ) +
+  discrete_scale("fill", "pgl_continuous", pgl_pals(), na.value = "grey") +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y")
+

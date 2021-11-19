@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt2_pilot_11-13-2021.csv")
+results_raw <- read_pcibex("data/expt2_11-18-2021.csv")
 
 # Check window sizes
 
@@ -59,6 +59,9 @@ failed_catch <- results_catch %>%
   filter(!pass) %>% 
   pull(participant) %>% 
   unique()
+# results_parsed %>% 
+#   filter(participant %in% failed_catch, str_detect(item, "^Filler")) %>% 
+#   View()
 results_parsed <- results_parsed %>% 
   filter(!participant %in% failed_catch) %>% 
   mutate(participant = factor(participant))

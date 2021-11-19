@@ -80,7 +80,7 @@ Template("01_trial_templates.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSallyMessageBar("directions", row[row.target])
+        newSallyMessageBar("directions", row.label)
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -106,7 +106,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay(resolveName(row.label1, row.order == "3-1", true))
+            .sallySay(resolveSallyMessage(row.label, row.order == "3-1", true))
         ,
         // teach referent(s)
         newTimer("learn-referent", 7000)
@@ -121,7 +121,7 @@ Template("01_trial_templates.csv", row =>
                     getSallyCanvas("learn-phase")
                         .hideAll()
                         .showSecond()
-                        .sallySay(resolveName(row.label2, row.order == "1-3", false))
+                        .sallySay(resolveSallyMessage(row.label, row.order == "1-3", false))
                 )
         ,
         getTimer("learn-referent")
