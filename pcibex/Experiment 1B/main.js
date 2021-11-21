@@ -6,20 +6,11 @@ PennController.Sequence("intro", "counter", "beginning", "experiment", "end", Se
 
 SetCounter("counter", "inc", 1);
 
-/*Intro for use with Sona
-                Participants see a screen and are told to press enter to go full screen and begin the study.
-                In the background, the URL parameter "survey_code" is set as the global variable "ID".
-                This trial logs the ID number to the results. Be sure to add the ".log("ID", getVar("ID")"  line
-                                at the end of every trial or trial template.*/
 newTrial( "intro" ,
     newText("<p style=font-size:18px;>Welcome to our study!</p>" +
             "<p style=font-size:18px;>Press Enter to go full screen and begin!:</p>")
         .center()
         .print()
-    ,
-    newVar("ID")
-        .global()
-        .set(GetURLParameter("survey_code"))
     ,
     newKey("Enter","ENTER")
         .wait()
@@ -68,7 +59,7 @@ PennController("beginning",
     newButton("Begin")
 )
 
-Template("01_trial_templates_notA.csv", row => 
+Template("01_trial_templates.csv", row => 
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
@@ -79,7 +70,7 @@ Template("01_trial_templates_notA.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSallyMessageBar("directions", row.label1)
+        newSallyMessageBar("directions", row[row.target])
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -105,7 +96,7 @@ Template("01_trial_templates_notA.csv", row =>
         ,
         getSallyCanvas("learn-phase")
             .showFirst()
-            .sallySay("Look, this is a " + row.label1 + "!<br>Do you see the " + row.label1 + "?")
+            .sallySay(resolveSallyMessage(row.label1, true))
         ,
         // teach referent(s)
         newTimer("learn-referent", 7000)
@@ -120,7 +111,7 @@ Template("01_trial_templates_notA.csv", row =>
                     getSallyCanvas("learn-phase")
                         .hideAll()
                         .showSecond()
-                        .sallySay("And look, this is a " + row.label2 + "!<br>Do you see the " + row.label2 + "?")
+                        .sallySay(resolveSallyMessage(row.label2, false))
                 )
         ,
         getTimer("learn-referent")
@@ -154,7 +145,8 @@ Template("01_trial_templates_notA.csv", row =>
             .wait(getSelectionGrid("test-phase").test.selectAny())
     )
     .log("group", row.group)
-    .log("condition", row.condition)
+    .log("labelled", row.labelled)
+    .log("target", row.target)
     .log("item", row.domain)
 )
 

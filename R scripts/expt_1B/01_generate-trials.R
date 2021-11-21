@@ -19,8 +19,8 @@ keys <- read_csv(here::here("R Scripts", "keys.csv"))
 fillers <- tibble(
   domain = c("Filler-Color-red", "Filler-Shape-triangle"),
   label1 = c("gelder", "panzet"),
-  target = "first",
-  labelled = F
+  target = "label1",
+  labelled = FALSE
 )
 
 nonsense_labels <- c(
@@ -43,46 +43,53 @@ nonsense_labels <- c(
 )
 
 cond_labelled <- c(TRUE, FALSE)
-cond_order <- c("first", "second")
+cond_order <- c("label1", "label2")
 
 group_A <- tibble(
-  labelled = cond_labelled[c(1, 2, 1, 2)],
-  target = cond_order[c(1, 2, 2, 1)],
+  labelled = cond_labelled[c(1, 1, 2, 2)],
+  target = cond_order[c(1, 2, 1, 2)],
   group = "A"
 )
 group_B <- tibble(
-  labelled = cond_labelled[c(1, 2, 1, 2)],
-  target = cond_order[c(2, 1, 1, 2)],
+  labelled = cond_labelled[c(2, 2, 1, 1)],
+  target = cond_order[c(2, 1, 2, 1)],
   group = "B"
 )
 group_C <- tibble(
-  labelled = cond_labelled[c(2, 1, 2, 1)],
-  target = cond_order[c(1, 2, 2, 1)],
+  labelled = cond_labelled[c(1, 2, 1, 2)],
+  target = cond_order[c(1, 1, 2, 2)],
   group = "C"
 )
 group_D <- tibble(
   labelled = cond_labelled[c(2, 1, 2, 1)],
-  target = cond_order[c(2, 1, 1, 2)],
+  target = cond_order[c(2, 2, 1, 1)],
   group = "D"
 )
 
 cond_design <- bind_rows(group_A, group_B, group_C, group_D) %>% 
   group_by(group) %>% 
-  slice(c(1:n(), 1:n())) %>% 
+  slice(1:n(), 1:n()) %>% 
   mutate(id = row_number()) %>% 
   ungroup()
 
 item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
-  label1 = nonsense_labels[c(TRUE, FALSE)],
-  label2 = nonsense_labels[c(FALSE, TRUE)],
+  labels = asplit(matrix(nonsense_labels, nrow = 2), 2)
 ) %>%
   mutate(id = row_number())
 
-
 group_designs <- cond_design %>% 
   left_join(item_design, by = "id") %>% 
-  select(-id) %>% 
+  rowwise() %>% 
+  mutate(
+    labels = ifelse(target == "label1", list(labels), list(rev(labels))),
+    labels = ifelse(labelled, list(labels),
+                    list(replace(labels, c("label1" = 2, "label2" = 1)[target], ""))),
+    label1 = labels[1],
+    label2 = labels[2]
+  ) %>% 
+  ungroup() %>%
+  select(-c(id, labels)) %>% 
   group_split(group) %>%
   map_dfr(
     ~ .x %>%
@@ -91,6 +98,22 @@ group_designs <- cond_design %>%
       fill(group)
   )
 
+# group_designs %>%
+#   filter(str_detect(domain, "^Filler", TRUE)) %>% 
+#   pivot_wider(-c(label1, label2), names_from = group, values_from = c(labelled, target)) %>%
+#   select(1, !!!str_order(str_extract(colnames(.)[-1], "\\w$")) + 1)
+#
+# |domain      |labelled_A |target_A |labelled_B |target_B |labelled_C |target_C |labelled_D |target_D |
+# |:-----------|:----------|:--------|:----------|:--------|:----------|:--------|:----------|:--------|
+# |animal      |TRUE       |label1   |TRUE       |label2   |FALSE      |label1   |FALSE      |label2   |
+# |beast       |FALSE      |label2   |FALSE      |label1   |TRUE       |label2   |TRUE       |label1   |
+# |electronics |TRUE       |label2   |TRUE       |label1   |FALSE      |label2   |FALSE      |label1   |
+# |fruit       |FALSE      |label1   |FALSE      |label2   |TRUE       |label1   |TRUE       |label2   |
+# |furniture   |TRUE       |label1   |TRUE       |label2   |FALSE      |label1   |FALSE      |label2   |
+# |light       |FALSE      |label2   |FALSE      |label1   |TRUE       |label2   |TRUE       |label1   |
+# |vegetable   |TRUE       |label2   |TRUE       |label1   |FALSE      |label2   |FALSE      |label1   |
+# |vehicle     |FALSE      |label1   |FALSE      |label2   |TRUE       |label1   |TRUE       |label2   |
+
 ## fill design with trial templates
 
 category_dict <- img_tbl %>% 
@@ -98,7 +121,7 @@ category_dict <- img_tbl %>%
   filter(type %in% c("sub", "contrast")) %>% 
   arrange(domain, desc(type))
 
-gen_learn_set <- function(d) {
+gen_learn_set <- function(d, target) {
   if (str_detect(d, "^Filler")) {
     if (str_detect(d, "Shape")) {
       "Fillers/Shape/triangle.jpg"
@@ -115,9 +138,14 @@ gen_learn_set <- function(d) {
     if (str_detect(d, "^Filler")) {
       pull(learn_set, path)
     } else {
-      learn_set %>% 
-        filter(type == "sub") %>% 
-        pull(path)
+      if (target == "label1") {
+        learn_set %>% 
+          pull(path)
+      } else {
+        learn_set %>% 
+          pull(path) %>% 
+          rev()
+      }
     }
   }
 }
@@ -158,7 +186,7 @@ gen_test_set <- function(d) {
 trial_template_tbl <- group_designs %>%
   rowwise() %>%
   mutate(
-    learn_set = list(gen_learn_set(domain)),
+    learn_set = list(gen_learn_set(domain, target)),
     test_set = list(gen_test_set(domain))
   ) %>% 
   mutate(across(ends_with("_set"), toJSON)) %>% 

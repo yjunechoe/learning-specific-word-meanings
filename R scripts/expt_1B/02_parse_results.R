@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt1_A_11-17-2021.csv")
+results_raw <- read_pcibex("data/expt1B_test_11-21-2021.csv")
 
 # Check window sizes
 
@@ -18,20 +18,10 @@ results_raw %>%
 
 # Processing
 
-participant_ID_vec <- results_raw %>% 
-  select(ID, contains("participant")) %>% 
-  na.omit() %>% 
-  distinct() %>% 
-  pull(1, 2)
-
 results_parsed <- results_raw %>% 
   rename(participant = contains("participant")) %>% 
-  mutate(ID = participant_ID_vec[participant]) %>% 
-  filter(
-    !Value %in% c("Start", "End"),
-    participant != names(which(participant_ID_vec == "test"))
-  ) %>% 
-  select(participant, Value, group, condition, item) %>% 
+  filter(!Value %in% c("Start", "End")) %>% 
+  select(participant, Value, group, labelled, target, item) %>% 
   separate(Value, "\\|", into = c("selections", "clicks")) %>% 
   mutate(
     selections = str_split(selections, ";"),
@@ -106,14 +96,10 @@ keys_nested <- nest(keys, referents = c(type, category, img))
 
 # Encode selections as categories ====
 
-categorize_responses <- function(item, selections, condition) {
+categorize_responses <- function(item, selections) {
   domain_keys <- keys %>% 
     filter(domain == item) %>% 
     pull(type, img)
-  # in the single condition, seeing "contrast" subordinate exemplar is actually as if it's sampled from basic
-  if (condition == "single") {
-    domain_keys[domain_keys == "contrast"] <- "basic"
-  }
   category_counts <- tidyr::replace_na(domain_keys[selections], "other")
   category_list <- modifyList(
     list(basic = 0, contrast = 0, sub = 0, sup = 0, other = 0),
@@ -124,10 +110,10 @@ categorize_responses <- function(item, selections, condition) {
 
 results_encoded <- results_parsed %>%
   filter(trial == "critical") %>% 
-  mutate(pmap_dfr(list(item, selections, condition), categorize_responses)) %>% 
+  mutate(pmap_dfr(list(item, selections), categorize_responses)) %>% 
   rename_with(~ paste0(.x, "_n"), matches("(basic|contrast|sub|sup|other)"))
 
-write_rds(results_encoded, here::here("R scripts", "expt_1", "02_results_encoded.rds"))
+write_rds(results_encoded, here::here("R scripts", "expt_1B", "02_results_encoded.rds"))
 
 
 # Click data ====
@@ -140,7 +126,6 @@ results_clicks <- results_encoded %>%
       select(item = domain, img, type),
     by = c("img", "item")
   ) %>% 
-  replace_na(list(type = "other")) %>% 
-  mutate(type = ifelse(condition == "single" & type == "contrast", "basic", type))
+  replace_na(list(type = "other"))
 
-write_csv(results_clicks, here::here("R scripts", "expt_1", "02_results_clicks.csv"))
+write_csv(results_clicks, here::here("R scripts", "expt_1B", "02_results_clicks.csv"))
