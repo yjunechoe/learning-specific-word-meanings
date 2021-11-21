@@ -7,70 +7,21 @@ library(tidyr)
 library(stringr)
 library(jsonlite)
 library(assertr)
-
-`%$%` <- magrittr::`%$%`
+library(magrittr)
 
 set.seed(2021)
 
-img_dir <- here("image_stimuli")
+img_tbl <- read_csv(here::here("R Scripts", "image_table.csv"))
+keys <- read_csv(here::here("R Scripts", "keys.csv"))
 
-img_paths <- fs::dir_ls(img_dir, regexp = "/[a-z]+$") %>% 
-  dir_ls(recurse = TRUE, type = "file") %>% 
-  path_rel(img_dir)
-
-img_info_col <- c("number", "type", "category", "id")
-
-img_tbl <- tibble(path = img_paths) %>%
-  mutate(
-    domain = str_extract(path_dir(img_paths), "^[a-z]+"),
-    kind = ifelse(domain %in% c("animal", "beast", "fruit", "vegetable"), "natural", "artificial"),
-    file = path_file(path)
-  ) %>% 
-  extract(
-    col = file,
-    into = img_info_col,
-    regex = "^(\\d)?(sup|basic|contrast|sub)-([a-z_]+)-?(\\d)?",
-    convert = TRUE
-  ) %>% 
-  relocate(path, .after = everything())
-
-img_tbl %>% 
-  verify(
-    expr = has_all_names(!!!c(img_info_col), "domain", "path"),
-    description = "Image info successfully parsed from relative paths."
-  ) %>% 
-  verify(
-    expr = (sum(is.na(number)) + sum(is.na(id))) == nrow(.),
-    description = "All images are used for either learning OR testing - always one never both."
-  ) %>% 
-  verify(
-    expr = (n_distinct(domain) == 9) && (var(table(domain[domain != "planet"])) == 0),
-    description = "There are 9 semantic domains, and all have the same # of images except the filler domain 'planet'."
-  )
-
-write_csv(img_tbl, here::here("R Scripts", "01_image_table.csv"))
-
-# keys
-
-keys <- img_tbl %>% 
-  filter(!is.na(id) & domain != "planet") %>% 
-  mutate(img = str_extract(path, "[^/]+\\.jpg$")) %>% 
-  select(domain, kind, type, category, img) %>% 
-  group_by(domain) %>% 
-  mutate(target = unique(category[type == "sub"]), .after = "kind") %>% 
-  ungroup()
-
-# fillers
+# design pre-randomized trial order and condition split (within-participant)
 
 fillers <- tibble(
   domain = c("Filler-Color-red", "Filler-Shape-triangle"),
   label1 = c("gelder", "panzet"),
-  label2 = ""
+  target = "first",
+  labelled = F
 )
-
-write_csv(keys, here::here("R Scripts", "01_keys.csv"))
-
-# design pre-randomized trial order and condition split (within-participant)
 
 nonsense_labels <- c(
   "kapsin",
@@ -91,36 +42,53 @@ nonsense_labels <- c(
   "dalkeet"
 )
 
-group_designs <- tibble(
+cond_labelled <- c(TRUE, FALSE)
+cond_order <- c("first", "second")
+
+group_A <- tibble(
+  labelled = cond_labelled[c(1, 2, 1, 2)],
+  target = cond_order[c(1, 2, 2, 1)],
+  group = "A"
+)
+group_B <- tibble(
+  labelled = cond_labelled[c(1, 2, 1, 2)],
+  target = cond_order[c(2, 1, 1, 2)],
+  group = "B"
+)
+group_C <- tibble(
+  labelled = cond_labelled[c(2, 1, 2, 1)],
+  target = cond_order[c(1, 2, 2, 1)],
+  group = "C"
+)
+group_D <- tibble(
+  labelled = cond_labelled[c(2, 1, 2, 1)],
+  target = cond_order[c(2, 1, 1, 2)],
+  group = "D"
+)
+
+cond_design <- bind_rows(group_A, group_B, group_C, group_D) %>% 
+  group_by(group) %>% 
+  slice(c(1:n(), 1:n())) %>% 
+  mutate(id = row_number()) %>% 
+  ungroup()
+
+item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
   label1 = nonsense_labels[c(TRUE, FALSE)],
   label2 = nonsense_labels[c(FALSE, TRUE)],
-  groupA = rep(c("S", "C"), 4),
-  groupB = rep(c("C", "S"), 4),
-  groupC = rep(c("S", "S", "C", "C"), 2),
-  groupD = rep(c("C", "C", "S", "S"), 2)
-) %>% 
-  add_row(fillers[1,], .after = 3) %>% 
-  add_row(fillers[2,], .after = 7) %>% 
-  pivot_longer(
-    cols = starts_with("group"),
-    names_to = "group",
-    names_prefix = "group",
-    values_to = "condition"
-  ) %>% 
-  replace_na(list(condition = "S")) %>% 
-  mutate(condition = c(S = "single", C = "contrast")[condition]) %>% 
-  arrange(group)
+) %>%
+  mutate(id = row_number())
 
-group_designs %>%
-  verify(
-    expr = length(str_subset(domain, "^Filler")) == 2 * 4,
-    description = "There are 4 trials from each condition in all 4 design groups."
-  ) %>% 
-  verify(
-    expr = filter(., str_detect(domain, "^Filler", negate = TRUE)) %$% 
-      all(table(group, condition) == 4),
-    description = "There are 4 trials from each condition in all 4 design groups."
+
+group_designs <- cond_design %>% 
+  left_join(item_design, by = "id") %>% 
+  select(-id) %>% 
+  group_split(group) %>%
+  map_dfr(
+    ~ .x %>%
+      add_row(fillers[1, ], .after = 3) %>%
+      add_row(fillers[2, ], .after = 7) %>%
+      fill(group)
   )
 
 ## fill design with trial templates
@@ -130,7 +98,7 @@ category_dict <- img_tbl %>%
   filter(type %in% c("sub", "contrast")) %>% 
   arrange(domain, desc(type))
 
-gen_learn_set <- function(d, condition) {
+gen_learn_set <- function(d) {
   if (str_detect(d, "^Filler")) {
     if (str_detect(d, "Shape")) {
       "Fillers/Shape/triangle.jpg"
@@ -144,9 +112,9 @@ gen_learn_set <- function(d, condition) {
         filter(img_tbl, number == 1), # single exemplar in learn phase
         by = c("domain", "type", "category")
       )
-    if (condition == "contrast") {
+    if (str_detect(d, "^Filler")) {
       pull(learn_set, path)
-    } else if (condition == "single") {
+    } else {
       learn_set %>% 
         filter(type == "sub") %>% 
         pull(path)
@@ -187,12 +155,14 @@ gen_test_set <- function(d) {
   }
 }
 
-trial_template_tbl <- group_designs %>% 
-  rowwise() %>% 
+trial_template_tbl <- group_designs %>%
+  rowwise() %>%
   mutate(
-    learn_set = toJSON(gen_learn_set(domain, condition)),
-    test_set = toJSON(gen_test_set(domain))
+    learn_set = list(gen_learn_set(domain)),
+    test_set = list(gen_test_set(domain))
   ) %>% 
+  mutate(across(ends_with("_set"), toJSON)) %>% 
   ungroup()
 
-write_csv(trial_template_tbl, here::here("R Scripts", "01_trial_templates.csv"))
+
+write_csv(trial_template_tbl, here::here("R Scripts", "expt_1B", "01_trial_templates.csv"))
