@@ -105,14 +105,14 @@ group_designs <- cond_design %>%
 #
 # |domain      |labelled_A |target_A |labelled_B |target_B |labelled_C |target_C |labelled_D |target_D |
 # |:-----------|:----------|:--------|:----------|:--------|:----------|:--------|:----------|:--------|
-# |animal      |TRUE       |label1   |TRUE       |label2   |FALSE      |label1   |FALSE      |label2   |
-# |beast       |FALSE      |label2   |FALSE      |label1   |TRUE       |label2   |TRUE       |label1   |
-# |electronics |TRUE       |label2   |TRUE       |label1   |FALSE      |label2   |FALSE      |label1   |
-# |fruit       |FALSE      |label1   |FALSE      |label2   |TRUE       |label1   |TRUE       |label2   |
-# |furniture   |TRUE       |label1   |TRUE       |label2   |FALSE      |label1   |FALSE      |label2   |
-# |light       |FALSE      |label2   |FALSE      |label1   |TRUE       |label2   |TRUE       |label1   |
-# |vegetable   |TRUE       |label2   |TRUE       |label1   |FALSE      |label2   |FALSE      |label1   |
-# |vehicle     |FALSE      |label1   |FALSE      |label2   |TRUE       |label1   |TRUE       |label2   |
+# |animal      |TRUE       |label1   |FALSE      |label2   |TRUE       |label1   |FALSE      |label2   |
+# |beast       |TRUE       |label2   |FALSE      |label1   |FALSE      |label1   |TRUE       |label2   |
+# |electronics |FALSE      |label1   |TRUE       |label2   |TRUE       |label2   |FALSE      |label1   |
+# |fruit       |FALSE      |label2   |TRUE       |label1   |FALSE      |label2   |TRUE       |label1   |
+# |furniture   |TRUE       |label1   |FALSE      |label2   |TRUE       |label1   |FALSE      |label2   |
+# |light       |TRUE       |label2   |FALSE      |label1   |FALSE      |label1   |TRUE       |label2   |
+# |vegetable   |FALSE      |label1   |TRUE       |label2   |TRUE       |label2   |FALSE      |label1   |
+# |vehicle     |FALSE      |label2   |TRUE       |label1   |FALSE      |label2   |TRUE       |label1   |
 
 ## fill design with trial templates
 

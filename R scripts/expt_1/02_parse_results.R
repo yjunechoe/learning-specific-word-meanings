@@ -74,7 +74,8 @@ failed_catch <- results_catch %>%
 
 # remove failed catches
 results_parsed <- results_parsed %>% 
-  filter(!participant %in% failed_catch)
+  filter(!participant %in% failed_catch) %>% 
+  mutate(participant = fct_drop(participant))
 
 # Validations ====
 ## check that selections are imgs where the click event was a selection ----
