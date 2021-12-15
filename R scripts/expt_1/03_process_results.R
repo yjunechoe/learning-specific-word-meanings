@@ -1,6 +1,5 @@
 library(tidyverse)
 library(penngradlings)
-library(emphatic)
 
 results_encoded <- read_rds("R scripts/expt_1/02_results_encoded.rds")
 
@@ -20,6 +19,121 @@ prop_table <- results_encoded %>%
     strict_basic_gen = sub_prop == 1 & other_prop == 0 & basic_prop == 1 & ifelse(is.na(contrast_prop), TRUE, contrast_prop == 1),
     item = fct_drop(item)
   )
+
+write_csv(prop_table, "R scripts/expt_1/03_prop_table.csv")
+
+# Stacked plot (HSP)
+
+prop_table1_HSP <- prop_table %>% 
+  transmute(
+    condition,
+    coding = case_when(
+      sub_only ~ "Subordinate",
+      basic_gen | strict_basic_gen ~ "Basic",
+      uncodeable ~ "Other",
+      TRUE ~ "Other"
+    )
+  ) %>% 
+  mutate(
+    fill = case_when(
+      coding == "Other" ~ "grey85",
+      TRUE ~ scales::col_factor(as.character(pgl_pals()(2)), coding)(coding)
+    ),
+    coding = factor(coding, levels = c("Other", "Subordinate", "Basic")),
+    fill = penngradlings::fct_match(fill, coding),
+    condition = fct_rev(condition)
+  )
+
+prop_plot1_HSP <- prop_table1_HSP %>% 
+  ggplot(aes(condition, fill = fill)) +
+  geom_bar(
+    position = position_fill(),
+    color = "white", size = .2, width = .7
+  ) +
+  ggfx::with_outer_glow(
+    geom_errorbar(
+      aes(ymin = lower, ymax = upper, fill = NULL),
+      color = "#3A6B7A", width = .2,
+      data = . %>% 
+        transmute(condition, basic = as.integer(coding == "Basic")) %>%
+        group_by(condition) %>%
+        summarize(confint = binom::binom.confint(sum(basic), n(), methods = "logit"), .groups = 'drop') %>%
+        unnest(confint)
+    ) ,
+    colour = "white", sigma = 0.01, expand = 2
+  ) +
+  scale_fill_identity(
+    labels = unique(prop_table_HSP$coding),
+    guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE)
+  ) +
+  scale_x_discrete(labels = c("single" = "No contrast", "contrast" = "Contrast")) +
+  scale_y_continuous(
+    limits = c(0, 1),
+    breaks = (0:4)/4,
+    expand = expansion(c(0, 0.03)),
+    labels = scales::label_percent(1)
+  ) +
+  labs(
+    title = "Experiment 1",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  theme(
+    plot.title = element_text(size = 14),
+    plot.subtitle = element_text(size = 12),
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    legend.text = element_text(size = 9, family = "Inter-SemiBold"),
+    plot.tag = element_text(margin = margin(t = 0, b = .2, l = .2, unit = "in"))
+  )
+
+# Aggregate ----
+prop_table %>%
+  filter(!uncodeable) %>%
+  group_by(condition) %>% 
+  summarize(
+    sum = sum(basic_gen),
+    mean = sum/n(),
+    confint = map2(sum, n(), binom::binom.confint, methods = "logit"),
+    .groups = 'drop'
+  ) %>%
+  hoist(confint, "lower", "upper") %>% 
+  ggplot(aes(condition, mean, fill = condition)) +
+  geom_col(color = "white", width = .7) +
+  geom_errorbar(
+    aes(ymin = lower, ymax = upper),
+    width = .2
+  ) +
+  scale_x_discrete(
+    labels = c("Contrast", "Single"),
+    expand = expansion(.5)
+  ) +
+  scale_y_continuous(
+    limits = c(0, 1),
+    breaks = (0:4)/4,
+    expand = expansion(c(0, 0.05)),
+    labels = scales::label_percent(1)
+  ) +
+  scale_fill_pgl_discrete(what = "blueberry_matcha_boba") +
+  guides(fill = guide_none()) +
+  labs(
+    title = "Expt.1) Basic-level generalizations",
+    x = NULL, y = NULL,
+    fill = "Condition",
+    tag = "Fig.2"
+  ) + 
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  theme(
+    plot.title = element_text(size = 12),
+    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    axis.text.y = element_text(size = 9),
+    plot.tag = element_text(margin = margin(t = 0, b = .2, unit = "in"))
+  )
+ggsave_auto(width = 4, height = 3.5)
+
+
+
 
 # Subordinate responses ----
 
@@ -126,7 +240,7 @@ prop_table %>%
     color = "white",
     fill = pgl_pals()(1)
   ) +
-  scale_y_continuous(expand = expansion(c(0, 0.05))) +
+  scale_y_continuous(limits = 0:1, expand = expansion(c(0, 0.05))) +
   labs(
     title = "Proportion of generalizations to the basic-level",
     x = NULL, y = NULL,
@@ -149,6 +263,7 @@ within_contrast <- prop_table %>%
     sub_prop == 1 & contrast_prop == 0 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "ME",
     sub_prop == 1 & contrast_prop == 1 & basic_prop == 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_narrow",
     sub_prop == 1 & contrast_prop == 1 & basic_prop > 0 & sup_prop == 0 & other_prop == 0 ~ "Basic_broad",
+    sub_prop == 1 & contrast_prop == 1 & basic_prop == 1 & sup_prop > 0 & other_prop == 0 ~ "Superordinate",
     TRUE ~ NA_character_
   )) %>% 
   mutate(
@@ -189,3 +304,4 @@ within_contrast %>%
     legend.position = "top",
     legend.direction = "horizontal"
   )
+

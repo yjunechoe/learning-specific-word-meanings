@@ -2230,3 +2230,1243 @@
 # 14. Comments.
 1637170213,81ae42c0b85ebaa55a680d26a19c359f,14,0,end,NULL,PennController,2,_Trial_,Start,1637170211557,1280x609,NULL
 1637170213,81ae42c0b85ebaa55a680d26a19c359f,14,0,end,NULL,PennController,2,_Trial_,End,1637170214468,1280x609,NULL
+#
+# Results on Sun, 21 Nov 2021 06:04:59 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 55
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474445435,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,2,0,intro,NULL,PennController,0,_Trial_,End,1637474449583,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474449586,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474457275,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474457276,D,three,label2,animal,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;4242:contrast-corgi-1.jpg;true;5398,1637474457278,D,three,label2,animal,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474486458,D,three,label2,animal,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474486459,D,one,label1,beast,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;4861:sub-trex-1.jpg;true;6054,1637474486461,D,one,label1,beast,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474514362,D,one,label1,beast,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474514363,D,three,label1,electronics,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;3734:sub-smart_phone-1.jpg;true;4708,1637474514365,D,three,label1,electronics,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474540052,D,three,label1,electronics,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474540053,D,one,label1,Filler-Color-red,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2410:red-rect.jpg;true;2924:red-rect.jpg;true;3382:red-rect.jpg;true;3909:red-rect.jpg;true;4389:red-rect.jpg;true;4865,1637474540054,D,one,label1,Filler-Color-red,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474558430,D,one,label1,Filler-Color-red,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474558431,D,one,label2,fruit,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg|contrast-green_apple-1.jpg;true;2927:contrast-green_apple-2.jpg;true;5054,1637474558432,D,one,label2,fruit,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474584758,D,one,label2,fruit,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474584759,D,three,label2,furniture,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-1.jpg;contrast-office_chair-2.jpg|contrast-office_chair-1.jpg;true;2387:contrast-office_chair-2.jpg;true;2701,1637474584760,D,three,label2,furniture,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474608490,D,three,label2,furniture,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474608491,D,one,label1,light,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-2.jpg;sub-gooseneck_lamp-1.jpg|sub-gooseneck_lamp-2.jpg;true;3006:sub-gooseneck_lamp-1.jpg;true;5131,1637474608492,D,one,label1,light,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474633546,D,one,label1,light,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474633546,D,one,label1,Filler-Shape-triangle,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg|triangle-5.jpg;true;1498:triangle-3.jpg;true;1776:triangle-2.jpg;true;2053:triangle-4.jpg;true;2308,1637474633548,D,one,label1,Filler-Shape-triangle,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474649373,D,one,label1,Filler-Shape-triangle,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474649373,D,three,label1,vegetable,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;1902:sub-green_pepper-2.jpg;true;2932,1637474649375,D,three,label1,vegetable,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474673911,D,three,label1,vegetable,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474673911,D,one,label2,vehicle,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;2257:contrast-van-1.jpg;true;2622,1637474673913,D,one,label2,vehicle,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474697703,D,one,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,14,0,end,NULL,PennController,2,_Trial_,Start,1637474697703,2560x1297,NULL
+1637474699,ccf5ed2bb7ef238e30a7e3e178b774a7,14,0,end,NULL,PennController,2,_Trial_,End,1637474699509,2560x1297,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:11 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+# Design number was non-random = 56
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474711,d47225eda80ba89b6365ef52417c3e58,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474451283,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,2,0,intro,NULL,PennController,0,_Trial_,End,1637474462890,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474462895,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474468361,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474711,d47225eda80ba89b6365ef52417c3e58,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474468362,A,one,label1,animal,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;4387:sub-dalmatian-2.jpg;true;5316,1637474468365,A,one,label1,animal,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474493875,A,one,label1,animal,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474493876,A,three,label2,beast,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;5406:contrast-triceratops-2.jpg;true;6268,1637474493878,A,three,label2,beast,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474521578,A,three,label2,beast,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474521579,A,one,label2,electronics,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-1.jpg;contrast-flip_phone-2.jpg|contrast-flip_phone-1.jpg;true;2246:contrast-flip_phone-2.jpg;true;2838,1637474521582,A,one,label2,electronics,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474547569,A,one,label2,electronics,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474547571,A,one,label1,Filler-Color-red,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2925:red-rect.jpg;true;3396:red-rect.jpg;true;3772:red-rect.jpg;true;4340:red-rect.jpg;true;4876:red-rect.jpg;true;5260,1637474547573,A,one,label1,Filler-Color-red,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474565938,A,one,label1,Filler-Color-red,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474565938,A,three,label1,fruit,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;1903:sub-red_apple-1.jpg;true;2597,1637474565941,A,three,label1,fruit,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474590873,A,three,label1,fruit,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474590875,A,one,label1,furniture,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;1847:sub-wooden_chair-1.jpg;true;4143,1637474590877,A,one,label1,furniture,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474615588,A,one,label1,furniture,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474615588,A,three,label2,light,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-2.jpg;contrast-desk_lamp-1.jpg|contrast-desk_lamp-2.jpg;true;2523:contrast-desk_lamp-1.jpg;true;4506,1637474615591,A,three,label2,light,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474642249,A,three,label2,light,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474642250,A,one,label1,Filler-Shape-triangle,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;1983:triangle-3.jpg;true;2406:triangle-2.jpg;true;2758:triangle-4.jpg;true;3110:triangle-1.jpg;true;3541,1637474642254,A,one,label1,Filler-Shape-triangle,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474659489,A,one,label1,Filler-Shape-triangle,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474659490,A,one,label2,vegetable,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;2040:contrast-red_pepper-2.jpg;true;3519,1637474659493,A,one,label2,vegetable,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474683538,A,one,label2,vegetable,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474683539,A,three,label1,vehicle,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;3026:sub-racecar-1.jpg;true;5560,1637474683541,A,three,label1,vehicle,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474710193,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474711,d47225eda80ba89b6365ef52417c3e58,14,0,end,NULL,PennController,2,_Trial_,Start,1637474710194,3072x1618,NULL
+1637474711,d47225eda80ba89b6365ef52417c3e58,14,0,end,NULL,PennController,2,_Trial_,End,1637474711937,3072x1618,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:20 GMT
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+# Design number was non-random = 55
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474445436,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,2,0,intro,NULL,PennController,0,_Trial_,End,1637474447960,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474447973,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474460044,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474460047,D,three,label2,animal,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;2650:contrast-corgi-1.jpg;true;3465,1637474460050,D,three,label2,animal,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474490341,D,three,label2,animal,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474490342,D,one,label1,beast,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;4348:sub-trex-1.jpg;true;6986,1637474490344,D,one,label1,beast,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474524304,D,one,label1,beast,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474524307,D,three,label1,electronics,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;2228:sub-smart_phone-1.jpg;true;7108,1637474524309,D,three,label1,electronics,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474551594,D,three,label1,electronics,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474551596,D,one,label1,Filler-Color-red,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2850:red-rect.jpg;true;3468:red-rect.jpg;true;4220:red-rect.jpg;true;5270:red-rect.jpg;true;5928:red-rect.jpg;true;6561,1637474551599,D,one,label1,Filler-Color-red,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474570956,D,one,label1,Filler-Color-red,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474570959,D,one,label2,fruit,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg;basic-apple-1.jpg|contrast-green_apple-1.jpg;true;1864:contrast-green_apple-2.jpg;true;2610:basic-apple-1.jpg;true;3364,1637474570961,D,one,label2,fruit,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474597274,D,one,label2,fruit,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474597277,D,three,label2,furniture,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-1.jpg;contrast-office_chair-2.jpg|contrast-office_chair-1.jpg;true;2974:contrast-office_chair-2.jpg;true;4585,1637474597280,D,three,label2,furniture,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474624331,D,three,label2,furniture,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474624333,D,one,label1,light,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-2.jpg;sub-gooseneck_lamp-1.jpg|sub-gooseneck_lamp-2.jpg;true;2722:sub-gooseneck_lamp-1.jpg;true;4534,1637474624336,D,one,label1,light,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474651449,D,one,label1,light,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474651450,D,one,label1,Filler-Shape-triangle,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;2153:triangle-3.jpg;true;2745:triangle-2.jpg;true;3306:triangle-4.jpg;true;3874:triangle-1.jpg;true;4531,1637474651454,D,one,label1,Filler-Shape-triangle,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474669362,D,one,label1,Filler-Shape-triangle,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474669364,D,three,label1,vegetable,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;1886:sub-green_pepper-2.jpg;true;2921,1637474669368,D,three,label1,vegetable,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474693322,D,three,label1,vegetable,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474693324,D,one,label2,vehicle,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;2315:contrast-van-1.jpg;true;3941,1637474693327,D,one,label2,vehicle,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474717596,D,one,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,14,0,end,NULL,PennController,2,_Trial_,Start,1637474717598,1440x714,NULL
+1637474720,c35ac4ff9d91a4e4d86620d7dba7f6a1,14,0,end,NULL,PennController,2,_Trial_,End,1637474720053,1440x714,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:26 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 57
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474726,bfa97c222450d62a8fecb78da9004aca,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474456103,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,2,0,intro,NULL,PennController,0,_Trial_,End,1637474458318,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474458325,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474465265,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474726,bfa97c222450d62a8fecb78da9004aca,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474465266,B,one,label2,animal,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg;basic-dog-2.jpg|contrast-corgi-2.jpg;true;5381:contrast-corgi-1.jpg;true;5966:basic-dog-2.jpg;true;9372,1637474465270,B,one,label2,animal,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474497358,B,one,label2,animal,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474497359,B,three,label1,beast,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-1.jpg;sub-trex-2.jpg|sub-trex-1.jpg;true;4115:sub-trex-2.jpg;true;7126,1637474497361,B,three,label1,beast,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474529933,B,three,label1,beast,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474529935,B,one,label1,electronics,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;4090:sub-smart_phone-1.jpg;true;5744,1637474529938,B,one,label1,electronics,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474557938,B,one,label1,electronics,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474557939,B,one,label1,Filler-Color-red,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2162:red-rect.jpg;true;2568:red-rect.jpg;true;3026:red-rect.jpg;true;4056:red-rect.jpg;true;4498:red-rect.jpg;true;4968,1637474557942,B,one,label1,Filler-Color-red,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474575913,B,one,label1,Filler-Color-red,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474575914,B,three,label2,fruit,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-2.jpg;contrast-green_apple-1.jpg;basic-apple-2.jpg;basic-apple-1.jpg|contrast-green_apple-2.jpg;true;3786:contrast-green_apple-1.jpg;true;4820:basic-apple-2.jpg;true;6738:basic-apple-1.jpg;true;9452,1637474575917,B,three,label2,fruit,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474605910,B,three,label2,fruit,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474605911,B,one,label2,furniture,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-2.jpg;contrast-office_chair-1.jpg|contrast-office_chair-2.jpg;true;4400:contrast-office_chair-1.jpg;true;6418,1637474605914,B,one,label2,furniture,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474632076,B,one,label2,furniture,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474632077,B,three,label1,light,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-1.jpg;sub-gooseneck_lamp-2.jpg|sub-gooseneck_lamp-1.jpg;true;3286:sub-gooseneck_lamp-2.jpg;true;4014,1637474632080,B,three,label1,light,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474660414,B,three,label1,light,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474660415,B,one,label1,Filler-Shape-triangle,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;1750:triangle-3.jpg;true;2102:triangle-2.jpg;true;2559:triangle-4.jpg;true;2990:triangle-1.jpg;true;3370,1637474660418,B,one,label1,Filler-Shape-triangle,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474676547,B,one,label1,Filler-Shape-triangle,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474676548,B,one,label1,vegetable,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;2371:sub-green_pepper-2.jpg;true;3191,1637474676551,B,one,label1,vegetable,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474701340,B,one,label1,vegetable,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474701341,B,three,label2,vehicle,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-1.jpg;contrast-van-2.jpg|contrast-van-1.jpg;true;2033:contrast-van-2.jpg;true;2407,1637474701344,B,three,label2,vehicle,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474725577,B,three,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474726,bfa97c222450d62a8fecb78da9004aca,14,0,end,NULL,PennController,2,_Trial_,Start,1637474725578,1920x937,NULL
+1637474726,bfa97c222450d62a8fecb78da9004aca,14,0,end,NULL,PennController,2,_Trial_,End,1637474727461,1920x937,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:32 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+# Design number was non-random = 57
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474732,1d2bf75668961c6ec528ef1107ee510f,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474452210,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,2,0,intro,NULL,PennController,0,_Trial_,End,1637474454764,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474454768,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474463438,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474732,1d2bf75668961c6ec528ef1107ee510f,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474463441,B,one,label2,animal,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-1.jpg;contrast-corgi-2.jpg|contrast-corgi-1.jpg;true;7129:contrast-corgi-2.jpg;true;8164,1637474463446,B,one,label2,animal,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474503152,B,one,label2,animal,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474503153,B,three,label1,beast,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;6453:sub-trex-1.jpg;true;7555,1637474503157,B,three,label1,beast,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474533586,B,three,label1,beast,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474533589,B,one,label1,electronics,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;7019:sub-smart_phone-1.jpg;true;9758,1637474533593,B,one,label1,electronics,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474565320,B,one,label1,electronics,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474565322,B,one,label1,Filler-Color-red,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;3725:red-rect.jpg;true;4091:red-rect.jpg;true;4589:red-rect.jpg;true;5201:red-rect.jpg;true;5741:red-rect.jpg;true;6151,1637474565325,B,one,label1,Filler-Color-red,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474585434,B,one,label1,Filler-Color-red,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474585436,B,three,label2,fruit,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg|contrast-green_apple-1.jpg;true;3226:contrast-green_apple-2.jpg;true;4358,1637474585439,B,three,label2,fruit,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474611677,B,three,label2,fruit,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474611678,B,one,label2,furniture,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-1.jpg;contrast-office_chair-2.jpg|contrast-office_chair-1.jpg;true;4491:contrast-office_chair-2.jpg;true;4969,1637474611682,B,one,label2,furniture,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474637349,B,one,label2,furniture,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474637350,B,three,label1,light,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-2.jpg;sub-gooseneck_lamp-1.jpg|sub-gooseneck_lamp-2.jpg;true;4378:sup-fruit-4.jpg;true;4776:sup-fruit-4.jpg;false;5428:sub-gooseneck_lamp-1.jpg;true;5797,1637474637353,B,three,label1,light,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474663800,B,three,label1,light,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474663801,B,one,label1,Filler-Shape-triangle,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;2279:triangle-3.jpg;true;2668:triangle-2.jpg;true;3089:triangle-4.jpg;true;3436:triangle-1.jpg;true;3834,1637474663804,B,one,label1,Filler-Shape-triangle,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474681344,B,one,label1,Filler-Shape-triangle,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474681345,B,one,label1,vegetable,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-2.jpg;sub-green_pepper-1.jpg|sub-green_pepper-2.jpg;true;3417:sub-green_pepper-1.jpg;true;5146,1637474681348,B,one,label1,vegetable,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474706727,B,one,label1,vegetable,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474706727,B,three,label2,vehicle,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;2162:contrast-van-1.jpg;true;3181,1637474706730,B,three,label2,vehicle,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474730349,B,three,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474732,1d2bf75668961c6ec528ef1107ee510f,14,0,end,NULL,PennController,2,_Trial_,Start,1637474730350,1920x955,NULL
+1637474732,1d2bf75668961c6ec528ef1107ee510f,14,0,end,NULL,PennController,2,_Trial_,End,1637474732377,1920x955,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:35 GMT
+# USER AGENT: Mozilla/5.0 (X11; CrOS aarch64 14150.87.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.124 Safari/537.36
+# Design number was non-random = 54
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474735,ca528126994206a8b560a5592ba00195,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474428281,NULL
+1637474735,ca528126994206a8b560a5592ba00195,2,0,intro,NULL,PennController,0,_Trial_,End,1637474432201,NULL
+1637474735,ca528126994206a8b560a5592ba00195,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474432229,NULL
+1637474735,ca528126994206a8b560a5592ba00195,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474454692,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474735,ca528126994206a8b560a5592ba00195,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474454701,C,three,label1,animal,NULL
+1637474735,ca528126994206a8b560a5592ba00195,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-2.jpg;sub-dalmatian-1.jpg|sub-dalmatian-2.jpg;true;4645:sub-dalmatian-1.jpg;true;5350,1637474454725,C,three,label1,animal,NULL
+1637474735,ca528126994206a8b560a5592ba00195,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474481179,C,three,label1,animal,NULL
+1637474735,ca528126994206a8b560a5592ba00195,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474481186,C,one,label2,beast,NULL
+1637474735,ca528126994206a8b560a5592ba00195,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-2.jpg;contrast-triceratops-1.jpg|contrast-triceratops-2.jpg;true;3810:contrast-triceratops-1.jpg;true;6126,1637474481205,C,one,label2,beast,NULL
+1637474735,ca528126994206a8b560a5592ba00195,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474508569,C,one,label2,beast,NULL
+1637474735,ca528126994206a8b560a5592ba00195,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474508584,C,three,label2,electronics,NULL
+1637474735,ca528126994206a8b560a5592ba00195,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;4905:contrast-flip_phone-1.jpg;true;6245,1637474508603,C,three,label2,electronics,NULL
+1637474735,ca528126994206a8b560a5592ba00195,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474537571,C,three,label2,electronics,NULL
+1637474735,ca528126994206a8b560a5592ba00195,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474537579,C,one,label1,Filler-Color-red,NULL
+1637474735,ca528126994206a8b560a5592ba00195,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;1497:red-rect.jpg;true;2200:red-rect.jpg;true;3437:red-rect.jpg;true;4631:red-rect.jpg;true;5265:red-rect.jpg;true;5888,1637474537597,C,one,label1,Filler-Color-red,NULL
+1637474735,ca528126994206a8b560a5592ba00195,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474556354,C,one,label1,Filler-Color-red,NULL
+1637474735,ca528126994206a8b560a5592ba00195,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474556359,C,one,label1,fruit,NULL
+1637474735,ca528126994206a8b560a5592ba00195,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-1.jpg;sub-red_apple-2.jpg|sub-red_apple-1.jpg;true;2519:sub-red_apple-2.jpg;true;3841,1637474556371,C,one,label1,fruit,NULL
+1637474735,ca528126994206a8b560a5592ba00195,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474581164,C,one,label1,fruit,NULL
+1637474735,ca528126994206a8b560a5592ba00195,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474581174,C,three,label1,furniture,NULL
+1637474735,ca528126994206a8b560a5592ba00195,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-1.jpg;sub-wooden_chair-2.jpg|basic-chair-1.jpg;true;3700:sub-wooden_chair-1.jpg;true;5495:sub-wooden_chair-2.jpg;true;6159:basic-chair-1.jpg;false;6874,1637474581190,C,three,label1,furniture,NULL
+1637474735,ca528126994206a8b560a5592ba00195,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474616840,C,three,label1,furniture,NULL
+1637474735,ca528126994206a8b560a5592ba00195,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474616850,C,one,label2,light,NULL
+1637474735,ca528126994206a8b560a5592ba00195,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-lamp-3.jpg;contrast-desk_lamp-2.jpg;contrast-desk_lamp-1.jpg|basic-lamp-3.jpg;true;6734:contrast-desk_lamp-2.jpg;true;7721:contrast-desk_lamp-1.jpg;true;9293,1637474616875,C,one,label2,light,NULL
+1637474735,ca528126994206a8b560a5592ba00195,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474649255,C,one,label2,light,NULL
+1637474735,ca528126994206a8b560a5592ba00195,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474649264,C,one,label1,Filler-Shape-triangle,NULL
+1637474735,ca528126994206a8b560a5592ba00195,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-1.jpg;triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg|triangle-1.jpg;true;1236:triangle-4.jpg;true;2099:triangle-2.jpg;true;2694:triangle-3.jpg;true;3236:triangle-5.jpg;true;3838,1637474649292,C,one,label1,Filler-Shape-triangle,NULL
+1637474735,ca528126994206a8b560a5592ba00195,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474667866,C,one,label1,Filler-Shape-triangle,NULL
+1637474735,ca528126994206a8b560a5592ba00195,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474667875,C,three,label2,vegetable,NULL
+1637474735,ca528126994206a8b560a5592ba00195,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;2437:contrast-red_pepper-2.jpg;true;3338,1637474667893,C,three,label2,vegetable,NULL
+1637474735,ca528126994206a8b560a5592ba00195,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474699748,C,three,label2,vegetable,NULL
+1637474735,ca528126994206a8b560a5592ba00195,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474699757,C,one,label1,vehicle,NULL
+1637474735,ca528126994206a8b560a5592ba00195,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-1.jpg;sub-racecar-2.jpg|sub-racecar-1.jpg;true;10003:sub-racecar-2.jpg;true;11050,1637474699780,C,one,label1,vehicle,NULL
+1637474735,ca528126994206a8b560a5592ba00195,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474732446,C,one,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474735,ca528126994206a8b560a5592ba00195,14,0,end,NULL,PennController,2,_Trial_,Start,1637474732453,1366x617,NULL
+1637474735,ca528126994206a8b560a5592ba00195,14,0,end,NULL,PennController,2,_Trial_,End,1637474734937,1366x617,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:36 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 58
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474736,5db87e99bd58360f81682ad8f74265ff,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474458933,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,2,0,intro,NULL,PennController,0,_Trial_,End,1637474464725,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474464729,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474475093,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474736,5db87e99bd58360f81682ad8f74265ff,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474475094,C,three,label1,animal,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;4460:sub-dalmatian-2.jpg;true;5437,1637474475096,C,three,label1,animal,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474502053,C,three,label1,animal,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474502053,C,one,label2,beast,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;5876:contrast-triceratops-2.jpg;true;6901,1637474502055,C,one,label2,beast,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474531568,C,one,label2,beast,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474531569,C,three,label2,electronics,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;2899:contrast-flip_phone-1.jpg;true;4041,1637474531572,C,three,label2,electronics,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474556035,C,three,label2,electronics,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474556036,C,one,label1,Filler-Color-red,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2448:red-rect.jpg;true;3033:red-rect.jpg;true;4720:red-rect.jpg;true;5507:red-rect.jpg;true;6140:red-rect.jpg;true;6977,1637474556037,C,one,label1,Filler-Color-red,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474579534,C,one,label1,Filler-Color-red,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474579534,C,one,label1,fruit,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;5438:sub-red_apple-1.jpg;true;6251,1637474579536,C,one,label1,fruit,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474605980,C,one,label1,fruit,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474605981,C,three,label1,furniture,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;2906:sub-wooden_chair-1.jpg;true;5796,1637474605983,C,three,label1,furniture,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474635161,C,three,label1,furniture,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474635161,C,one,label2,light,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;4132:contrast-desk_lamp-2.jpg;true;6227,1637474635163,C,one,label2,light,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474661433,C,one,label2,light,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474661434,C,one,label1,Filler-Shape-triangle,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-1.jpg;triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg|triangle-1.jpg;true;3240:triangle-4.jpg;true;3849:triangle-2.jpg;true;4513:triangle-3.jpg;true;4954:triangle-5.jpg;true;5478,1637474661435,C,one,label1,Filler-Shape-triangle,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474679958,C,one,label1,Filler-Shape-triangle,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474679959,C,three,label2,vegetable,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;3181:contrast-red_pepper-2.jpg;true;3913,1637474679960,C,three,label2,vegetable,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474704149,C,three,label2,vegetable,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474704150,C,one,label1,vehicle,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;7541:sub-racecar-1.jpg;true;8342,1637474704151,C,one,label1,vehicle,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474732541,C,one,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474736,5db87e99bd58360f81682ad8f74265ff,14,0,end,NULL,PennController,2,_Trial_,Start,1637474732542,2560x1297,NULL
+1637474736,5db87e99bd58360f81682ad8f74265ff,14,0,end,NULL,PennController,2,_Trial_,End,1637474735776,2560x1297,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:45 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 61
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474745,ebbab20c9de7492c380c73ea24cbe736,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474471355,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,2,0,intro,NULL,PennController,0,_Trial_,End,1637474484760,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474484764,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474492765,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474745,ebbab20c9de7492c380c73ea24cbe736,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474492766,B,one,label2,animal,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;3000:contrast-corgi-1.jpg;true;3368,1637474492769,B,one,label2,animal,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474518072,B,one,label2,animal,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474518073,B,three,label1,beast,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;4106:sub-trex-1.jpg;true;5019,1637474518076,B,three,label1,beast,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474546156,B,three,label1,beast,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474546157,B,one,label1,electronics,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;3468:sub-smart_phone-1.jpg;true;4900,1637474546160,B,one,label1,electronics,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474571886,B,one,label1,electronics,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474571887,B,one,label1,Filler-Color-red,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;3911:red-rect.jpg;true;4145:red-rect.jpg;true;5133:red-rect.jpg;true;5643:red-rect.jpg;true;5997:red-rect.jpg;true;6323,1637474571889,B,one,label1,Filler-Color-red,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474595201,B,one,label1,Filler-Color-red,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474595203,B,three,label2,fruit,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg;basic-apple-1.jpg|contrast-green_apple-1.jpg;true;5482:contrast-green_apple-2.jpg;true;6046:basic-apple-1.jpg;true;7274,1637474595206,B,three,label2,fruit,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474623601,B,three,label2,fruit,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474623602,B,one,label2,furniture,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-2.jpg;contrast-office_chair-1.jpg|contrast-office_chair-2.jpg;true;2114:contrast-office_chair-1.jpg;true;2775,1637474623607,B,one,label2,furniture,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474648042,B,one,label2,furniture,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474648043,B,three,label1,light,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-1.jpg;sub-gooseneck_lamp-2.jpg|sub-gooseneck_lamp-1.jpg;true;7082:sub-gooseneck_lamp-2.jpg;true;7822,1637474648047,B,three,label1,light,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474676862,B,three,label1,light,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474676863,B,one,label1,Filler-Shape-triangle,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;1264:triangle-3.jpg;true;1753:triangle-2.jpg;true;2046:triangle-4.jpg;true;2287:triangle-1.jpg;true;3041,1637474676867,B,one,label1,Filler-Shape-triangle,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474692558,B,one,label1,Filler-Shape-triangle,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474692559,B,one,label1,vegetable,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-pepper-1.jpg;sub-green_pepper-2.jpg;basic-pepper-2.jpg|basic-pepper-1.jpg;true;2204:sub-green_pepper-2.jpg;true;4262:basic-pepper-2.jpg;true;5012,1637474692562,B,one,label1,vegetable,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474717627,B,one,label1,vegetable,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474717628,B,three,label2,vehicle,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-1.jpg;contrast-van-2.jpg|contrast-van-1.jpg;true;1437:contrast-van-2.jpg;true;1668,1637474717630,B,three,label2,vehicle,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474740887,B,three,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474745,ebbab20c9de7492c380c73ea24cbe736,14,0,end,NULL,PennController,2,_Trial_,Start,1637474740889,1920x975,NULL
+1637474745,ebbab20c9de7492c380c73ea24cbe736,14,0,end,NULL,PennController,2,_Trial_,End,1637474742909,1920x975,NULL
+#
+# Results on Sun, 21 Nov 2021 06:05:53 GMT
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0
+# Design number was non-random = 62
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474753,07f3087b7d2a964301d2565e648ce546,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474483527,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,2,0,intro,NULL,PennController,0,_Trial_,End,1637474486045,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474486058,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474493897,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474753,07f3087b7d2a964301d2565e648ce546,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474493907,C,three,label1,animal,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;2616:sub-dalmatian-2.jpg;true;3551,1637474493931,C,three,label1,animal,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474518743,C,three,label1,animal,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474518755,C,one,label2,beast,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;2326:contrast-triceratops-2.jpg;true;4380,1637474518772,C,one,label2,beast,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474545534,C,one,label2,beast,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474545540,C,three,label2,electronics,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;1944:contrast-flip_phone-1.jpg;true;3129,1637474545559,C,three,label2,electronics,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474570743,C,three,label2,electronics,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474570749,C,one,label1,Filler-Color-red,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;1464:red-rect.jpg;true;1847:red-rect.jpg;true;2271:red-rect.jpg;true;2789:red-rect.jpg;true;3204:red-rect.jpg;true;3613,1637474570767,C,one,label1,Filler-Color-red,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474587458,C,one,label1,Filler-Color-red,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474587462,C,one,label1,fruit,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-1.jpg;sub-red_apple-2.jpg|sub-red_apple-1.jpg;true;3318:sub-red_apple-2.jpg;true;4568,1637474587482,C,one,label1,fruit,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474613365,C,one,label1,fruit,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474613369,C,three,label1,furniture,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;2766:sub-wooden_chair-1.jpg;true;3288,1637474613387,C,three,label1,furniture,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474644431,C,three,label1,furniture,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474644436,C,one,label2,light,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg;basic-lamp-3.jpg|contrast-desk_lamp-1.jpg;true;1837:contrast-desk_lamp-2.jpg;true;3000:basic-lamp-3.jpg;true;7699,1637474644453,C,one,label2,light,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474676405,C,one,label2,light,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474676407,C,one,label1,Filler-Shape-triangle,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;2068:triangle-3.jpg;true;2353:triangle-2.jpg;true;2664:triangle-4.jpg;true;2978:triangle-1.jpg;true;3265,1637474676412,C,one,label1,Filler-Shape-triangle,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474693048,C,one,label1,Filler-Shape-triangle,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474693053,C,three,label2,vegetable,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-2.jpg;contrast-red_pepper-1.jpg|contrast-red_pepper-2.jpg;true;1671:contrast-red_pepper-1.jpg;true;2639,1637474693071,C,three,label2,vegetable,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474719472,C,three,label2,vegetable,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474719476,C,one,label1,vehicle,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-1.jpg;sub-racecar-2.jpg;sub-racecar-1.jpg;basic-car-2.jpg;basic-car-3.jpg|contrast-van-1.jpg;true;2839:sub-racecar-2.jpg;true;3436:sub-racecar-1.jpg;true;5346:basic-car-2.jpg;true;6269:basic-car-3.jpg;true;7165,1637474719483,C,one,label1,vehicle,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474751434,C,one,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474753,07f3087b7d2a964301d2565e648ce546,14,0,end,NULL,PennController,2,_Trial_,Start,1637474751435,1920x917,NULL
+1637474753,07f3087b7d2a964301d2565e648ce546,14,0,end,NULL,PennController,2,_Trial_,End,1637474753088,1920x917,NULL
+#
+# Results on Sun, 21 Nov 2021 06:06:26 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+# Design number was non-random = 60
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474786,ee8808cfb487836d218d66ba846d60d7,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474465409,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,2,0,intro,NULL,PennController,0,_Trial_,End,1637474477771,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474477784,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474486893,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474786,ee8808cfb487836d218d66ba846d60d7,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474486895,A,one,label1,animal,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;3421:sub-dalmatian-2.jpg;true;5101,1637474486901,A,one,label1,animal,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474515541,A,one,label1,animal,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474515544,A,three,label2,beast,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;3560:contrast-triceratops-2.jpg;true;4974,1637474515547,A,three,label2,beast,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474544948,A,three,label2,beast,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474544950,A,one,label2,electronics,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-1.jpg;contrast-flip_phone-2.jpg|contrast-flip_phone-1.jpg;true;2357:contrast-flip_phone-2.jpg;true;2977,1637474544954,A,one,label2,electronics,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474573604,A,one,label2,electronics,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474573607,A,one,label1,Filler-Color-red,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;3406:red-rect.jpg;true;4952:red-rect.jpg;true;5994:red-rect.jpg;true;6652:red-rect.jpg;true;7348:red-rect.jpg;true;7904,1637474573610,A,one,label1,Filler-Color-red,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474594700,A,one,label1,Filler-Color-red,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474594701,A,three,label1,fruit,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-1.jpg;sub-red_apple-2.jpg|sub-red_apple-1.jpg;true;3800:sub-red_apple-2.jpg;true;4799,1637474594705,A,three,label1,fruit,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474623599,A,three,label1,fruit,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474623600,A,one,label1,furniture,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;2332:sub-wooden_chair-1.jpg;true;4944,1637474623604,A,one,label1,furniture,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474654684,A,one,label1,furniture,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474654686,A,three,label2,light,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;3993:contrast-desk_lamp-2.jpg;true;5471,1637474654689,A,three,label2,light,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474684190,A,three,label2,light,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474684191,A,one,label1,Filler-Shape-triangle,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-2.jpg;triangle-3.jpg;triangle-5.jpg;triangle-4.jpg;triangle-1.jpg|triangle-2.jpg;true;4886:triangle-3.jpg;true;12857:triangle-3.jpg;false;17279:triangle-2.jpg;false;18193:triangle-2.jpg;true;23389:triangle-3.jpg;true;25435:triangle-5.jpg;true;25863:triangle-4.jpg;true;26602:triangle-1.jpg;true;27921,1637474684194,A,one,label1,Filler-Shape-triangle,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474726125,A,one,label1,Filler-Shape-triangle,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474726127,A,one,label2,vegetable,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-2.jpg;contrast-red_pepper-1.jpg|contrast-red_pepper-2.jpg;true;3296:contrast-red_pepper-1.jpg;true;6565,1637474726131,A,one,label2,vegetable,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474754555,A,one,label2,vegetable,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474754556,A,three,label1,vehicle,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;4143:sub-racecar-1.jpg;true;5183,1637474754560,A,three,label1,vehicle,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474783581,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474786,ee8808cfb487836d218d66ba846d60d7,14,0,end,NULL,PennController,2,_Trial_,Start,1637474783582,681x454,NULL
+1637474786,ee8808cfb487836d218d66ba846d60d7,14,0,end,NULL,PennController,2,_Trial_,End,1637474785366,681x454,NULL
+#
+# Results on Sun, 21 Nov 2021 06:07:21 GMT
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:93.0) Gecko/20100101 Firefox/93.0
+# Design number was non-random = 62
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474841,78632e14a32ce457d449838e6cb480ba,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474505661,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,2,0,intro,NULL,PennController,0,_Trial_,End,1637474511236,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474511299,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474527377,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474841,78632e14a32ce457d449838e6cb480ba,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474527389,C,three,label1,animal,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;6635:sub-dalmatian-2.jpg;true;7404,1637474527416,C,three,label1,animal,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474556969,C,three,label1,animal,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474556973,C,one,label2,beast,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-2.jpg;contrast-triceratops-1.jpg|contrast-triceratops-2.jpg;true;5480:contrast-triceratops-1.jpg;true;15119,1637474556985,C,one,label2,beast,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474597436,C,one,label2,beast,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474597453,C,three,label2,electronics,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;2560:contrast-flip_phone-1.jpg;true;3499,1637474597482,C,three,label2,electronics,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474628746,C,three,label2,electronics,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474628757,C,one,label1,Filler-Color-red,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;4007:red-rect.jpg;true;4544:red-rect.jpg;true;5195:red-rect.jpg;true;6011:red-rect.jpg;true;6710:red-rect.jpg;true;7413,1637474628773,C,one,label1,Filler-Color-red,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474652709,C,one,label1,Filler-Color-red,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474652713,C,one,label1,fruit,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;2378:sub-red_apple-1.jpg;true;3224:sub-red_apple-1.jpg;false;5541:sub-red_apple-1.jpg;true;6590,1637474652745,C,one,label1,fruit,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474684051,C,one,label1,fruit,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474684058,C,three,label1,furniture,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;2528:sub-wooden_chair-1.jpg;true;3045,1637474684081,C,three,label1,furniture,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474723873,C,three,label1,furniture,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474723886,C,one,label2,light,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;3349:contrast-desk_lamp-2.jpg;true;5517,1637474723912,C,one,label2,light,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474759958,C,one,label2,light,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474759964,C,one,label1,Filler-Shape-triangle,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-1.jpg;triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg|triangle-1.jpg;true;2764:triangle-4.jpg;true;3287:triangle-2.jpg;true;3722:triangle-3.jpg;true;4179:triangle-5.jpg;true;4680,1637474759978,C,one,label1,Filler-Shape-triangle,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474779477,C,one,label1,Filler-Shape-triangle,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474779479,C,three,label2,vegetable,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-2.jpg;contrast-red_pepper-1.jpg|contrast-red_pepper-2.jpg;true;2083:contrast-red_pepper-1.jpg;true;3094,1637474779493,C,three,label2,vegetable,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474809756,C,three,label2,vegetable,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474809759,C,one,label1,vehicle,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-1.jpg;sub-racecar-2.jpg|sub-racecar-1.jpg;true;2995:sub-racecar-2.jpg;true;4484,1637474809770,C,one,label1,vehicle,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474837894,C,one,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474841,78632e14a32ce457d449838e6cb480ba,14,0,end,NULL,PennController,2,_Trial_,Start,1637474837901,1454x652,NULL
+1637474841,78632e14a32ce457d449838e6cb480ba,14,0,end,NULL,PennController,2,_Trial_,End,1637474840758,1454x652,NULL
+#
+# Results on Sun, 21 Nov 2021 06:07:22 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 66
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474842,9645c5db080f5395d93d1c34afcde4c3,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474541310,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,2,0,intro,NULL,PennController,0,_Trial_,End,1637474558603,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474558612,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474579334,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474842,9645c5db080f5395d93d1c34afcde4c3,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474579335,C,three,label1,animal,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-2.jpg;sub-dalmatian-1.jpg|sub-dalmatian-2.jpg;true;7046:sub-dalmatian-1.jpg;true;7953,1637474579339,C,three,label1,animal,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474609916,C,three,label1,animal,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474609917,C,one,label2,beast,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;3422:contrast-triceratops-2.jpg;true;7115,1637474609920,C,one,label2,beast,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474638625,C,one,label2,beast,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474638626,C,three,label2,electronics,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;2917:contrast-flip_phone-1.jpg;true;3688,1637474638628,C,three,label2,electronics,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474664859,C,three,label2,electronics,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474664860,C,one,label1,Filler-Color-red,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;4290:red-rect.jpg;true;4882:red-rect.jpg;true;5415:red-rect.jpg;true;6077:red-rect.jpg;true;6661:red-rect.jpg;true;7128,1637474664864,C,one,label1,Filler-Color-red,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474685464,C,one,label1,Filler-Color-red,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474685465,C,one,label1,fruit,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;4242:sub-red_apple-1.jpg;true;5013,1637474685467,C,one,label1,fruit,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474710321,C,one,label1,fruit,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474710323,C,three,label1,furniture,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-1.jpg;sub-wooden_chair-2.jpg|sub-wooden_chair-1.jpg;true;8855:sub-wooden_chair-2.jpg;true;9398,1637474710329,C,three,label1,furniture,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474739762,C,three,label1,furniture,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474739763,C,one,label2,light,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;2378:contrast-desk_lamp-2.jpg;true;3310,1637474739766,C,one,label2,light,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474762932,C,one,label2,light,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474762933,C,one,label1,Filler-Shape-triangle,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;11628:triangle-3.jpg;true;12066:triangle-2.jpg;true;12431:triangle-4.jpg;true;12853:triangle-1.jpg;true;13302,1637474762936,C,one,label1,Filler-Shape-triangle,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474788857,C,one,label1,Filler-Shape-triangle,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474788857,C,three,label2,vegetable,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-2.jpg;contrast-red_pepper-1.jpg|contrast-red_pepper-2.jpg;true;2680:contrast-red_pepper-1.jpg;true;3433,1637474788861,C,three,label2,vegetable,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474812240,C,three,label2,vegetable,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474812240,C,one,label1,vehicle,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;4778:sub-racecar-1.jpg;true;6427,1637474812243,C,one,label1,vehicle,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474838964,C,one,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474842,9645c5db080f5395d93d1c34afcde4c3,14,0,end,NULL,PennController,2,_Trial_,Start,1637474838965,1388x882,NULL
+1637474842,9645c5db080f5395d93d1c34afcde4c3,14,0,end,NULL,PennController,2,_Trial_,End,1637474842527,1388x882,NULL
+#
+# Results on Sun, 21 Nov 2021 06:07:41 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+# Design number was non-random = 64
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474499727,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,2,0,intro,NULL,PennController,0,_Trial_,End,1637474503797,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474503872,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474524905,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474524911,A,one,label1,animal,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;10149:sub-dalmatian-2.jpg;true;14278,1637474524935,A,one,label1,animal,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474563187,A,one,label1,animal,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474563197,A,three,label2,beast,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;contrast-triceratops-2.jpg;sub-trex-1.jpg;contrast-triceratops-1.jpg;sup-beast-2.jpg;basic-dinosaur-1.jpg;basic-dinosaur-3.jpg;basic-dinosaur-2.jpg|sub-trex-2.jpg;true;10051:contrast-triceratops-2.jpg;true;12017:sub-trex-1.jpg;true;14332:contrast-triceratops-1.jpg;true;16353:sup-beast-2.jpg;true;21068:basic-dinosaur-1.jpg;true;22685:basic-dinosaur-3.jpg;true;24044:basic-dinosaur-2.jpg;true;29957,1637474563217,A,three,label2,beast,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474616603,A,three,label2,beast,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474616616,A,one,label2,electronics,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-1.jpg;contrast-flip_phone-2.jpg|contrast-flip_phone-1.jpg;true;3303:contrast-flip_phone-2.jpg;true;4563,1637474616642,A,one,label2,electronics,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474646380,A,one,label2,electronics,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474646386,A,one,label1,Filler-Color-red,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;5066:red-rect.jpg;true;5980:red-rect.jpg;true;7226:red-rect.jpg;true;8402:red-rect.jpg;true;9569:red-rect.jpg;true;10718,1637474646409,A,one,label1,Filler-Color-red,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474671294,A,one,label1,Filler-Color-red,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474671304,A,three,label1,fruit,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-1.jpg;sub-red_apple-2.jpg|sub-red_apple-1.jpg;true;3538:sub-red_apple-2.jpg;true;4954,1637474671323,A,three,label1,fruit,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474698419,A,three,label1,fruit,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474698424,A,one,label1,furniture,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;4568:sub-wooden_chair-1.jpg;true;9333,1637474698440,A,one,label1,furniture,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474730534,A,one,label1,furniture,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474730539,A,three,label2,light,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;4097:contrast-desk_lamp-2.jpg;true;6034,1637474730555,A,three,label2,light,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474761601,A,three,label2,light,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474761607,A,one,label1,Filler-Shape-triangle,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-1.jpg;triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg|triangle-1.jpg;true;2839:triangle-4.jpg;true;3918:triangle-2.jpg;true;5070:triangle-3.jpg;true;6123:triangle-5.jpg;true;7783,1637474761623,A,one,label1,Filler-Shape-triangle,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474784704,A,one,label1,Filler-Shape-triangle,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474784709,A,one,label2,vegetable,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;3958:contrast-red_pepper-2.jpg;true;5874,1637474784727,A,one,label2,vegetable,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474813585,A,one,label2,vegetable,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474813590,A,three,label1,vehicle,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-1.jpg;sub-racecar-2.jpg;basic-car-2.jpg;basic-car-3.jpg;basic-car-1.jpg|sub-racecar-1.jpg;true;4651:sub-racecar-2.jpg;true;7882:basic-car-2.jpg;true;16772:basic-car-3.jpg;true;19327:basic-car-1.jpg;true;22258,1637474813607,A,three,label1,vehicle,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474858121,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,14,0,end,NULL,PennController,2,_Trial_,Start,1637474858127,1280x567,NULL
+1637474861,52a8c14569ead8ea2bf883acc7f4658d,14,0,end,NULL,PennController,2,_Trial_,End,1637474862828,1280x567,NULL
+#
+# Results on Sun, 21 Nov 2021 06:07:43 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+# Design number was non-random = 65
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474511922,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,2,0,intro,NULL,PennController,0,_Trial_,End,1637474540057,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474540081,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474552279,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474552282,B,one,label2,animal,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;2658:contrast-corgi-1.jpg;true;3845,1637474552294,B,one,label2,animal,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474586423,B,one,label2,animal,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474586430,B,three,label1,beast,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;6181:sub-trex-1.jpg;true;8177,1637474586447,B,three,label1,beast,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474625441,B,three,label1,beast,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474625447,B,one,label1,electronics,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;3358:sub-smart_phone-1.jpg;true;6832,1637474625460,B,one,label1,electronics,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474662047,B,one,label1,electronics,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474662051,B,one,label1,Filler-Color-red,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2557:red-rect.jpg;true;3462:red-rect.jpg;true;4597:red-rect.jpg;true;6056:red-rect.jpg;true;6808:red-rect.jpg;true;8007:red-rect.jpg;false;19013:red-rect.jpg;false;19761:red-rect.jpg;true;20782:red-rect.jpg;true;21498,1637474662060,B,one,label1,Filler-Color-red,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474697025,B,one,label1,Filler-Color-red,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474697028,B,three,label2,fruit,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-2.jpg;contrast-green_apple-1.jpg;basic-apple-1.jpg|contrast-green_apple-2.jpg;true;2588:contrast-green_apple-1.jpg;true;4300:basic-apple-1.jpg;true;6122,1637474697038,B,three,label2,fruit,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474725106,B,three,label2,fruit,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474725109,B,one,label2,furniture,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-1.jpg;contrast-office_chair-2.jpg|contrast-office_chair-1.jpg;true;6554:contrast-office_chair-2.jpg;true;7981,1637474725118,B,one,label2,furniture,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474758347,B,one,label2,furniture,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474758350,B,three,label1,light,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-1.jpg;sub-gooseneck_lamp-2.jpg|sub-gooseneck_lamp-1.jpg;true;2020:sub-gooseneck_lamp-2.jpg;true;3570,1637474758358,B,three,label1,light,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474787374,B,three,label1,light,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474787376,B,one,label1,Filler-Shape-triangle,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;1823:triangle-3.jpg;true;2642:triangle-2.jpg;true;3417:triangle-4.jpg;true;4197:triangle-1.jpg;true;4999,1637474787384,B,one,label1,Filler-Shape-triangle,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474806091,B,one,label1,Filler-Shape-triangle,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474806094,B,one,label1,vegetable,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-2.jpg;sub-green_pepper-1.jpg|sub-green_pepper-2.jpg;true;2027:sub-green_pepper-1.jpg;true;3592,1637474806100,B,one,label1,vegetable,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474832633,B,one,label1,vegetable,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474832636,B,three,label2,vehicle,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-1.jpg;contrast-van-2.jpg|contrast-van-1.jpg;true;2135:contrast-van-2.jpg;true;3222,1637474832643,B,three,label2,vehicle,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474860320,B,three,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,14,0,end,NULL,PennController,2,_Trial_,Start,1637474860322,1366x654,NULL
+1637474863,d01182ce4c23d0a12a302799cb1a8a35,14,0,end,NULL,PennController,2,_Trial_,End,1637474862010,1366x654,NULL
+#
+# Results on Sun, 21 Nov 2021 06:08:08 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 68
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474587856,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,2,0,intro,NULL,PennController,0,_Trial_,End,1637474592384,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474592407,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474614133,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474614134,A,one,label1,animal,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;4876:sub-dalmatian-2.jpg;true;6795,1637474614139,A,one,label1,animal,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474643709,A,one,label1,animal,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474643710,A,three,label2,beast,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-2.jpg;contrast-triceratops-1.jpg|contrast-triceratops-2.jpg;true;6217:contrast-triceratops-1.jpg;true;10649,1637474643712,A,three,label2,beast,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474676412,A,three,label2,beast,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474676413,A,one,label2,electronics,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-1.jpg;contrast-flip_phone-2.jpg|contrast-flip_phone-1.jpg;true;2433:contrast-flip_phone-2.jpg;true;3361,1637474676417,A,one,label2,electronics,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474706484,A,one,label2,electronics,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474706485,A,one,label1,Filler-Color-red,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;4231:red-rect.jpg;true;5079:red-rect.jpg;true;5767:red-rect.jpg;true;6439:red-rect.jpg;true;7079:red-rect.jpg;true;7503,1637474706488,A,one,label1,Filler-Color-red,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474727620,A,one,label1,Filler-Color-red,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474727621,A,three,label1,fruit,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-1.jpg;sub-red_apple-2.jpg|sub-red_apple-1.jpg;true;1785:sub-red_apple-2.jpg;true;2737,1637474727623,A,three,label1,fruit,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474757612,A,three,label1,fruit,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474757613,A,one,label1,furniture,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|sub-wooden_chair-2.jpg;true;2610:sub-wooden_chair-1.jpg;true;5634,1637474757615,A,one,label1,furniture,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474790492,A,one,label1,furniture,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474790493,A,three,label2,light,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-2.jpg;contrast-desk_lamp-1.jpg|contrast-desk_lamp-2.jpg;true;3172:contrast-desk_lamp-1.jpg;true;5092,1637474790495,A,three,label2,light,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474816388,A,three,label2,light,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474816389,A,one,label1,Filler-Shape-triangle,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;2253:triangle-3.jpg;true;2821:triangle-2.jpg;true;3429:triangle-4.jpg;true;3957:triangle-1.jpg;true;4597,1637474816392,A,one,label1,Filler-Shape-triangle,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474835573,A,one,label1,Filler-Shape-triangle,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474835574,A,one,label2,vegetable,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;2247:contrast-red_pepper-2.jpg;true;3839,1637474835578,A,one,label2,vegetable,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474862332,A,one,label2,vegetable,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474862333,A,three,label1,vehicle,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;4356:sub-racecar-1.jpg;true;5387,1637474862335,A,three,label1,vehicle,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474888316,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,14,0,end,NULL,PennController,2,_Trial_,Start,1637474888317,1536x722,NULL
+1637474888,cc387f6f21b73ee3ccecc55e2af73998,14,0,end,NULL,PennController,2,_Trial_,End,1637474890395,1536x722,NULL
+#
+# Results on Sun, 21 Nov 2021 06:09:32 GMT
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36
+# Design number was non-random = 55
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637474972,49eec1ea42edaa4116076de556db1956,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474444080,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,2,0,intro,NULL,PennController,0,_Trial_,End,1637474707706,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474707714,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474715401,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637474972,49eec1ea42edaa4116076de556db1956,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474715404,D,three,label2,animal,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-1.jpg;contrast-corgi-2.jpg|contrast-corgi-1.jpg;true;4116:contrast-corgi-2.jpg;true;5227,1637474715412,D,three,label2,animal,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474743354,D,three,label2,animal,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474743356,D,one,label1,beast,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-1.jpg;sub-trex-2.jpg|sub-trex-1.jpg;true;2253:sub-trex-2.jpg;true;4347,1637474743361,D,one,label1,beast,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474769453,D,one,label1,beast,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474769455,D,three,label1,electronics,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg|sub-smart_phone-2.jpg;true;4205,1637474769461,D,three,label1,electronics,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474795703,D,three,label1,electronics,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474795706,D,one,label1,Filler-Color-red,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;1892:red-rect.jpg;true;2360:red-rect.jpg;true;3021:red-rect.jpg;true;3712:red-rect.jpg;true;4180:red-rect.jpg;false;6657:red-rect.jpg;false;8929:red-rect.jpg;true;9437:red-rect.jpg;false;9761:red-rect.jpg;true;10521:red-rect.jpg;true;11097:red-rect.jpg;true;11497,1637474795712,D,one,label1,Filler-Color-red,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,7,0,experiment,NULL,PennController,7,_Trial_,End,1637474820384,D,one,label1,Filler-Color-red,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637474820386,D,one,label2,fruit,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg|contrast-green_apple-1.jpg;true;2025:contrast-green_apple-2.jpg;true;3509:contrast-green_apple-2.jpg;false;5273:contrast-green_apple-1.jpg;false;5837:contrast-green_apple-1.jpg;true;6257:contrast-green_apple-2.jpg;true;6793,1637474820391,D,one,label2,fruit,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,8,0,experiment,NULL,PennController,8,_Trial_,End,1637474848907,D,one,label2,fruit,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637474848910,D,three,label2,furniture,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-2.jpg;contrast-office_chair-1.jpg|contrast-office_chair-2.jpg;true;2330:contrast-office_chair-1.jpg;true;3285,1637474848916,D,three,label2,furniture,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,9,0,experiment,NULL,PennController,9,_Trial_,End,1637474876254,D,three,label2,furniture,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637474876256,D,one,label1,light,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,basic-lamp-2.jpg|basic-lamp-2.jpg;true;2804,1637474876261,D,one,label1,light,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,10,0,experiment,NULL,PennController,10,_Trial_,End,1637474902157,D,one,label1,light,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637474902158,D,one,label1,Filler-Shape-triangle,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg;triangle-1.jpg|triangle-4.jpg;true;1642:triangle-2.jpg;true;2025:triangle-3.jpg;true;2366:triangle-5.jpg;true;2709:triangle-1.jpg;true;3268,1637474902161,D,one,label1,Filler-Shape-triangle,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,11,0,experiment,NULL,PennController,11,_Trial_,End,1637474918218,D,one,label1,Filler-Shape-triangle,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637474918221,D,three,label1,vegetable,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;4980:sub-green_pepper-2.jpg;true;5720,1637474918229,D,three,label1,vegetable,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,12,0,experiment,NULL,PennController,12,_Trial_,End,1637474944728,D,three,label1,vegetable,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637474944731,D,one,label2,vehicle,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;4095:contrast-van-1.jpg;true;4671,1637474944737,D,one,label2,vehicle,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,13,0,experiment,NULL,PennController,13,_Trial_,End,1637474970861,D,one,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637474972,49eec1ea42edaa4116076de556db1956,14,0,end,NULL,PennController,2,_Trial_,Start,1637474970863,1366x637,NULL
+1637474972,49eec1ea42edaa4116076de556db1956,14,0,end,NULL,PennController,2,_Trial_,End,1637474972694,1366x637,NULL
+#
+# Results on Sun, 21 Nov 2021 06:13:22 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44
+# Design number was non-random = 71
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474865458,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,2,0,intro,NULL,PennController,0,_Trial_,End,1637474878915,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474878937,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474890637,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474890639,D,three,label2,animal,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;4302:contrast-corgi-1.jpg;true;5018,1637474890654,D,three,label2,animal,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474918288,D,three,label2,animal,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474918290,D,one,label1,beast,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;8967:sub-trex-1.jpg;true;10091,1637474918296,D,one,label1,beast,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,5,0,experiment,NULL,PennController,5,_Trial_,End,1637474950491,D,one,label1,beast,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637474950497,D,three,label1,electronics,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-2.jpg;sub-smart_phone-1.jpg|sub-smart_phone-2.jpg;true;5684:sub-smart_phone-1.jpg;true;7235,1637474950513,D,three,label1,electronics,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,6,0,experiment,NULL,PennController,6,_Trial_,End,1637474979952,D,three,label1,electronics,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637474979954,D,one,label1,Filler-Color-red,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;6869:red-rect.jpg;true;7738:red-rect.jpg;true;8419:red-rect.jpg;true;9250:red-rect.jpg;true;10232:red-rect.jpg;true;11230,1637474979961,D,one,label1,Filler-Color-red,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,7,0,experiment,NULL,PennController,7,_Trial_,End,1637475004888,D,one,label1,Filler-Color-red,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637475004889,D,one,label2,fruit,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-1.jpg;contrast-green_apple-2.jpg;basic-apple-1.jpg|contrast-green_apple-1.jpg;true;3897:contrast-green_apple-2.jpg;true;4783:basic-apple-1.jpg;true;6106,1637475004895,D,one,label2,fruit,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,8,0,experiment,NULL,PennController,8,_Trial_,End,1637475038265,D,one,label2,fruit,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637475038268,D,three,label2,furniture,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-2.jpg;contrast-office_chair-1.jpg|contrast-office_chair-2.jpg;true;4610:contrast-office_chair-1.jpg;true;5592,1637475038274,D,three,label2,furniture,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,9,0,experiment,NULL,PennController,9,_Trial_,End,1637475068112,D,three,label2,furniture,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637475068114,D,one,label1,light,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-2.jpg;sub-gooseneck_lamp-1.jpg|sub-gooseneck_lamp-2.jpg;true;4624:sub-gooseneck_lamp-1.jpg;true;5600,1637475068119,D,one,label1,light,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,10,0,experiment,NULL,PennController,10,_Trial_,End,1637475099703,D,one,label1,light,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637475099706,D,one,label1,Filler-Shape-triangle,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;7605:triangle-3.jpg;true;8307:triangle-2.jpg;true;9172:triangle-4.jpg;true;9916:triangle-1.jpg;true;10691,1637475099712,D,one,label1,Filler-Shape-triangle,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,11,0,experiment,NULL,PennController,11,_Trial_,End,1637475125760,D,one,label1,Filler-Shape-triangle,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637475125763,D,three,label1,vegetable,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-1.jpg;sub-green_pepper-2.jpg|sub-green_pepper-1.jpg;true;5423:sub-green_pepper-2.jpg;true;6489,1637475125769,D,three,label1,vegetable,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,12,0,experiment,NULL,PennController,12,_Trial_,End,1637475159399,D,three,label1,vegetable,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637475159400,D,one,label2,vehicle,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;8673:contrast-van-1.jpg;true;9904,1637475159405,D,one,label2,vehicle,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,13,0,experiment,NULL,PennController,13,_Trial_,End,1637475189974,D,one,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,14,0,end,NULL,PennController,2,_Trial_,Start,1637475189978,1366x657,NULL
+1637475202,f1d311e2be2fa5fa7221eaf03d216d41,14,0,end,NULL,PennController,2,_Trial_,End,1637475193998,1366x657,NULL
+#
+# Results on Sun, 21 Nov 2021 06:14:44 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 72
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474936759,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,2,0,intro,NULL,PennController,0,_Trial_,End,1637474942359,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474942371,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,3,0,beginning,NULL,PennController,1,_Trial_,End,1637474951993,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637474951995,A,one,label1,animal,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg;contrast-corgi-1.jpg;basic-dog-2.jpg;contrast-corgi-2.jpg;basic-dog-3.jpg;basic-dog-1.jpg|sub-dalmatian-1.jpg;true;6453:sub-dalmatian-2.jpg;true;7316:contrast-corgi-1.jpg;true;13911:basic-dog-2.jpg;true;14845:contrast-corgi-2.jpg;true;15425:basic-dog-3.jpg;true;16474:basic-dog-1.jpg;true;19085,1637474952002,A,one,label1,animal,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,4,0,experiment,NULL,PennController,4,_Trial_,End,1637474995812,A,one,label1,animal,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637474995813,A,three,label2,beast,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;5258:contrast-triceratops-2.jpg;true;10722,1637474995816,A,three,label2,beast,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,5,0,experiment,NULL,PennController,5,_Trial_,End,1637475029895,A,three,label2,beast,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637475029898,A,one,label2,electronics,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;2626:contrast-flip_phone-1.jpg;true;3051,1637475029902,A,one,label2,electronics,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,6,0,experiment,NULL,PennController,6,_Trial_,End,1637475056263,A,one,label2,electronics,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637475056264,A,one,label1,Filler-Color-red,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;3063:red-rect.jpg;true;3626:red-rect.jpg;true;4803:red-rect.jpg;true;5304:red-rect.jpg;true;6089:red-rect.jpg;true;6613,1637475056268,A,one,label1,Filler-Color-red,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,7,0,experiment,NULL,PennController,7,_Trial_,End,1637475076518,A,one,label1,Filler-Color-red,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637475076519,A,three,label1,fruit,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-2.jpg;basic-apple-2.jpg;contrast-green_apple-1.jpg;basic-apple-1.jpg|contrast-green_apple-2.jpg;true;2375:basic-apple-2.jpg;true;3652:contrast-green_apple-1.jpg;true;4374:basic-apple-1.jpg;true;4852,1637475076522,A,three,label1,fruit,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,8,0,experiment,NULL,PennController,8,_Trial_,End,1637475102934,A,three,label1,fruit,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637475102935,A,one,label1,furniture,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;basic-chair-3.jpg;sub-wooden_chair-1.jpg|basic-chair-1.jpg;true;298:basic-chair-1.jpg;false;1278:sub-wooden_chair-2.jpg;true;7942:basic-chair-3.jpg;true;9282:sub-wooden_chair-1.jpg;true;12120,1637475102939,A,one,label1,furniture,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,9,0,experiment,NULL,PennController,9,_Trial_,End,1637475135390,A,one,label1,furniture,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637475135391,A,three,label2,light,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;sub-gooseneck_lamp-1.jpg;contrast-desk_lamp-2.jpg;sub-gooseneck_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;3575:sub-gooseneck_lamp-1.jpg;true;4657:contrast-desk_lamp-2.jpg;true;5567:sub-gooseneck_lamp-2.jpg;true;7299,1637475135393,A,three,label2,light,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,10,0,experiment,NULL,PennController,10,_Trial_,End,1637475165046,A,three,label2,light,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637475165047,A,one,label1,Filler-Shape-triangle,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-1.jpg;triangle-4.jpg;triangle-2.jpg;triangle-3.jpg;triangle-5.jpg|triangle-1.jpg;true;3390:triangle-4.jpg;true;3822:triangle-2.jpg;true;4201:triangle-3.jpg;true;4542:triangle-5.jpg;true;4864,1637475165051,A,one,label1,Filler-Shape-triangle,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,11,0,experiment,NULL,PennController,11,_Trial_,End,1637475183166,A,one,label1,Filler-Shape-triangle,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637475183168,A,one,label2,vegetable,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-2.jpg|contrast-red_pepper-2.jpg;true;52285,1637475183173,A,one,label2,vegetable,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,12,0,experiment,NULL,PennController,12,_Trial_,End,1637475257664,A,one,label2,vegetable,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637475257666,A,three,label1,vehicle,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;1456:contrast-van-1.jpg;true;2027,1637475257671,A,three,label1,vehicle,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,13,0,experiment,NULL,PennController,13,_Trial_,End,1637475281137,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,14,0,end,NULL,PennController,2,_Trial_,Start,1637475281138,1396x656,NULL
+1637475284,9c67c9f5b0b83062098bc4f3e00a0deb,14,0,end,NULL,PennController,2,_Trial_,End,1637475284254,1396x656,NULL
+#
+# Results on Sun, 21 Nov 2021 06:17:39 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 68
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,2,0,intro,NULL,PennController,0,_Trial_,Start,1637474585809,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,2,0,intro,NULL,PennController,0,_Trial_,End,1637474591541,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637474591545,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,3,0,beginning,NULL,PennController,1,_Trial_,End,1637475179127,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637475179128,A,one,label1,animal,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-dalmatian-1.jpg;sub-dalmatian-2.jpg|sub-dalmatian-1.jpg;true;3642:sub-dalmatian-2.jpg;true;4825,1637475179130,A,one,label1,animal,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,4,0,experiment,NULL,PennController,4,_Trial_,End,1637475207061,A,one,label1,animal,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637475207062,A,three,label2,beast,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-triceratops-1.jpg;contrast-triceratops-2.jpg|contrast-triceratops-1.jpg;true;4897:contrast-triceratops-2.jpg;true;5818,1637475207063,A,three,label2,beast,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,5,0,experiment,NULL,PennController,5,_Trial_,End,1637475237838,A,three,label2,beast,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637475237839,A,one,label2,electronics,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-flip_phone-2.jpg;contrast-flip_phone-1.jpg|contrast-flip_phone-2.jpg;true;3222:contrast-flip_phone-1.jpg;true;3864,1637475237842,A,one,label2,electronics,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,6,0,experiment,NULL,PennController,6,_Trial_,End,1637475266631,A,one,label2,electronics,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637475266632,A,one,label1,Filler-Color-red,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;2125:red-rect.jpg;true;2524:red-rect.jpg;true;3388:red-rect.jpg;true;4051:red-rect.jpg;true;4571:red-rect.jpg;true;4985,1637475266634,A,one,label1,Filler-Color-red,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,7,0,experiment,NULL,PennController,7,_Trial_,End,1637475284842,A,one,label1,Filler-Color-red,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637475284843,A,three,label1,fruit,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-red_apple-2.jpg;sub-red_apple-1.jpg|sub-red_apple-2.jpg;true;3293:sub-red_apple-1.jpg;true;4193,1637475284844,A,three,label1,fruit,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,8,0,experiment,NULL,PennController,8,_Trial_,End,1637475311638,A,three,label1,fruit,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637475311639,A,one,label1,furniture,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-wooden_chair-2.jpg;sub-wooden_chair-1.jpg|contrast-office_chair-1.jpg;true;1413:contrast-office_chair-2.jpg;true;3389:contrast-office_chair-1.jpg;false;8639:contrast-office_chair-2.jpg;false;9339:sub-wooden_chair-2.jpg;true;9966:sub-wooden_chair-1.jpg;true;11370,1637475311641,A,one,label1,furniture,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,9,0,experiment,NULL,PennController,9,_Trial_,End,1637475346164,A,one,label1,furniture,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637475346165,A,three,label2,light,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-desk_lamp-1.jpg;contrast-desk_lamp-2.jpg|contrast-desk_lamp-1.jpg;true;4280:contrast-desk_lamp-2.jpg;true;5294,1637475346166,A,three,label2,light,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,10,0,experiment,NULL,PennController,10,_Trial_,End,1637475379322,A,three,label2,light,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637475379324,A,one,label1,Filler-Shape-triangle,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;3084:triangle-3.jpg;true;3712:triangle-2.jpg;true;4089:triangle-4.jpg;true;4518:triangle-1.jpg;true;5053,1637475379326,A,one,label1,Filler-Shape-triangle,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,11,0,experiment,NULL,PennController,11,_Trial_,End,1637475398797,A,one,label1,Filler-Shape-triangle,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637475398798,A,one,label2,vegetable,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-red_pepper-1.jpg;contrast-red_pepper-2.jpg|contrast-red_pepper-1.jpg;true;3689:contrast-red_pepper-2.jpg;true;4852,1637475398800,A,one,label2,vegetable,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,12,0,experiment,NULL,PennController,12,_Trial_,End,1637475429003,A,one,label2,vegetable,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637475429004,A,three,label1,vehicle,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-racecar-2.jpg;sub-racecar-1.jpg|sub-racecar-2.jpg;true;3571:sub-racecar-1.jpg;true;5533,1637475429005,A,three,label1,vehicle,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,13,0,experiment,NULL,PennController,13,_Trial_,End,1637475458937,A,three,label1,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,14,0,end,NULL,PennController,2,_Trial_,Start,1637475458938,1920x937,NULL
+1637475459,a2b100b5a94a67a9c8d3789ce7fe4d17,14,0,end,NULL,PennController,2,_Trial_,End,1637475460477,1920x937,NULL
+#
+# Results on Sun, 21 Nov 2021 06:51:17 GMT
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+# Design number was non-random = 73
+#
+# Columns below this comment are as follows:
+# 1. Results reception time.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Order number of item.
+# 5. Inner element number.
+# 6. Label.
+# 7. Latin Square Group.
+# 8. PennElementType.
+# 9. PennElementName.
+# 10. Parameter.
+# 11. Value.
+# 12. EventTime.
+# 13. Comments.
+1637477477,d08e338c33631b42e1413d7073926ff8,2,0,intro,NULL,PennController,0,_Trial_,Start,1637477151324,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,2,0,intro,NULL,PennController,0,_Trial_,End,1637477156865,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,3,0,beginning,NULL,PennController,1,_Trial_,Start,1637477156891,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,3,0,beginning,NULL,PennController,1,_Trial_,End,1637477171029,NULL
+# 13. group.
+# 14. number.
+# 15. target.
+# 16. item.
+# 17. Comments.
+1637477477,d08e338c33631b42e1413d7073926ff8,4,0,experiment,NULL,PennController,4,_Trial_,Start,1637477171030,B,one,label2,animal,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,4,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-corgi-2.jpg;contrast-corgi-1.jpg|contrast-corgi-2.jpg;true;7492:contrast-corgi-1.jpg;true;10371,1637477171036,B,one,label2,animal,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,4,0,experiment,NULL,PennController,4,_Trial_,End,1637477206982,B,one,label2,animal,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,5,0,experiment,NULL,PennController,5,_Trial_,Start,1637477206983,B,three,label1,beast,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,5,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-trex-2.jpg;sub-trex-1.jpg|sub-trex-2.jpg;true;9526:sub-trex-1.jpg;true;11053,1637477206987,B,three,label1,beast,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,5,0,experiment,NULL,PennController,5,_Trial_,End,1637477245925,B,three,label1,beast,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,6,0,experiment,NULL,PennController,6,_Trial_,Start,1637477245926,B,one,label1,electronics,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,6,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-smart_phone-1.jpg;sub-smart_phone-2.jpg|sub-smart_phone-1.jpg;true;6654:sub-smart_phone-2.jpg;true;8239,1637477245929,B,one,label1,electronics,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,6,0,experiment,NULL,PennController,6,_Trial_,End,1637477279916,B,one,label1,electronics,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,7,0,experiment,NULL,PennController,7,_Trial_,Start,1637477279917,B,one,label1,Filler-Color-red,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,7,0,experiment,NULL,SelectionGrid,test-phase,Selections,red-rect.jpg|red-rect.jpg;true;3721:red-rect.jpg;true;4513:red-rect.jpg;true;5273:red-rect.jpg;true;6017:red-rect.jpg;true;6897:red-rect.jpg;true;7345,1637477279920,B,one,label1,Filler-Color-red,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,7,0,experiment,NULL,PennController,7,_Trial_,End,1637477300828,B,one,label1,Filler-Color-red,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,8,0,experiment,NULL,PennController,8,_Trial_,Start,1637477300830,B,three,label2,fruit,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,8,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-green_apple-2.jpg;contrast-green_apple-1.jpg|contrast-green_apple-2.jpg;true;4297:contrast-green_apple-1.jpg;true;6737,1637477300834,B,three,label2,fruit,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,8,0,experiment,NULL,PennController,8,_Trial_,End,1637477333661,B,three,label2,fruit,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,9,0,experiment,NULL,PennController,9,_Trial_,Start,1637477333663,B,one,label2,furniture,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,9,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-office_chair-2.jpg;contrast-office_chair-1.jpg|contrast-office_chair-2.jpg;true;4267:contrast-office_chair-1.jpg;true;5419,1637477333667,B,one,label2,furniture,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,9,0,experiment,NULL,PennController,9,_Trial_,End,1637477360404,B,one,label2,furniture,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,10,0,experiment,NULL,PennController,10,_Trial_,Start,1637477360406,B,three,label1,light,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,10,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-gooseneck_lamp-1.jpg;sub-gooseneck_lamp-2.jpg|sub-gooseneck_lamp-1.jpg;true;5285:sub-gooseneck_lamp-2.jpg;true;6005,1637477360410,B,three,label1,light,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,10,0,experiment,NULL,PennController,10,_Trial_,End,1637477388732,B,three,label1,light,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,11,0,experiment,NULL,PennController,11,_Trial_,Start,1637477388733,B,one,label1,Filler-Shape-triangle,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,11,0,experiment,NULL,SelectionGrid,test-phase,Selections,triangle-5.jpg;triangle-3.jpg;triangle-2.jpg;triangle-4.jpg;triangle-1.jpg|triangle-5.jpg;true;16407:triangle-3.jpg;true;16976:triangle-2.jpg;true;17368:lines-7.jpg;true;17751:triangle-4.jpg;true;18263:lines-7.jpg;false;18775:triangle-1.jpg;true;19647,1637477388737,B,one,label1,Filler-Shape-triangle,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,11,0,experiment,NULL,PennController,11,_Trial_,End,1637477422416,B,one,label1,Filler-Shape-triangle,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,12,0,experiment,NULL,PennController,12,_Trial_,Start,1637477422417,B,one,label1,vegetable,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,12,0,experiment,NULL,SelectionGrid,test-phase,Selections,sub-green_pepper-2.jpg;sub-green_pepper-1.jpg|sub-green_pepper-2.jpg;true;3173:sub-green_pepper-1.jpg;true;5365,1637477422421,B,one,label1,vegetable,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,12,0,experiment,NULL,PennController,12,_Trial_,End,1637477448376,B,one,label1,vegetable,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,13,0,experiment,NULL,PennController,13,_Trial_,Start,1637477448379,B,three,label2,vehicle,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,13,0,experiment,NULL,SelectionGrid,test-phase,Selections,contrast-van-2.jpg;contrast-van-1.jpg|contrast-van-2.jpg;true;3203:contrast-van-1.jpg;true;4235,1637477448382,B,three,label2,vehicle,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,13,0,experiment,NULL,PennController,13,_Trial_,End,1637477474136,B,three,label2,vehicle,NULL
+# 13. window_size.
+# 14. Comments.
+1637477477,d08e338c33631b42e1413d7073926ff8,14,0,end,NULL,PennController,2,_Trial_,Start,1637477474138,1366x657,NULL
+1637477477,d08e338c33631b42e1413d7073926ff8,14,0,end,NULL,PennController,2,_Trial_,End,1637477476638,1366x657,NULL

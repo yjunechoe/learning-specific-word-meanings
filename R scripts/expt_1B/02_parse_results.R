@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt1B_test_11-21-2021.csv")
+results_raw <- read_pcibex("data/expt1B_FIN_12-01-2021.csv")
 
 # Check window sizes
 
@@ -12,7 +12,10 @@ results_raw %>%
   select(participant = contains("participant"), window_size) %>%
   mutate(at = rep(c("start", "end"), n()/2)) %>%
   separate(window_size, into = c("width", "height"), sep = "x", convert = TRUE) %>% 
-  mutate(across(width:height, ~ .x / 96, .names = "{.col}_px"))
+  mutate(across(width:height, ~ .x / 96, .names = "{.col}_px")) %>% 
+  group_by(participant) %>% 
+  summarize(across(ends_with("_px"), sd)) %>% 
+  filter(if_any(ends_with("_px"), ~ .x != 0))
   # group_by(participant) %>% 
   # summarize(across(width:height, sd))
 
@@ -36,10 +39,11 @@ results_parsed <- results_raw %>%
     trial = ifelse(str_detect(item, "^Filler"), "catch", "critical"),
     participant = as.factor(participant),
     item = as.factor(item)
-  )
+  ) %>% 
+  mutate(group = replace(group, group == "FALSE", "F")) #< weird parsing error for group F
 
 # Check on catch trials
-pass_catch <- function(item, clicks) {
+pass_catch <- function(item, clicks, selections) {
   switch(
     item,
     "Filler-Color-red" = {
@@ -49,14 +53,14 @@ pass_catch <- function(item, clicks) {
         sum()) == 6
     },
     "Filler-Shape-triangle" = {
-      every(clicks$img, ~ str_detect(.x, "^triangle"))
+      every(selections, ~ str_detect(.x, "^triangle"))
     }
   )
 }
 
 results_catch <- results_parsed %>%
   filter(trial == "catch") %>%
-  mutate(pass = map2_lgl(as.character(item), clicks, pass_catch))
+  mutate(pass = Vectorize(pass_catch)(as.character(item), clicks, selections))
 failed_catch <- results_catch %>% 
   filter(!pass) %>% 
   pull(participant) %>% 
@@ -64,7 +68,8 @@ failed_catch <- results_catch %>%
 
 # remove failed catches
 results_parsed <- results_parsed %>% 
-  filter(!participant %in% failed_catch)
+  filter(!participant %in% failed_catch) %>% 
+  mutate(participant = fct_drop(participant))
 
 # Validations ====
 ## check that selections are imgs where the click event was a selection ----
@@ -88,7 +93,7 @@ stopifnot(
 ## Read / transform ----
 library(here)
 
-trial_template <- read_csv(here("pcibex", "Experiment 1", "01_trial_templates.csv"))
+trial_template <- read_csv(here("pcibex", "Experiment 1B", "01_trial_templates.csv"))
 img_tbl <- read_csv(here("R Scripts", "image_table.csv"))
 keys <- read_csv(here("R Scripts", "keys.csv"))
 keys_nested <- nest(keys, referents = c(type, category, img))

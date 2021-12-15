@@ -70,7 +70,8 @@ cond_design <- bind_rows(group_A, group_B, group_C, group_D) %>%
   group_by(group) %>% 
   slice(1:n(), 1:n()) %>% 
   mutate(id = row_number()) %>% 
-  ungroup()
+  ungroup() %>% 
+  mutate(labelled = !labelled) #< round 2 design
 
 item_design <- tibble(
   domain = setdiff(unique(img_tbl$domain), "planet"),
@@ -99,7 +100,7 @@ group_designs <- cond_design %>%
   )
 
 # group_designs %>%
-#   filter(str_detect(domain, "^Filler", TRUE)) %>% 
+#   filter(str_detect(domain, "^Filler", TRUE)) %>%
 #   pivot_wider(-c(label1, label2), names_from = group, values_from = c(labelled, target)) %>%
 #   select(1, !!!str_order(str_extract(colnames(.)[-1], "\\w$")) + 1)
 #
@@ -113,6 +114,24 @@ group_designs <- cond_design %>%
 # |light       |TRUE       |label2   |FALSE      |label1   |FALSE      |label1   |TRUE       |label2   |
 # |vegetable   |FALSE      |label1   |TRUE       |label2   |TRUE       |label2   |FALSE      |label1   |
 # |vehicle     |FALSE      |label2   |TRUE       |label1   |FALSE      |label2   |TRUE       |label1   |
+
+# group_designs %>%
+#   mutate(labelled = !labelled) %>% 
+#   filter(str_detect(domain, "^Filler", TRUE)) %>%
+#   pivot_wider(-c(label1, label2), names_from = group, values_from = c(labelled, target)) %>%
+#   select(1, !!!str_order(str_extract(colnames(.)[-1], "\\w$")) + 1)
+#
+# |domain      |labelled_A |target_A |labelled_B |target_B |labelled_C |target_C |labelled_D |target_D |
+# |:-----------|:----------|:--------|:----------|:--------|:----------|:--------|:----------|:--------|
+# |animal      |FALSE      |label1   |TRUE       |label2   |FALSE      |label1   |TRUE       |label2   |
+# |beast       |FALSE      |label2   |TRUE       |label1   |TRUE       |label1   |FALSE      |label2   |
+# |electronics |TRUE       |label1   |FALSE      |label2   |FALSE      |label2   |TRUE       |label1   |
+# |fruit       |TRUE       |label2   |FALSE      |label1   |TRUE       |label2   |FALSE      |label1   |
+# |furniture   |FALSE      |label1   |TRUE       |label2   |FALSE      |label1   |TRUE       |label2   |
+# |light       |FALSE      |label2   |TRUE       |label1   |TRUE       |label1   |FALSE      |label2   |
+# |vegetable   |TRUE       |label1   |FALSE      |label2   |FALSE      |label2   |TRUE       |label1   |
+# |vehicle     |TRUE       |label2   |FALSE      |label1   |TRUE       |label2   |FALSE      |label1   |
+  
 
 ## fill design with trial templates
 

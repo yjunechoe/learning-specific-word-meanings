@@ -3,7 +3,7 @@ source("R scripts/read_pcibex.R")
 
 # Read in data ====
 
-results_raw <- read_pcibex("data/expt1_A_11-17-2021.csv")
+results_raw <- read_pcibex("data/expt1_FIN_11-23-2021.csv")
 
 # Check window sizes
 
@@ -49,28 +49,34 @@ results_parsed <- results_raw %>%
   )
 
 # Check on catch trials
-pass_catch <- function(item, clicks) {
+pass_catch <- function(item, clicks, selections) {
   switch(
     item,
     "Filler-Color-red" = {
       (clicks %>% 
-        filter(img == "red-rect.jpg") %>% 
-        pull(selected) %>% 
-        sum()) == 6
+         filter(img == "red-rect.jpg") %>% 
+         pull(selected) %>% 
+         sum()) == 6
     },
     "Filler-Shape-triangle" = {
-      every(clicks$img, ~ str_detect(.x, "^triangle"))
+      every(selections, ~ str_detect(.x, "^triangle"))
     }
   )
 }
 
 results_catch <- results_parsed %>%
   filter(trial == "catch") %>%
-  mutate(pass = map2_lgl(as.character(item), clicks, pass_catch))
+  mutate(pass = Vectorize(pass_catch)(as.character(item), clicks, selections))
 failed_catch <- results_catch %>% 
   filter(!pass) %>% 
   pull(participant) %>% 
   unique()
+
+# remove failed catches
+results_parsed <- results_parsed %>% 
+  filter(!participant %in% failed_catch) %>% 
+  mutate(participant = fct_drop(participant))
+
 
 # remove failed catches
 results_parsed <- results_parsed %>% 
