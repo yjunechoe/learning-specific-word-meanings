@@ -37,7 +37,7 @@ prop_table1_HSP <- prop_table %>%
   mutate(
     fill = case_when(
       coding == "Other" ~ "grey85",
-      TRUE ~ scales::col_factor(as.character(pgl_pals()(2)), coding)(coding)
+      TRUE ~ scales::col_factor(as.character(penngradlings::pgl_pals()(2)), coding)(coding)
     ),
     coding = factor(coding, levels = c("Other", "Subordinate", "Basic")),
     fill = penngradlings::fct_match(fill, coding),
@@ -63,7 +63,7 @@ prop_plot1_HSP <- prop_table1_HSP %>%
     colour = "white", sigma = 0.01, expand = 2
   ) +
   scale_fill_identity(
-    labels = unique(prop_table_HSP$coding),
+    labels = unique(prop_table1_HSP$coding),
     guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE)
   ) +
   scale_x_discrete(labels = c("single" = "No contrast", "contrast" = "Contrast")) +
@@ -115,7 +115,7 @@ prop_table %>%
     expand = expansion(c(0, 0.05)),
     labels = scales::label_percent(1)
   ) +
-  scale_fill_pgl_discrete(what = "blueberry_matcha_boba") +
+  penngradlings::scale_fill_pgl_discrete(what = "blueberry_matcha_boba") +
   guides(fill = guide_none()) +
   labs(
     title = "Expt.1) Basic-level generalizations",
@@ -126,9 +126,9 @@ prop_table %>%
   theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
   theme(
     plot.title = element_text(size = 12),
-    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    # axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
     axis.text.y = element_text(size = 9),
-    plot.tag = element_text(margin = margin(t = 0, b = .2, unit = "in"))
+    # plot.tag = element_text(margin = margin(t = 0, b = .2, unit = "in"))
   )
 ggsave_auto(width = 4, height = 3.5)
 

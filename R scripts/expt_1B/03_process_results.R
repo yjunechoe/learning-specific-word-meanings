@@ -25,9 +25,27 @@ prop_table <- results_encoded %>%
     item = fct_drop(item)
   )
 
+# Smaller set (CogSci)
+
+prop_table_recoded_CogSci <- prop_table %>%
+  select(-selections, -clicks) %>% 
+  mutate(
+    coding = as.character(coding),
+    coding = case_when(
+      str_detect(coding, "Basic") ~ "Basic",
+      coding == "ME" ~ "ME",
+      coding == "Superordinate" ~ "Other",
+      is.na(coding) ~ "Other",
+      TRUE ~ coding
+    )
+  )
+
+# write_csv(prop_table_recoded_CogSci, "R scripts/expt_1B/03_prop_table_CogSci.csv")
+
 # Stacked plot (HSP)
 
-prop_table2_HSP <- prop_table %>% 
+prop_table_recoded_HSP <- prop_table %>%
+  select(-selections, -clicks) %>% 
   mutate(
     coding = as.character(coding),
     coding = case_when(
@@ -37,7 +55,11 @@ prop_table2_HSP <- prop_table %>%
       is.na(coding) ~ "Other",
       TRUE ~ coding
     )
-  ) %>% 
+  )
+
+# write_csv(prop_table_recoded_HSP, "R scripts/expt_1B/03_prop_table_HSP.csv")
+
+prop_table2_HSP <- prop_table_recoded_HSP %>% 
   mutate(
     fill = case_when(
       coding == "Other" ~ "grey85",
