@@ -81,7 +81,8 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
             document.removeEventListener("keydown", this.keydown_fj)
             buttons.css("display", "none")
             timeBar.css("visibility", "hidden")
-          }
+            // replace sally message bar text
+            document.querySelector("p.PennController-speech-text").textContent = 'Good work! Click the "Continue" button to proceed.'            }
         }
         
         // Keydown logic

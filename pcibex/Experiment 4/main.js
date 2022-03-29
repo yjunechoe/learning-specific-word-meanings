@@ -83,7 +83,8 @@ Template("01_trial_templates_v2.csv", row =>
                 "top" : "-175px",
                 "transform": "translateX(-50%)",
                 "z-index": "2",
-                "font-size": "32px"
+                "font-size": "24px",
+                "padding": "10px"
             })
         ,
         newSelectionArray("test-phase", row.test_set)
@@ -100,7 +101,7 @@ Template("01_trial_templates_v2.csv", row =>
         getSallyCanvas("learn-phase")
             .showSpeechBubble()
             .sallySay("Okay!<br>Pay attention now!")
-        ,f
+        ,
         // teach left referent
         newTimer("hold-speech-bubble", 3000)
             .start()
