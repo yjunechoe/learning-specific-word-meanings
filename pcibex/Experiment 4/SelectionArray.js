@@ -47,7 +47,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
                   <span>Yes<br>"F"</br></span>
                 </button>
                 <button class="PennController-SA-btn PennController-SA-btn-no">
-                  <span>Yes<br>"J"</br></span>
+                  <span>No<br>"J"</br></span>
                 </button>
               </div>
           `))
