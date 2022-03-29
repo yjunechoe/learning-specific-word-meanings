@@ -43,8 +43,8 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
                 </div>
               </div>
               <div class="PennController-SA-actions">
-                <button class="PennController-SA-btn">Yes</button>
-                <button class="PennController-SA-btn">No</button>
+                <button class="PennController-SA-btn PennController-SA-btn-yes">Yes</button>
+                <button class="PennController-SA-btn PennController-SA-btn-no">No</button>
               </div>
           `))
           
@@ -58,8 +58,11 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         
         const cardImg = this.jQueryElement.find(".PennController-SA-card-img")
         const timeBar = this.jQueryElement.find(".PennController-SA-time-bar-wrapper div")
-        const buttons = this.jQueryElement.find(".PennController-SA-actions button")
+        const buttons = this.jQueryElement.find("button.PennController-SA-btn")
+        const buttonYes = this.jQueryElement.find("button.PennController-SA-btn-yes")
+        const buttonNo = this.jQueryElement.find("button.PennController-SA-btn-no")
 
+        // Card traversing logic
         const move_on = function() {
           const len = wrapper.children().length
           const cur = wrapper.children()[len - 1]
@@ -73,6 +76,29 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           } else {
             buttons.css("display", "none")
             timeBar.css("visibility", "hidden")
+          }
+        }
+        
+        // Keydown logic
+        const keydown_fj = e => {
+          e.preventDefault
+          const key = e.key
+          if (key == "f") {
+              this.selections.push("Yes")
+              this.times.push(this.barTime.stop())
+              buttonYes.removeClass("PennController-SA-btn-clicked")
+              setTimeout(() => {
+                buttonYes.addClass("PennController-SA-btn-clicked")
+              }, 10)
+              move_on()
+          } else if (key == "j") {
+              this.selections.push("No")
+              this.times.push(this.barTime.stop())
+              buttonNo.removeClass("PennController-SA-btn-clicked")
+              setTimeout(() => {
+                buttonNo.addClass("PennController-SA-btn-clicked")
+              }, 10)
+              move_on()
           }
         }
         
@@ -99,25 +125,14 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         }
         
         // Button logic
-        buttons.click(event => {
-            this.selections.push(event.target.textContent)
-            this.times.push(this.barTime.stop())
-            move_on()
-        })
+        // buttons.click(event => {
+        //    this.selections.push(event.target.textContent)
+        //    this.times.push(this.barTime.stop())
+        //    move_on()
+        // })
         
         // Keypress logic
-        document.addEventListener("keydown", e => {
-            const key = e.key
-            if (key == "f") {
-                this.selections.push("Yes")
-                this.times.push(this.barTime.stop())
-                move_on()
-            } else if (key == "j") {
-                this.selections.push("No")
-                this.times.push(this.barTime.stop())
-                move_on()
-            }
-        })
+        document.addEventListener("keydown", keydown_fj)
         
         resolve();
 
