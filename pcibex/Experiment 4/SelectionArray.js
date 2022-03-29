@@ -63,7 +63,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         const buttonNo = this.jQueryElement.find("button.PennController-SA-btn-no")
 
         // Card traversing logic
-        const move_on = function() {
+        const move_on = () => {
           const len = wrapper.children().length
           const cur = wrapper.children()[len - 1]
           console.log(len)
@@ -74,13 +74,14 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           if (len > 1) {
             that.barTime = that.barShrink()
           } else {
+            document.removeEventListener("keydown", this.keydown_fj)
             buttons.css("display", "none")
             timeBar.css("visibility", "hidden")
           }
         }
         
         // Keydown logic
-        const keydown_fj = e => {
+        this.keydown_fj = e => {
           e.preventDefault
           const key = e.key
           if (key == "f") {
@@ -132,7 +133,6 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         // })
         
         // Keypress logic
-        document.addEventListener("keydown", keydown_fj)
         
         resolve();
 
@@ -147,7 +147,6 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         }
         // remove all elements from selection set
         that.selections = []
-        
     };
 
     this.test = {
@@ -163,6 +162,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         show: function(resolve){
             // console.log("SelectionGrid shown")
             this.jQueryElement.css("display", "grid")
+            document.addEventListener("keydown", this.keydown_fj)
             this.startTime = Date.now()
             this.barTime = this.barShrink()
             resolve();
