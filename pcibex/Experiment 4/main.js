@@ -80,7 +80,7 @@ Template("01_trial_templates_v2.csv", row =>
             .cssContainer({"position": "relative"})
             .css({
                 "position" : "absolute",
-                "top" : "-150px",
+                "top" : "-175px",
                 "transform": "translateX(-50%)",
                 "z-index": "2",
                 "font-size": "32px"
@@ -100,7 +100,7 @@ Template("01_trial_templates_v2.csv", row =>
         getSallyCanvas("learn-phase")
             .showSpeechBubble()
             .sallySay("Okay!<br>Pay attention now!")
-        ,
+        ,f
         // teach left referent
         newTimer("hold-speech-bubble", 3000)
             .start()

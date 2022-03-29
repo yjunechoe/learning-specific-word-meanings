@@ -148,20 +148,16 @@
 }
 
 .SA-actions {
-  width: 300px;
+  width: 500px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
-/* keyframes go in global_main.css */
-@keyframes btnClick {
-  from {background-color: #04AA6D}
-  to {background-color: #EFEFEF}
-}
-
 .SA-btn {
-  font-size: 20px;
+  width: 100px;
+  height: 80px;
+  font-size: 22px;
   pointer-events: none;
   background-color: #EFEFEF;
 }
@@ -169,4 +165,10 @@
 .SA-btn-clicked {
   animation-name: btnClick;
   animation-duration: 1s;
+}
+
+/* keyframes go in global_main.css */
+@keyframes btnClick {
+  from {background-color: #04AA6D}
+  to {background-color: #EFEFEF}
 }
