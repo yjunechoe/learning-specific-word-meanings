@@ -71,8 +71,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           const len = wrapper.children().length
           const cur = wrapper.children()[len - 1]
           console.log(len)
-          console.log(that.selections)
-          console.log(that.times)
+          console.table({response: that.selections, time: that.times})
           cur.remove()
           clearInterval(that.barTime)
           if (len > 1) {
@@ -85,7 +84,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
             document.querySelector("p.PennController-speech-text").textContent = 'Good work! Click the "Continue" button to proceed.'            }
         }
         
-        // Keydown logic
+        // Keydown logic (defined as property)
         this.keydown_fj = e => {
           e.preventDefault
           const key = e.key.toLowerCase()
@@ -147,7 +146,6 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         // log
         if (this.log){
             let trialResult = Array.from(that.selections).join(";") + "|" + Array.from(that.times).join(";")
-            console.log(trialResult)
             PennEngine.controllers.running.save(this.type, this.id, "Selections", trialResult, this.printTime, "NULL")
         }
         // remove all elements from selection set
