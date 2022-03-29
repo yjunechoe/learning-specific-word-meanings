@@ -25,7 +25,63 @@ prop_table <- results_encoded %>%
     item = fct_drop(item)
   )
 
-# Smaller set (CogSci)
+
+# many categories
+prop_table_5_categories <- prop_table %>% 
+  mutate(
+    coding = case_when(
+      coding == "Subordinate" ~ "narrow subordinate",
+      coding == "ME" ~ "broad subordinate",
+      str_detect(coding, "^Basic") ~ "basic",
+      coding == "Superordinate" ~ "superordinate",
+      TRUE ~ "uncodeable"
+    ),
+    coding = factor(coding, rev(c("basic", "narrow subordinate", "broad subordinate", "superordinate", "uncodeable"))),
+    fill = set_names(fct_inorder(rev(c("#44889CFF", "#E1AF00FF", "#CC4D06FF", "#3343CFFF", "grey"))), levels(coding))[coding]
+  )
+
+prop_table_5_categories %>% 
+  ggplot(aes(labelled, fill = fill)) +
+  geom_bar(
+    position = position_fill(),
+    color = "white", size = .2, width = .7
+  ) +
+  geom_label(
+    aes(label = paste0(round(after_stat(count/sum(count)) * 2 * 100, 1), "%"),
+        color = colorspace::darken(fill, .5), group = fill),
+    show.legend = FALSE, family = "Inter-Bold", size = 3.5,
+    stat = StatCount, fill = "white", label.size = 0.25,
+    position = position_fill(vjust = 0.5)
+  ) +
+  scale_color_identity() +
+  scale_fill_identity(
+    labels = rev(c("Basic", "Narrow Subordinate", "Broad Subordinate", "Superordinate", "Uncodeable")),
+    guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE)
+  ) +
+  scale_x_discrete(labels = c("Unlabelled", "Labelled")) +
+  scale_y_continuous(
+    limits = c(-.03, 1),
+    breaks = (0:4)/4,
+    expand = expansion(c(0, 0)),
+    labels = scales::label_percent(1)
+  ) +
+  labs(
+    title = "Distribution of responses at test",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  theme(
+    plot.title = element_text(size = 14),
+    plot.subtitle = element_text(size = 12),
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    legend.text = element_text(size = 9, family = "Inter-SemiBold"),
+    plot.tag = element_text(margin = margin(t = 0, b = .2, l = .2, unit = "in")),
+    legend.position = "top"
+  )
+
+# Subordinate breakdown (CogSci)
 
 prop_table_recoded_CogSci <- prop_table %>%
   select(-selections, -clicks) %>% 
@@ -33,11 +89,58 @@ prop_table_recoded_CogSci <- prop_table %>%
     coding = as.character(coding),
     coding = case_when(
       str_detect(coding, "Basic") ~ "Basic",
-      coding == "ME" ~ "ME",
+      coding == "Subordinate" ~ "Target Subordinate",
+      coding == "ME" ~ "Exclusionary Subordinate",
       coding == "Superordinate" ~ "Other",
       is.na(coding) ~ "Other",
       TRUE ~ coding
     )
+  )
+
+
+prop_table_plot_df_recoded_CogSci <- prop_table_recoded_CogSci %>% 
+  mutate(
+    fill = case_when(
+      coding == "Other" ~ "grey85",
+      TRUE ~ scales::col_factor(as.character(pgl_pals()(2)), coding)(coding)
+    ),
+    coding = factor(coding, levels = c("Other", "Target Subordinate", "Exclusionary Subordinate", "Basic")),
+    fill = penngradlings::fct_derive(fill, coding)
+  )
+
+prop_table_plot_df_recoded_CogSci %>% 
+  ggplot(aes(labelled, fill = fill)) +
+  geom_bar(
+    position = position_fill(),
+    color = "white", size = .2, width = .7
+  ) +
+  scale_fill_identity(
+    labels = ~ (prop_table_plot_df_recoded_CogSci %>% 
+      distinct(coding, fill) %>% 
+      pull(coding, fill))[.x],
+    guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE)
+  ) +
+  scale_x_discrete(labels = c("TRUE" = "Labelled", "FALSE" = "Unlabelled")) +
+  scale_y_continuous(
+    limits = c(0, 1),
+    breaks = (0:4)/4,
+    expand = expansion(c(0, 0.03)),
+    labels = scales::label_percent(1)
+  ) +
+  labs(
+    title = "Experiment 2",
+    x = NULL,
+    y = NULL
+  ) +
+  facet_wrap(~ target) +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  theme(
+    plot.title = element_text(size = 14),
+    plot.subtitle = element_text(size = 12),
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    legend.text = element_text(size = 9, family = "Inter-SemiBold"),
+    plot.tag = element_text(margin = margin(t = 0, b = .2, l = .2, unit = "in"))
   )
 
 # write_csv(prop_table_recoded_CogSci, "R scripts/expt_1B/03_prop_table_CogSci.csv")
@@ -66,10 +169,10 @@ prop_table2_HSP <- prop_table_recoded_HSP %>%
       TRUE ~ scales::col_factor(as.character(pgl_pals()(2)), coding)(coding)
     ),
     coding = factor(coding, levels = c("Other", "Subordinate", "Basic")),
-    fill = penngradlings::fct_match(fill, coding)
+    fill = penngradlings::fct_derive(fill, coding)
   )
 
-prop_plot2_HSP <- prop_table_HSP %>% 
+prop_plot2_HSP <- prop_table2_HSP %>% 
   ggplot(aes(labelled, fill = fill)) +
   geom_bar(
     position = position_fill(),
@@ -88,7 +191,7 @@ prop_plot2_HSP <- prop_table_HSP %>%
     colour = "white", sigma = 0.01, expand = 2
   ) +
   scale_fill_identity(
-    labels = unique(prop_table_HSP$coding),
+    labels = unique(prop_table2_HSP$coding),
     guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE)
   ) +
   scale_x_discrete(labels = c("TRUE" = "Labelled", "FALSE" = "Unlabelled")) +

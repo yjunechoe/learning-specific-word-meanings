@@ -13,7 +13,7 @@ prop_table <- results_encoded %>%
   ) %>% 
   select(participant, group, condition, item, ends_with("_prop")) %>% 
   mutate(
-    uncodeable = sub_prop < 0 | other_prop > 1,
+    uncodeable = sub_prop < 0 | other_prop > 0,
     sub_only = sub_prop == 1 & if_all(ends_with("_prop") & !matches("sub_prop"), ~ is.na(.x) | .x == 0),
     basic_gen = sub_prop == 1 & other_prop == 0 & ifelse(is.na(contrast_prop), basic_prop > 0, contrast_prop == 1),
     strict_basic_gen = sub_prop == 1 & other_prop == 0 & basic_prop == 1 & ifelse(is.na(contrast_prop), TRUE, contrast_prop == 1),
@@ -21,6 +21,64 @@ prop_table <- results_encoded %>%
   )
 
 write_csv(prop_table, "R scripts/expt_1/03_prop_table.csv")
+
+
+# many categories
+prop_table_5_categories <- prop_table %>% 
+  mutate(coding = case_when(
+    sub_prop == 1 & if_all(ends_with("_prop") & !matches("sub_prop"), ~ is.na(.x) | .x == 0) ~ "narrow subordinate",
+    sub_prop == 1 & other_prop == 0 & ifelse(is.na(contrast_prop), FALSE, contrast_prop == 0 & basic_prop > 0) ~ "broad subordinate",
+    sub_prop == 1 & other_prop == 0 & ifelse(is.na(contrast_prop), basic_prop > 0, contrast_prop == 1 & basic_prop > 0) ~ "basic",
+    sub_prop == 1 & ifelse(is.na(contrast_prop), basic_prop == 1, contrast_prop == 1 & basic_prop == 1) & sup_prop > 0 ~ "superordinate",
+    TRUE ~ "other"
+  )) %>% 
+  mutate(
+    coding = factor(coding, levels = rev(c("basic", "narrow subordinate", "broad subordinate", "superordinate", "other"))),
+    condition = c("single" = "No Contrast", "contrast" = "Contrast")[condition],
+    condition = factor(condition, levels = c("No Contrast", "Contrast")),
+    fill = set_names(fct_inorder(rev(c("#44889CFF", "#E1AF00FF", "#CC4D06FF", "#3343CFFF", "grey"))), levels(coding))[coding]
+  )
+
+prop_table_5_categories %>% 
+  ggplot(aes(condition, fill = fill)) +
+  geom_bar(
+    position = position_fill(),
+    color = "white", size = .2, width = .7
+  ) +
+  geom_label(
+    aes(label = paste0(after_stat(count/sum(count)) * 2 * 100, "%"),
+        color = colorspace::darken(fill, .5), group = fill),
+    show.legend = FALSE, family = "Inter-Bold",
+    stat = StatCount, fill = "white", label.size = 0.5,
+    position = position_fill(vjust = 0.5)
+  ) +
+  scale_color_identity() +
+  scale_fill_identity(
+    labels = rev(c("Basic", "Narrow Subordinate", "Broad Subordinate", "Superordinate", "Uncodeable")),
+    guide = guide_legend(title = NULL, nrow = 1, reverse = TRUE), drop = FALSE
+  ) +
+  scale_x_discrete(labels = c("single" = "No contrast", "contrast" = "Contrast")) +
+  scale_y_continuous(
+    limits = c(-.03, 1),
+    breaks = (0:4)/4,
+    expand = expansion(c(0, 0)),
+    labels = scales::label_percent(1)
+  ) +
+  labs(
+    title = "Distribution of responses at test",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_pgl_minimal(axis_lines = "x", grid_lines = "y") +
+  theme(
+    plot.title = element_text(size = 14),
+    plot.subtitle = element_text(size = 12),
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 10, family = "Inter-SemiBold", margin = margin(t = .1, unit = "in")),
+    legend.text = element_text(size = 9, family = "Inter-SemiBold"),
+    plot.tag = element_text(margin = margin(t = 0, b = .2, l = .2, unit = "in")),
+    legend.position = "top"
+  )
 
 # Stacked plot (HSP)
 
@@ -40,7 +98,7 @@ prop_table1_HSP <- prop_table %>%
       TRUE ~ scales::col_factor(as.character(penngradlings::pgl_pals()(2)), coding)(coding)
     ),
     coding = factor(coding, levels = c("Other", "Subordinate", "Basic")),
-    fill = penngradlings::fct_match(fill, coding),
+    fill = penngradlings::fct_derive(fill, coding),
     condition = fct_rev(condition)
   )
 

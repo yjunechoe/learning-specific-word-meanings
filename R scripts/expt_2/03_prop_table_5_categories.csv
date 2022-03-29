@@ -1,0 +1,401 @@
+participant,group,condition,item,basic_prop,contrast_prop,sub_prop,sup_prop,other_prop,uncodeable,sub_only,basic_gen,strict_basic_gen,coding,fill
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,No Contrast,vegetable,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+5ab45ca0d6e1938e5afea5031a0e8bb4,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b1c1994160b2cb0dd33663c00cb78cad,A,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+b1c1994160b2cb0dd33663c00cb78cad,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b1c1994160b2cb0dd33663c00cb78cad,A,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+b1c1994160b2cb0dd33663c00cb78cad,A,Contrast,fruit,0.6666666666666666,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+b1c1994160b2cb0dd33663c00cb78cad,A,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+b1c1994160b2cb0dd33663c00cb78cad,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b1c1994160b2cb0dd33663c00cb78cad,A,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+b1c1994160b2cb0dd33663c00cb78cad,A,Contrast,vehicle,1,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+33e9b6e30588abb3e2f4491fdc571e8c,B,Contrast,animal,0,0.5,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+33e9b6e30588abb3e2f4491fdc571e8c,B,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+33e9b6e30588abb3e2f4491fdc571e8c,B,Contrast,electronics,0,1,1,0,0,FALSE,FALSE,TRUE,FALSE,other,grey
+33e9b6e30588abb3e2f4491fdc571e8c,B,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+33e9b6e30588abb3e2f4491fdc571e8c,B,Contrast,furniture,0,1,1,0,0,FALSE,FALSE,TRUE,FALSE,other,grey
+33e9b6e30588abb3e2f4491fdc571e8c,B,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+33e9b6e30588abb3e2f4491fdc571e8c,B,Contrast,vegetable,1,1,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+33e9b6e30588abb3e2f4491fdc571e8c,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+bfe4b7cc17e52de65731f6f1973d1695,C,No Contrast,animal,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+bfe4b7cc17e52de65731f6f1973d1695,C,No Contrast,beast,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+bfe4b7cc17e52de65731f6f1973d1695,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+bfe4b7cc17e52de65731f6f1973d1695,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+bfe4b7cc17e52de65731f6f1973d1695,C,No Contrast,furniture,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+bfe4b7cc17e52de65731f6f1973d1695,C,No Contrast,light,0.6,NA,1,0.4,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+bfe4b7cc17e52de65731f6f1973d1695,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+bfe4b7cc17e52de65731f6f1973d1695,C,Contrast,vehicle,0.3333333333333333,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+52cebdff8c1e2433c2310be25bd03be3,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+52cebdff8c1e2433c2310be25bd03be3,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+52cebdff8c1e2433c2310be25bd03be3,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+52cebdff8c1e2433c2310be25bd03be3,D,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+52cebdff8c1e2433c2310be25bd03be3,D,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+52cebdff8c1e2433c2310be25bd03be3,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+52cebdff8c1e2433c2310be25bd03be3,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+52cebdff8c1e2433c2310be25bd03be3,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7a4a69c7de10e01f2553b14568bcfdd9,A,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+7a4a69c7de10e01f2553b14568bcfdd9,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7a4a69c7de10e01f2553b14568bcfdd9,A,No Contrast,electronics,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+7a4a69c7de10e01f2553b14568bcfdd9,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7a4a69c7de10e01f2553b14568bcfdd9,A,No Contrast,furniture,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+7a4a69c7de10e01f2553b14568bcfdd9,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7a4a69c7de10e01f2553b14568bcfdd9,A,No Contrast,vegetable,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+7a4a69c7de10e01f2553b14568bcfdd9,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3d2a5ad1bdad0baf052031ad096a77a8,B,Contrast,animal,0.3333333333333333,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+3d2a5ad1bdad0baf052031ad096a77a8,B,No Contrast,beast,1,NA,1,0.2,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+3d2a5ad1bdad0baf052031ad096a77a8,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3d2a5ad1bdad0baf052031ad096a77a8,B,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+3d2a5ad1bdad0baf052031ad096a77a8,B,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+3d2a5ad1bdad0baf052031ad096a77a8,B,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+3d2a5ad1bdad0baf052031ad096a77a8,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3d2a5ad1bdad0baf052031ad096a77a8,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0eb0033fb8cfb99676422eda4fb283ce,C,No Contrast,animal,1,NA,1,0.2,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+0eb0033fb8cfb99676422eda4fb283ce,C,No Contrast,beast,1,NA,1,0.2,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+0eb0033fb8cfb99676422eda4fb283ce,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0eb0033fb8cfb99676422eda4fb283ce,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0eb0033fb8cfb99676422eda4fb283ce,C,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+0eb0033fb8cfb99676422eda4fb283ce,C,No Contrast,light,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+0eb0033fb8cfb99676422eda4fb283ce,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0eb0033fb8cfb99676422eda4fb283ce,C,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+9e1529ca3a0de676ed4051ee0d6193c4,D,Contrast,animal,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+9e1529ca3a0de676ed4051ee0d6193c4,D,Contrast,beast,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+9e1529ca3a0de676ed4051ee0d6193c4,D,No Contrast,electronics,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+9e1529ca3a0de676ed4051ee0d6193c4,D,No Contrast,fruit,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+9e1529ca3a0de676ed4051ee0d6193c4,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9e1529ca3a0de676ed4051ee0d6193c4,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9e1529ca3a0de676ed4051ee0d6193c4,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9e1529ca3a0de676ed4051ee0d6193c4,D,No Contrast,vehicle,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a384c99e731f88ae0213bf7ce69ffbf3,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a384c99e731f88ae0213bf7ce69ffbf3,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a384c99e731f88ae0213bf7ce69ffbf3,A,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a384c99e731f88ae0213bf7ce69ffbf3,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a384c99e731f88ae0213bf7ce69ffbf3,A,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+a384c99e731f88ae0213bf7ce69ffbf3,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a384c99e731f88ae0213bf7ce69ffbf3,A,No Contrast,vegetable,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a384c99e731f88ae0213bf7ce69ffbf3,A,Contrast,vehicle,0,0,0,0.4,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a9b43032ad704405350ab0760542d64f,C,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a9b43032ad704405350ab0760542d64f,C,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+a9b43032ad704405350ab0760542d64f,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a9b43032ad704405350ab0760542d64f,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a9b43032ad704405350ab0760542d64f,C,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a9b43032ad704405350ab0760542d64f,C,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+a9b43032ad704405350ab0760542d64f,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a9b43032ad704405350ab0760542d64f,C,Contrast,vehicle,1,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+d9fe89579bae59b225c0714469acdade,D,Contrast,animal,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+d9fe89579bae59b225c0714469acdade,D,Contrast,beast,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+d9fe89579bae59b225c0714469acdade,D,No Contrast,electronics,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+d9fe89579bae59b225c0714469acdade,D,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+d9fe89579bae59b225c0714469acdade,D,Contrast,furniture,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+d9fe89579bae59b225c0714469acdade,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+d9fe89579bae59b225c0714469acdade,D,No Contrast,vegetable,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+d9fe89579bae59b225c0714469acdade,D,No Contrast,vehicle,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+4364708ef153b55c228707f018ea3eea,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4364708ef153b55c228707f018ea3eea,A,No Contrast,vegetable,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+4364708ef153b55c228707f018ea3eea,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+778d24723cc848117fd6bf4bfaa35472,B,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,No Contrast,light,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+778d24723cc848117fd6bf4bfaa35472,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e20915dfee7ba38dec9eff1f6b76680d,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+e20915dfee7ba38dec9eff1f6b76680d,C,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e20915dfee7ba38dec9eff1f6b76680d,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e20915dfee7ba38dec9eff1f6b76680d,C,Contrast,fruit,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+e20915dfee7ba38dec9eff1f6b76680d,C,No Contrast,furniture,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+e20915dfee7ba38dec9eff1f6b76680d,C,No Contrast,light,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+e20915dfee7ba38dec9eff1f6b76680d,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e20915dfee7ba38dec9eff1f6b76680d,C,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,Contrast,beast,0,0.5,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+509a616664dc871903538dc8ae4e5c67,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+509a616664dc871903538dc8ae4e5c67,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,No Contrast,electronics,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+2c4e304d96faebc0a4a1631ef682bc6f,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,Contrast,light,0,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+2c4e304d96faebc0a4a1631ef682bc6f,A,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c4e304d96faebc0a4a1631ef682bc6f,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,No Contrast,light,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2f5d3f2ec0c425ded7f607a07aed1451,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+8ed8cd822d7893939eb282f742e0bf0b,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+8ed8cd822d7893939eb282f742e0bf0b,C,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+8ed8cd822d7893939eb282f742e0bf0b,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+8ed8cd822d7893939eb282f742e0bf0b,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+8ed8cd822d7893939eb282f742e0bf0b,C,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+8ed8cd822d7893939eb282f742e0bf0b,C,No Contrast,light,1,NA,1,0.6,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+8ed8cd822d7893939eb282f742e0bf0b,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+8ed8cd822d7893939eb282f742e0bf0b,C,Contrast,vehicle,1,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+e50b80bd97e45e9bfdd7de68147d8d95,D,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+e50b80bd97e45e9bfdd7de68147d8d95,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+e50b80bd97e45e9bfdd7de68147d8d95,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,Contrast,beast,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+0acd029686223205a976964c90766a67,A,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+0acd029686223205a976964c90766a67,A,No Contrast,vegetable,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+0acd029686223205a976964c90766a67,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,No Contrast,furniture,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a43e0ed4b3b0d492fb84a3162103ddad,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a43e0ed4b3b0d492fb84a3162103ddad,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+cf7729441664c6ff07c19f4ee9d66569,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+cf7729441664c6ff07c19f4ee9d66569,A,Contrast,beast,0,0,1,0.2,0,FALSE,FALSE,FALSE,FALSE,other,grey
+cf7729441664c6ff07c19f4ee9d66569,A,No Contrast,electronics,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+cf7729441664c6ff07c19f4ee9d66569,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+cf7729441664c6ff07c19f4ee9d66569,A,No Contrast,furniture,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+cf7729441664c6ff07c19f4ee9d66569,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+cf7729441664c6ff07c19f4ee9d66569,A,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+cf7729441664c6ff07c19f4ee9d66569,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab0f803ccc42ac33b2bdb69f376037a0,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab0f803ccc42ac33b2bdb69f376037a0,A,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab0f803ccc42ac33b2bdb69f376037a0,A,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+ab0f803ccc42ac33b2bdb69f376037a0,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab0f803ccc42ac33b2bdb69f376037a0,A,No Contrast,furniture,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+ab0f803ccc42ac33b2bdb69f376037a0,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab0f803ccc42ac33b2bdb69f376037a0,A,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+ab0f803ccc42ac33b2bdb69f376037a0,A,Contrast,vehicle,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+600b0f69781ac9acf2f2cf857cbee0d5,A,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+600b0f69781ac9acf2f2cf857cbee0d5,A,Contrast,beast,1,0,1,0.2,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+600b0f69781ac9acf2f2cf857cbee0d5,A,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+600b0f69781ac9acf2f2cf857cbee0d5,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+600b0f69781ac9acf2f2cf857cbee0d5,A,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+600b0f69781ac9acf2f2cf857cbee0d5,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+600b0f69781ac9acf2f2cf857cbee0d5,A,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+600b0f69781ac9acf2f2cf857cbee0d5,A,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,Contrast,beast,1,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+9a1b56f6bf67bcf108ae83c0c06579e3,A,Contrast,light,0.3333333333333333,1,1,0,0.125,TRUE,FALSE,FALSE,FALSE,other,grey
+9a1b56f6bf67bcf108ae83c0c06579e3,A,No Contrast,vegetable,0,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+9a1b56f6bf67bcf108ae83c0c06579e3,A,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+f0ac8188d99231af0ad7cb795a2d876b,A,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,Contrast,beast,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+f0ac8188d99231af0ad7cb795a2d876b,A,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+f0ac8188d99231af0ad7cb795a2d876b,A,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,Contrast,furniture,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+634faa4c3d77234caade9b6afe6ab3ea,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+634faa4c3d77234caade9b6afe6ab3ea,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+634faa4c3d77234caade9b6afe6ab3ea,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+3954c96a1c64811340c170d20eaf434d,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+4b4b28bef6dd7d69638c93ec9a49b9c2,D,No Contrast,vehicle,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+53aa8e47c872ae05b55b8fa286acd04a,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+53aa8e47c872ae05b55b8fa286acd04a,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+53aa8e47c872ae05b55b8fa286acd04a,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+53aa8e47c872ae05b55b8fa286acd04a,D,No Contrast,fruit,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+53aa8e47c872ae05b55b8fa286acd04a,D,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+53aa8e47c872ae05b55b8fa286acd04a,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+53aa8e47c872ae05b55b8fa286acd04a,D,No Contrast,vegetable,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+53aa8e47c872ae05b55b8fa286acd04a,D,No Contrast,vehicle,0.2,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+ab2657c22e99857d1cbf33ef8d476f9d,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab2657c22e99857d1cbf33ef8d476f9d,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab2657c22e99857d1cbf33ef8d476f9d,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+ab2657c22e99857d1cbf33ef8d476f9d,D,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+ab2657c22e99857d1cbf33ef8d476f9d,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab2657c22e99857d1cbf33ef8d476f9d,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+ab2657c22e99857d1cbf33ef8d476f9d,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+ab2657c22e99857d1cbf33ef8d476f9d,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+61c0b0a2ed2e9397397e4f2b75874580,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+61c0b0a2ed2e9397397e4f2b75874580,C,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+61c0b0a2ed2e9397397e4f2b75874580,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+61c0b0a2ed2e9397397e4f2b75874580,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+61c0b0a2ed2e9397397e4f2b75874580,C,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+61c0b0a2ed2e9397397e4f2b75874580,C,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+61c0b0a2ed2e9397397e4f2b75874580,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+61c0b0a2ed2e9397397e4f2b75874580,C,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+08e9cf981e780a3e1ea3753b075dd617,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+08e9cf981e780a3e1ea3753b075dd617,C,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+08e9cf981e780a3e1ea3753b075dd617,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+08e9cf981e780a3e1ea3753b075dd617,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+08e9cf981e780a3e1ea3753b075dd617,C,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+08e9cf981e780a3e1ea3753b075dd617,C,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+08e9cf981e780a3e1ea3753b075dd617,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+08e9cf981e780a3e1ea3753b075dd617,C,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+1809dde04feb597d3be4f49bb7db327d,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+1809dde04feb597d3be4f49bb7db327d,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+1809dde04feb597d3be4f49bb7db327d,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,Contrast,beast,1,0,1,0.2,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,No Contrast,vegetable,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+10bc8ec7ffa19a6c7958998e7cad43fd,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c14265e0d136270bc1c33d4275396f1,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+2c14265e0d136270bc1c33d4275396f1,C,No Contrast,beast,1,NA,1,0.2,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+2c14265e0d136270bc1c33d4275396f1,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c14265e0d136270bc1c33d4275396f1,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c14265e0d136270bc1c33d4275396f1,C,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c14265e0d136270bc1c33d4275396f1,C,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+2c14265e0d136270bc1c33d4275396f1,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+2c14265e0d136270bc1c33d4275396f1,C,Contrast,vehicle,0.6666666666666666,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+7f36a637037644ad197a3a90aea10eb1,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+7f36a637037644ad197a3a90aea10eb1,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+7f36a637037644ad197a3a90aea10eb1,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b6cbe71dfae507fa2950f70d73b1c81b,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b6cbe71dfae507fa2950f70d73b1c81b,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b6cbe71dfae507fa2950f70d73b1c81b,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b6cbe71dfae507fa2950f70d73b1c81b,D,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+b6cbe71dfae507fa2950f70d73b1c81b,D,Contrast,furniture,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+b6cbe71dfae507fa2950f70d73b1c81b,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+b6cbe71dfae507fa2950f70d73b1c81b,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+b6cbe71dfae507fa2950f70d73b1c81b,D,No Contrast,vehicle,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+91e966a365ad56e755a5adf46213296e,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+91e966a365ad56e755a5adf46213296e,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+91e966a365ad56e755a5adf46213296e,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+91e966a365ad56e755a5adf46213296e,B,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+91e966a365ad56e755a5adf46213296e,B,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+91e966a365ad56e755a5adf46213296e,B,No Contrast,light,0.4,NA,1,0.2,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+91e966a365ad56e755a5adf46213296e,B,Contrast,vegetable,1,0,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+91e966a365ad56e755a5adf46213296e,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,Contrast,furniture,0,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+c10294dd5a534b7c0e14331e4d6f74df,B,No Contrast,light,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+c10294dd5a534b7c0e14331e4d6f74df,B,Contrast,vegetable,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+c10294dd5a534b7c0e14331e4d6f74df,B,No Contrast,vehicle,0.2,NA,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+796305ff4df1e35bd9e4395b4daae1c1,C,No Contrast,animal,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+796305ff4df1e35bd9e4395b4daae1c1,C,No Contrast,beast,1,NA,1,0.6,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+796305ff4df1e35bd9e4395b4daae1c1,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+796305ff4df1e35bd9e4395b4daae1c1,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+796305ff4df1e35bd9e4395b4daae1c1,C,No Contrast,furniture,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+796305ff4df1e35bd9e4395b4daae1c1,C,No Contrast,light,1,NA,0.5,0.4,0,FALSE,FALSE,FALSE,FALSE,other,grey
+796305ff4df1e35bd9e4395b4daae1c1,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+796305ff4df1e35bd9e4395b4daae1c1,C,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+640ea55da0b5bbfab917ec10708555f2,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+640ea55da0b5bbfab917ec10708555f2,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+640ea55da0b5bbfab917ec10708555f2,D,No Contrast,electronics,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+640ea55da0b5bbfab917ec10708555f2,D,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+640ea55da0b5bbfab917ec10708555f2,D,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+640ea55da0b5bbfab917ec10708555f2,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+640ea55da0b5bbfab917ec10708555f2,D,No Contrast,vegetable,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+640ea55da0b5bbfab917ec10708555f2,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,Contrast,beast,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,No Contrast,electronics,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+166ce6424c00e9fed6885c4210960635,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+923e8620db9f06194ce4d10ca56da604,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+923e8620db9f06194ce4d10ca56da604,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+923e8620db9f06194ce4d10ca56da604,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+923e8620db9f06194ce4d10ca56da604,B,No Contrast,fruit,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+923e8620db9f06194ce4d10ca56da604,B,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+923e8620db9f06194ce4d10ca56da604,B,No Contrast,light,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+923e8620db9f06194ce4d10ca56da604,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+923e8620db9f06194ce4d10ca56da604,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,No Contrast,animal,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,Contrast,fruit,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,No Contrast,furniture,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,No Contrast,light,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+9ecdd75b27ff42b07c5c6b9a98e3453d,C,Contrast,vehicle,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+aaa9e5a955ee91e790ef53ecb31c339b,D,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+aaa9e5a955ee91e790ef53ecb31c339b,D,Contrast,beast,0,1,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+aaa9e5a955ee91e790ef53ecb31c339b,D,No Contrast,electronics,0.4,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+aaa9e5a955ee91e790ef53ecb31c339b,D,No Contrast,fruit,0.8,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+aaa9e5a955ee91e790ef53ecb31c339b,D,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+aaa9e5a955ee91e790ef53ecb31c339b,D,Contrast,light,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+aaa9e5a955ee91e790ef53ecb31c339b,D,No Contrast,vegetable,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+aaa9e5a955ee91e790ef53ecb31c339b,D,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,No Contrast,beast,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,No Contrast,fruit,0.8,NA,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,No Contrast,light,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,Contrast,vegetable,0,0,0.5,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+a33b360e2663b2c97f26fe2cdb9d6ee5,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,Contrast,animal,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,No Contrast,beast,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,Contrast,electronics,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,No Contrast,fruit,1,NA,1,0,0,FALSE,FALSE,TRUE,TRUE,basic,#44889CFF
+811ab7d71a75d86af6e801cf14219769,B,Contrast,furniture,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,No Contrast,light,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+811ab7d71a75d86af6e801cf14219769,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ed4bfdecfff786443f0d7db0a9ba089,B,Contrast,animal,0.6666666666666666,0,0,0,0,FALSE,FALSE,FALSE,FALSE,other,grey
+5ed4bfdecfff786443f0d7db0a9ba089,B,No Contrast,beast,0.6,NA,1,0.2,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+5ed4bfdecfff786443f0d7db0a9ba089,B,Contrast,electronics,0,0,1,0.2,0,FALSE,FALSE,FALSE,FALSE,other,grey
+5ed4bfdecfff786443f0d7db0a9ba089,B,No Contrast,fruit,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ed4bfdecfff786443f0d7db0a9ba089,B,Contrast,furniture,0.3333333333333333,0,1,0,0,FALSE,FALSE,FALSE,FALSE,broad subordinate,#CC4D06FF
+5ed4bfdecfff786443f0d7db0a9ba089,B,No Contrast,light,0.6,NA,1,0,0,FALSE,FALSE,TRUE,FALSE,basic,#44889CFF
+5ed4bfdecfff786443f0d7db0a9ba089,B,Contrast,vegetable,0,0,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
+5ed4bfdecfff786443f0d7db0a9ba089,B,No Contrast,vehicle,0,NA,1,0,0,FALSE,TRUE,FALSE,FALSE,narrow subordinate,#E1AF00FF
