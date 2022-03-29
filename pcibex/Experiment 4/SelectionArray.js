@@ -109,14 +109,14 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           var time = 0;
           var tick = setInterval(increment, 10)
           function increment() {
-            if (time > 300) {
+            if (time >= 3000) {
               that.selections.push("NONE")
               that.times.push(time)
               clearInterval(tick)
               move_on()
             } else {
-              time++;
-              timeBar.css({"width": 500 - 500/300 * time + "px"})
+              time = time + 10;
+              timeBar.css({"width": 500 - 500/300 * (time/10) + "px"})
             }
           }
           return {stop: function() {
