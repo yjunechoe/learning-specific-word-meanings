@@ -43,8 +43,12 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
                 </div>
               </div>
               <div class="PennController-SA-actions">
-                <button class="PennController-SA-btn PennController-SA-btn-yes">Yes</button>
-                <button class="PennController-SA-btn PennController-SA-btn-no">No</button>
+                <button class="PennController-SA-btn PennController-SA-btn-yes">
+                  <span>Yes<br>"F"</br></span>
+                </button>
+                <button class="PennController-SA-btn PennController-SA-btn-no">
+                  <span>Yes<br>"J"</br></span>
+                </button>
               </div>
           `))
           
@@ -83,7 +87,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         // Keydown logic
         this.keydown_fj = e => {
           e.preventDefault
-          const key = e.key
+          const key = e.key.toLowerCase()
           if (key == "f") {
               this.selections.push("Yes")
               this.times.push(this.barTime.stop())
