@@ -155,6 +155,9 @@ gen_test_set <- function(d, other_set = c("in", "out")) {
       other_refs <- img_tbl %>% 
         filter(domain == d, type == "sup") %>% 
         pull(path)
+      if (d == "animal") {
+        other_refs <- paste0("in-domain-alts/animal/animal-alt-duck", 1:5, ".jpg")
+      }
     }
     domain_refs <- img_tbl %>% 
       filter(domain == d, !is.na(id)) %>% 

@@ -133,6 +133,9 @@
 .SA-card-img {
   align-self: center;
   position: absolute;
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
 }
 
 .SA-time-bar-wrapper {
