@@ -70,7 +70,7 @@ Template("01_trial_templates_v2.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSallyMessageBar("directions", row[row.target])
+        newSallyMessageBar("directions", row.label1)
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -80,7 +80,7 @@ Template("01_trial_templates_v2.csv", row =>
             .cssContainer({"position": "relative"})
             .css({
                 "position" : "absolute",
-                "top" : "-175px",
+                "top" : "-200px",
                 "transform": "translateX(-50%)",
                 "z-index": "2",
                 "font-size": "24px",
@@ -137,8 +137,34 @@ Template("01_trial_templates_v2.csv", row =>
             .sallyStill()
             .hideSpeechBubble()
         ,
+        // -- Drill in target label
+        newTimer("transition-1", 1000)
+          .start()
+          .wait()
+        ,
+        getSallyCanvas("learn-phase")
+          .showSpeechBubble()
+          .showFirst()
+          .sallySay("Now, can you help me find more " + row.label1 + "s?")
+        ,
+        newTimer("transition-2", 5000)
+          .start()
+          .wait()
+        ,
+        getSallyCanvas("learn-phase")
+          .hideAll()
+          .sallyStill()
+          .sallySay('Make your choices by pressing the "F" or "J" key!<br>Click the "Begin" button when you are ready</br>')
+        ,
+        newButton("direction-end", "Begin")
+          .print()
+          .center()
+          .wait()
+          .remove()
+        ,
+        // --
         // move to test phase after 3 sec
-        newTimer("show-selection-grid", 1000)
+        newTimer("show-selection-aray", 1000)
             .start()
             .wait()
         ,
@@ -156,8 +182,8 @@ Template("01_trial_templates_v2.csv", row =>
             .wait()
     )
     .log("group", row.group)
-    .log("labelled", row.labelled)
-    .log("target", row.target)
+    .log("contrast", row.contrast)
+    .log("other_set", row.other_set)
     .log("item", row.domain)
 )
 
