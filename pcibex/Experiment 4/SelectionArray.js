@@ -105,6 +105,20 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
             move_on()
         })
         
+        // Keypress logic
+        document.addEventListener("keydown", e => {
+            const key = e.key
+            if (key == "f") {
+                this.selections.push("Yes")
+                this.times.push(this.barTime.stop())
+                move_on()
+            } else if (key == "j") {
+                this.selections.push("No")
+                this.times.push(this.barTime.stop())
+                move_on()
+            }
+        })
+        
         resolve();
 
     };
