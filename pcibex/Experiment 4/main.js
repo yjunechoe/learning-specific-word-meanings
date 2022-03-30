@@ -63,12 +63,35 @@ PennController("training",
     ,
     newSallyMessageBar("directions", "")
       .cssContainer("display", "block")
-      .sallySay("You'll now be seeing images appear below")
+      .sallySay("You will now be seeing images appear below, one-by-one.")
       .print()
     ,    
     newButton("Next-5", "Next")
     ,
-    newSelectionArray("training-phase1", ["TRAINING/training-pizza.jpg"])
+    getSallyMessageBar("directions")
+      .sallySay('If what you see is a pizza, press the "F" key.')
+    ,
+    newButton("Next-6", "Next")
+    ,
+    getSallyMessageBar("directions")
+      .sallySay('If what you see is NOT a pizza, press the "J" key.')
+    ,
+    newButton("Next-7", "Next")
+    ,
+    getSallyMessageBar("directions")
+      .sallySay('Keep your fingers on these keys and respond quickly!')
+    ,
+    newButton("Next-8", "Next")
+    ,
+    getSallyMessageBar("directions")
+      .sallySay('Click the "Begin" button when you are ready.')
+    ,
+    newButton("Begin", "Begin")
+    ,
+    getSallyMessageBar("directions")
+      .sallySay('Is this a pizza?')
+    ,
+    newSelectionArray("training-phase", [1,2,3,4,5].map(i => "TRAINING/training-pizza" + i + ".jpg"))
       .print()
       .center()
       .show()
@@ -85,7 +108,7 @@ PennController("training",
         "padding": "10px"
       })
     ,
-    getSelectionArray("training-phase1")
+    getSelectionArray("training-phase")
       .remove()
     ,
     getSallyCanvas("training-message")
