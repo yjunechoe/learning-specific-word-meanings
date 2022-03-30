@@ -2,7 +2,7 @@ PennController.ResetPrefix(null)
 DebugOff()
 var showProgressBar = false;
 
-PennController.Sequence("intro", "counter", "training", "beginning", "experiment", "end", SendResults(), "bye")
+PennController.Sequence("intro", "counter", "instructions", "training", "beginning", "experiment", "end", SendResults(), "bye")
 
 SetCounter("counter", "inc", 1);
 
@@ -19,7 +19,7 @@ newTrial( "intro" ,
 
 ).setOption("hideProgressBar",true)
 
-PennController("training",
+PennController("instructions",
     defaultSallyCanvas
         .css("height", "550px")
         .css("width", "1100px")
@@ -69,35 +69,47 @@ PennController("training",
     newButton("Next-5", "Next")
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see is a pizza, press the "F" key.')
+      .sallySay('If what you see matches the word, press the "F" key.')
     ,
     newButton("Next-6", "Next")
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see is NOT a pizza, press the "J" key.')
+      .sallySay('If what you see does NOT match the word, press the "J" key.')
     ,
     newButton("Next-7", "Next")
     ,
     getSallyMessageBar("directions")
-      .sallySay('Keep your fingers on these keys and respond quickly!')
+      .sallySay('In this example, the word is "pizza".')
     ,
     newButton("Next-8", "Next")
+    ,
+    getSallyMessageBar("directions")
+      .sallySay('Keep your fingers on these keys and respond quickly!')
+    ,
+    newButton("Next-9", "Next")
     ,
     getSallyMessageBar("directions")
       .sallySay('Click the "Begin" button when you are ready.')
     ,
     newButton("Begin", "Begin")
+)
+
+PennController("training",
+    newTimer("timer", 500)
+      .start()
+      .wait()
     ,
-    getSallyMessageBar("directions")
-      .sallySay('Is this a pizza?')
+    newSallyMessageBar("directions", "pizza")
+      .print()
     ,
-    newSelectionArray("training-phase", [1,2,3,4,5].map(i => "TRAINING/training-pizza" + i + ".jpg"))
+    newSelectionArray("training-phase", [0,1,2,3,4,5].map(i => "TRAINING/training-pizza" + i + ".jpg"))
       .print()
       .center()
       .show()
     ,
     newButton("Continue")
       .center()
+      .print()
       .cssContainer({"position": "relative"})
       .css({
         "position" : "absolute",
@@ -107,15 +119,8 @@ PennController("training",
         "font-size": "24px",
         "padding": "10px"
       })
-    ,
-    getSelectionArray("training-phase")
+      .wait()
       .remove()
-    ,
-    getSallyCanvas("training-message")
-      .css("display", "")
-      .sallySay("Good job!")
-    ,
-    newButton("Next", "Next")
 )
 
 PennController("beginning",
@@ -137,22 +142,20 @@ PennController("beginning",
         .wait()
         .remove()
     ,
-    newButton("Next-1", "Next")
-    ,
-    getSallyCanvas("beginning-message")
+    newSallyCanvas("beginning-message")
         .sallySay("Now let's play this game with words from my native language.")
     ,
-    newButton("Next-2", "Next")
+    newButton("Next-1", "Next")
     ,
     getSallyCanvas("beginning-message")
         .sallySay("You've probably never seen these words before,<br>so I'll teach you what they mean first.")
     ,
-    newButton("Next-3", "Next")
+    newButton("Next-2", "Next")
     ,
     getSallyCanvas("beginning-message")
         .sallySay('Remember to keep your fingers on "F" and "J" keys of your keyboard to make your choices!')
     ,
-    newButton("Next-4", "Next")
+    newButton("Next-3", "Next")
     ,
     getSallyCanvas("beginning-message")
         .sallySay('Are you ready?<br>Click the "Begin" button when you are ready!')
