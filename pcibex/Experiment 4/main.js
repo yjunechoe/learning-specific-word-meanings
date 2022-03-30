@@ -2,7 +2,7 @@ PennController.ResetPrefix(null)
 DebugOff()
 var showProgressBar = false;
 
-PennController.Sequence("intro", "counter", "beginning", "experiment", "end", SendResults(), "bye")
+PennController.Sequence("intro", "counter", "training", "beginning", "experiment", "end", SendResults(), "bye")
 
 SetCounter("counter", "inc", 1);
 
@@ -18,6 +18,59 @@ newTrial( "intro" ,
     fullscreen()
 
 ).setOption("hideProgressBar",true)
+
+PennController("training",
+    defaultSallyCanvas
+        .css("height", "550px")
+        .css("width", "1100px")
+        .css("position", "relative")
+        .css("margin-top", "-50px")
+        .css("margin-bottom", "2rem")
+        .css("outline", "none")
+        .showSpeechBubble()
+        .print()
+    ,
+    defaultButton
+        .cssContainer("margin-top", "2rem")
+        .cssContainer("margin-bottom", "1rem")
+        .center()
+        .print()
+        .wait()
+        .remove()
+    ,
+    newSallyCanvas("training-message")
+        .sallySay("Hi there!<br>My name is Sally.")
+    ,
+    newButton("Next-1", "Next")
+    ,
+    getSallyCanvas("training-message")
+        .sallySay("We'll be play a game of finding matches.<br>Here's how it works:")
+    ,
+    newButton("Next-2", "Next")
+    ,
+    getSallyCanvas("training-message")
+        .sallySay("I will first give you a word<br>and you will tell me if you find a match!")
+    ,
+    newButton("Next-3", "Next")
+    ,
+    getSallyCanvas("training-message")
+      .sallySay("Are you ready for an example?")
+    ,
+    newButton("Next-4", "Next")
+    ,
+    getSallyCanvas("training-message")
+      .css("display", "none")
+    ,
+    newSelectionArray("test-phase", ["TRAINING/training-pizza"])
+      .print()
+      .center()
+    ,
+    getSallyCanvas("training-message")
+      .css("display", "")
+      .sallySay("Good job!")
+    ,
+    newButton("Next", "Next")
+)
 
 PennController("beginning",
     defaultSallyCanvas
@@ -38,20 +91,22 @@ PennController("beginning",
         .wait()
         .remove()
     ,
-    newSallyCanvas("beginning-message")
-        .sallySay("Hi there!<br>My name is Sally!")
-    ,
     newButton("Next-1", "Next")
     ,
     getSallyCanvas("beginning-message")
-        .sallySay("I'd like to teach you some words<br>from my native language.")
+        .sallySay("Now let's play this game with words from my native language.")
     ,
     newButton("Next-2", "Next")
     ,
     getSallyCanvas("beginning-message")
-        .sallySay("Please pay attention because I will be<br>asking you questions about these words later!")
+        .sallySay("You've probably never seen these words before,<br>so I'll teach you what they mean first.")
     ,
     newButton("Next-3", "Next")
+    ,
+    getSallyCanvas("beginning-message")
+        .sallySay('Remember to keep your fingers on "F" and "J" keys of your keyboard to make your choices!')
+    ,
+    newButton("Next-4", "Next")
     ,
     getSallyCanvas("beginning-message")
         .sallySay('Are you ready?<br>Click the "Begin" button when you are ready!')
@@ -143,24 +198,14 @@ Template("01_trial_templates_v2.csv", row =>
           .wait()
         ,
         getSallyCanvas("learn-phase")
-          .showSpeechBubble()
           .showFirst()
-          .sallySay("Now, can you help me find more " + row.label1 + "s?")
+          .sallyStill()
+          .showSpeechBubble()
+          .sallySay("Now can you help me find more " + row.label1 + "s?")
         ,
         newTimer("transition-2", 5000)
           .start()
           .wait()
-        ,
-        getSallyCanvas("learn-phase")
-          .hideAll()
-          .sallyStill()
-          .sallySay('Make your choices by pressing the "F" or "J" key!<br>Click the "Begin" button when you are ready</br>')
-        ,
-        newButton("direction-end", "Begin")
-          .print()
-          .center()
-          .wait()
-          .remove()
         ,
         // --
         // move to test phase after 3 sec
