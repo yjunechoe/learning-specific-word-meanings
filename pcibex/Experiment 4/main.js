@@ -49,7 +49,7 @@ PennController("training",
     newButton("Next-2", "Next")
     ,
     getSallyCanvas("training-message")
-        .sallySay("I will first give you a word<br>and you will tell me if you find a match!")
+        .sallySay("I will first give you a word, and then<br>you will tell me if you find a match!")
     ,
     newButton("Next-3", "Next")
     ,
@@ -61,9 +61,32 @@ PennController("training",
     getSallyCanvas("training-message")
       .css("display", "none")
     ,
-    newSelectionArray("test-phase", ["TRAINING/training-pizza"])
+    newSallyMessageBar("directions", "")
+      .cssContainer("display", "block")
+      .sallySay("You'll now be seeing images appear below")
+      .print()
+    ,    
+    newButton("Next-5", "Next")
+    ,
+    newSelectionArray("training-phase1", ["TRAINING/training-pizza.jpg"])
       .print()
       .center()
+      .show()
+    ,
+    newButton("Continue")
+      .center()
+      .cssContainer({"position": "relative"})
+      .css({
+        "position" : "absolute",
+        "top" : "-200px",
+        "transform": "translateX(-50%)",
+        "z-index": "2",
+        "font-size": "24px",
+        "padding": "10px"
+      })
+    ,
+    getSelectionArray("training-phase1")
+      .remove()
     ,
     getSallyCanvas("training-message")
       .css("display", "")
