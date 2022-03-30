@@ -235,9 +235,9 @@ Template("01_trial_templates_v2.csv", row =>
             .start()
             .wait()
         ,
-        // hide all taught referents
+        // keep up all taught referents
         getSallyCanvas("learn-phase")
-            .hideAll()
+            .showFirst()
             .sallyStill()
             .hideSpeechBubble()
         ,
@@ -247,8 +247,6 @@ Template("01_trial_templates_v2.csv", row =>
           .wait()
         ,
         getSallyCanvas("learn-phase")
-          .showFirst()
-          .sallyStill()
           .showSpeechBubble()
           .sallySay("Now can you help me find more " + row.label1 + "s?")
         ,
