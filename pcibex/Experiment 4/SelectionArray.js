@@ -46,10 +46,10 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
               </div>
               <div class="PennController-SA-actions">
                 <button class="PennController-SA-btn PennController-SA-btn-yes">
-                  <span>Yes<br>"F"</br></span>
+                  <span>No<br>"F"</br></span>
                 </button>
                 <button class="PennController-SA-btn PennController-SA-btn-no">
-                  <span>No<br>"J"</br></span>
+                  <span>Yes<br>"J"</br></span>
                 </button>
               </div>
           `))
@@ -91,7 +91,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           e.preventDefault
           const key = e.key.toLowerCase()
           if (key == "f") {
-              this.selections.push("Yes")
+              this.selections.push("No")
               this.times.push(this.barTime.stop())
               buttonYes.removeClass("PennController-SA-btn-clicked")
               setTimeout(() => {
@@ -99,7 +99,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
               }, 10)
               move_on()
           } else if (key == "j") {
-              this.selections.push("No")
+              this.selections.push("Yes")
               this.times.push(this.barTime.stop())
               buttonNo.removeClass("PennController-SA-btn-clicked")
               setTimeout(() => {

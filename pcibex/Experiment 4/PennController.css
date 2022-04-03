@@ -170,8 +170,18 @@
   animation-duration: 1s;
 }
 
+.blinking-text {
+  animation: txtBlink 3s infinite;
+}
+
 /* keyframes go in global_main.css */
 @keyframes btnClick {
   from {background-color: #04AA6D}
   to {background-color: #EFEFEF}
+}
+
+@keyframes txtBlink {
+  0% {opacity: 1}
+  50% {opacity: 0.1}
+  100% {opacity: 1}
 }
