@@ -75,13 +75,13 @@ PennController("instructions",
       .wait()
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see matches the word, press the "J" key.')
+      .sallySay('If what you see matches the word, press the "F" key.')
     ,
     getKey("Next")
       .wait()
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see does NOT match the word, press the "F" key.')
+      .sallySay('If what you see does NOT match the word, press the "J" key.')
     ,
     getKey("Next")
       .wait()
@@ -176,7 +176,7 @@ PennController("beginning",
         .remove()
     ,
     newSallyCanvas("beginning-message")
-        .sallySay("Now let's play this game with words<br>from my native language.")
+        .sallySay("Now let's play this game with words<br>from my native language!")
     ,
     newText("press-space", "<p class='PennController-blinking-text'>Press the spacebar key to proceed ...</p>")
       .center()
@@ -187,7 +187,7 @@ PennController("beginning",
       .wait()
     ,
     getSallyCanvas("beginning-message")
-        .sallySay("You've probably never seen these words before,<br>so I'll teach you what they mean first.")
+        .sallySay("You've probably never seen these words before,<br>so I'll tell you what they mean first.")
     ,
     newKey("Next", " ")
       .wait()
@@ -207,7 +207,7 @@ PennController("beginning",
     newButton("Begin")
 )
 
-Template("01_trial_templates_v2.csv", row => 
+Template("01_trial_templates.csv", row => 
     // learn-phase goes here before test-phase
     newTrial("experiment",
         // init learn and test content
@@ -218,7 +218,7 @@ Template("01_trial_templates_v2.csv", row =>
             .css("margin-bottom", "2rem")
             .print()
         ,
-        newSallyMessageBar("directions", row.label1)
+        newSallyMessageBar("directions", row[[row.target]])
             .cssContainer("display", "block")
             .print()
             .hidden()
@@ -323,7 +323,8 @@ Template("01_trial_templates_v2.csv", row =>
     )
     .log("group", row.group)
     .log("contrast", row.contrast)
-    .log("other_set", row.other_set)
+    .log("target", row.target)
+    .log("order", row.order)
     .log("item", row.domain)
 )
 
