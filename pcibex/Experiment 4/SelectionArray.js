@@ -37,6 +37,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           .attr("class", "PennController-SelectionArray")
           .append($(`
               <div class="PennController-SA-time-bar-wrapper">
+                <span style="font-family:monospace;">Time</span>
                 <div class="PennController-SA-time-bar">
                 </div>
               </div>
@@ -44,12 +45,16 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
                 <div class="PennController-SA-wrapper">
                 </div>
               </div>
+              <div class="PennController-SA-actions" style="font-family:monospace;font-size:24px;color:grey;font-weight:bold;margin-bottom:15px;">
+                <span style="transform: translate(calc(-50% + 50px));">NO</span>
+                <span style="transform: translate(calc(50% - 50px));">YES</span>
+              </div>
               <div class="PennController-SA-actions">
                 <button class="PennController-SA-btn PennController-SA-btn-yes">
-                  <span>No<br>"F"</br></span>
+                  <span class="PennController-SA-btn-top">F</span>
                 </button>
                 <button class="PennController-SA-btn PennController-SA-btn-no">
-                  <span>Yes<br>"J"</br></span>
+                  <span class="PennController-SA-btn-top">J</span>
                 </button>
               </div>
           `))
@@ -65,8 +70,8 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
         const cardImg = this.jQueryElement.find(".PennController-SA-card-img")
         const timeBar = this.jQueryElement.find(".PennController-SA-time-bar-wrapper div")
         const buttons = this.jQueryElement.find("button.PennController-SA-btn")
-        const buttonYes = this.jQueryElement.find("button.PennController-SA-btn-yes")
-        const buttonNo = this.jQueryElement.find("button.PennController-SA-btn-no")
+        const buttonYes = this.jQueryElement.find("button.PennController-SA-btn-yes span")
+        const buttonNo = this.jQueryElement.find("button.PennController-SA-btn-no span")
 
         // Card traversing logic
         const move_on = () => {
@@ -81,7 +86,7 @@ window.PennController._AddElementType("SelectionArray", function(PennEngine) {
           } else {
             document.removeEventListener("keydown", this.keydown_fj)
             buttons.css("display", "none")
-            timeBar.css("visibility", "hidden")
+            this.jQueryElement.css("visibility", "hidden")
             // replace sally message bar text
             document.querySelector("p.PennController-speech-text").textContent = 'Good work! Click the "Continue" button to proceed.'            }
         }

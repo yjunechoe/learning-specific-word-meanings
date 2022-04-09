@@ -102,14 +102,14 @@
 }
 
 .labelled > img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  left:0;
-  right:0;
-  margin:auto;
-  top:0;
-  bottom:0;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    top:0;
+    bottom:0;
 }
 
 .SA-wrapper {
@@ -140,7 +140,6 @@
 
 .SA-time-bar-wrapper {
   padding: 5vh 0;
-  margin: auto;
 }
 
 .SA-time-bar {
@@ -158,11 +157,25 @@
 }
 
 .SA-btn {
-  width: 100px;
-  height: 80px;
-  font-size: 22px;
-  pointer-events: none;
-  background-color: #EFEFEF;
+ width: 100px;
+ font-size: 24px;
+ font-weight: bold;
+ border: none;
+ border-radius: 0.75em;
+ background: #000000;
+ padding: 0px;
+}
+
+.SA-btn-top {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid #000000;
+ border-radius: 0.75em;
+ padding: 0.5em 1.5em;
+ background: #e8e8e8;
+ color: #000000;
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
 }
 
 .SA-btn-clicked {
@@ -174,12 +187,18 @@
   animation: txtBlink 3s infinite;
 }
 
+
 /* keyframes go in global_main.css */
 @keyframes btnClick {
-  from {background-color: #04AA6D}
-  to {background-color: #EFEFEF}
+  from {
+    background-color: #707070;
+    transform: translateY(0);
+  }
+  to {
+    background-color: "white";
+    transform: translateY(-0.2em);
+  }
 }
-
 @keyframes txtBlink {
   0% {opacity: 1}
   50% {opacity: 0.1}
