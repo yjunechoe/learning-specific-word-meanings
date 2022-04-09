@@ -292,7 +292,7 @@ Template("01_trial_templates.csv", row =>
         ,
         getSallyCanvas("learn-phase")
           .showSpeechBubble()
-          .sallySay("Now can you help me find more " + row.label1 + "s?")
+          .sallySay("Now can you help me find more " + row[[row.target]] + "s?")
         ,
         newTimer("transition-2", 5000)
           .start()
