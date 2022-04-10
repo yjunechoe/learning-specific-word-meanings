@@ -189,13 +189,13 @@ PennController("beginning",
     getSallyCanvas("beginning-message")
         .sallySay("You've probably never seen these words before,<br>so I'll tell you what they mean first.")
     ,
-    newKey("Next", " ")
+    getKey("Next")
       .wait()
     ,
     getSallyCanvas("beginning-message")
         .sallySay('Remember to keep your fingers on "F" and "J" keys of your keyboard to make your choices!')
     ,
-    newKey("Next", " ")
+    getKey("Next")
       .wait()
     ,
     getText("press-space")
@@ -356,5 +356,22 @@ newTrial( "bye" ,
             "<p style=font-size:18px;><a href='https://app.prolific.co/submissions/complete?cc=42CB45E7'>Click here to confirm my submission on Prolific</a>.</p>")
         .center()
         .print()
+    ,
+    newText( "debrief" , `<div>
+        <h1>Debriefing</h1>
+        <p>In this experiment, we were looking at how people generalize the meaning of a new word (e.g., "fep") when the evidence (e.g., an image of a dalmatian) points to either a narrow meaning (like DALMATIAN) or a broad meaning (like DOG) of the word. We hypothesized that when the evidence was also accompanied by an alternative to the narrow meaning (e.g., the word "blicket" presented with an image of a corgi), people are more likely to think that "fep" means DALMATIAN, as opposed to DOG.</p>
+        <p>We used a word-picture matching task (the game you played with Sally) to test this hypothesis. If you answered "YES" just to images of other dalmatians, we took that to mean that you think "fep" means DALMATIAN. On the other hand, if you answered "YES" to all dogs, including dalmatians, we took that to mean that you think "fep" means DOG. Additionally, we also kept track of the time it took for you to make a decision with the F and J keys, to measure how confident or surprised you were in making a decision for each image during the task.</p>
+    </div>`)
+        .css({
+          "width": "800px",
+          "margin-top": "20px",
+          "border-top": "2px solid black"
+        })
+        .center()
+        .print()
+    ,
+    newButton("empty")
+        .print()
+        .hidden()
         .wait()
 ).setOption("hideProgressBar",true)
