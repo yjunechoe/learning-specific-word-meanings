@@ -75,13 +75,13 @@ PennController("instructions",
       .wait()
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see matches the word, press the "F" key.')
+      .sallySay('If what you see matches the word, press the "J" key.')
     ,
     getKey("Next")
       .wait()
     ,
     getSallyMessageBar("directions")
-      .sallySay('If what you see does NOT match the word, press the "J" key.')
+      .sallySay('If what you see does NOT match the word, press the "F" key.')
     ,
     getKey("Next")
       .wait()
